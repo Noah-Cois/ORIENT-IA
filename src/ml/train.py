@@ -9,25 +9,30 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import classification_report
 
-# 1. Chargement dynamique de tous les fichiers du dossier synthetic
+# 1. Chargement dynamique robuste basé sur l'emplacement de train.py
 current_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = os.path.abspath(os.path.join(current_dir, '../../../'))
+# On remonte de 2 crans pour arriver à la racine du projet (src/ml -> src -> orient_ia_project)
+project_root = os.path.abspath(os.path.join(current_dir, '../../'))
 
+# Recherche prioritaire dans data/synthetic
 synthetic_dir = os.path.join(project_root, 'data', 'synthetic')
 if not os.path.exists(synthetic_dir):
+    # Fallback si le dossier est directement à la racine du projet
     synthetic_dir = os.path.join(project_root, 'synthetic')
+
+if not os.path.exists(synthetic_dir):
+    raise FileNotFoundError(f"Le dossier 'synthetic' est introuvable. Vérifie son emplacement par rapport à {project_root}")
 
 all_csv_files = glob.glob(os.path.join(synthetic_dir, '*.csv'))
 print(f"Fichiers détectés dans synthetic : {len(all_csv_files)} fichiers trouvés.")
 
-# 2. Stratégie d'intégration globale : 
-# On cherche en priorité le fichier principal qui contient les profils et les cibles d'orientation,
-# tout en pouvant enrichir avec les autres tables si nécessaire.
-# Le fichier le plus complet pour l'apprentissage direct reste 'profils_etudiants_synthetiques.csv' ou 'candidat_filiere.csv'.
-
+# 2. Chargement du dataset principal
 target_df_path = os.path.join(synthetic_dir, 'profils_etudiants_synthetiques.csv')
 if not os.path.exists(target_df_path):
     target_df_path = os.path.join(synthetic_dir, 'candidat_filiere.csv')
+
+if not os.path.exists(target_df_path):
+    raise FileNotFoundError(f"Le fichier de données principal est introuvable dans {synthetic_dir}")
 
 df = pd.read_csv(target_df_path)
 print(f"Dataset principal chargé : {os.path.basename(target_df_path)} ({len(df)} lignes)")
@@ -74,7 +79,7 @@ y_pred = model_pipeline.predict(X_test)
 print("--- Rapport de performance du modèle global ---")
 print(classification_report(y_test, y_pred, zero_division=0))
 
-# 6. Sauvegarde du modèle
+# 6. Sauvegarde du modèle (sauvegardé dans le dossier models à la racine du projet)
 models_dir = os.path.join(project_root, 'models')
 os.makedirs(models_dir, exist_ok=True)
 model_path = os.path.join(models_dir, 'ispm_orientation_model.pkl')
