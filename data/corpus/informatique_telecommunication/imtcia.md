@@ -29,7 +29,7 @@ Cette filière se concentre sur la convergence entre l'informatique, le multimé
 - Créer des applications multimédias riches intégrant des outils intelligents.
 
 ### 4. Prérequis et profil recherché
-- Bacc Série C ou D ou S ou A ou Technique
+- Bacc C, D, S et Techniques industrielles
 - Français
 - Anglais
 - Mathématiques et Culture numérique

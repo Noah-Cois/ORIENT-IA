@@ -29,7 +29,7 @@ La filière GCA forme des professionnels spécialisés dans la conception, le ca
 - Elaborer des plans architecturaux et diriger les équipes sur le terrain.
 
 ### 4. Prérequis et profil recherché
-- Bacc Série C ou D ou S ou Technique (Génie Civil)
+- Bacc C, D, S et Techniques du génie civil
 - Français
 - Anglais
 - Mathématiques, Physique et Dessin

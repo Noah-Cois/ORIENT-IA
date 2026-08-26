@@ -29,7 +29,7 @@ La filière IAA forme des spécialistes de la transformation, de la conservation
 - Mettre en place et auditer les systèmes de management de la qualité et de la sécurité alimentaire.
 
 ### 4. Prérequis et profil recherché
-- Bacc Série C ou D ou S ou TV ou Technique
+- Bacc C, D, S, Techniques agricoles et A2 avec note de mathématiques >= 12
 - Français
 - Anglais
 - Chimie et Biologie (SVT)

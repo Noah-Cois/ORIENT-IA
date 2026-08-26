@@ -29,7 +29,7 @@ La filière CAA forme des cadres opérationnels et des gestionnaires capables de
 - Administrer une unité d'affaires et encadrer une équipe commerciale.
 
 ### 4. Prérequis et profil recherché
-- Bacc Toutes Séries (A, C, D, G, S, Technique)
+- Bacc Toutes Séries (A, C, D, S, Technique)
 - Français
 - Anglais
 - Mathématiques de gestion et Communication

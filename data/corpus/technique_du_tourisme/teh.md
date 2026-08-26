@@ -29,7 +29,7 @@ La filière TEH forme des cadres opérationnels et des managers pour les secteur
 - Créer, tarifer et vendre des séjours et produits touristiques clés en main.
 
 ### 4. Prérequis et profil recherché
-- Bacc Toutes Séries (A, C, D, G, L, S)
+- Bacc Toutes Séries (A, C, D, L, S)
 - Français (excellente maîtrise orale et écrite)
 - Anglais et deuxième langue étrangère
 - Communication et Relations humaines
