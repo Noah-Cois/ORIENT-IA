@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ispm="http://www.ispm.mg/ontologies/orientia#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#IGGLIA">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Filiere"/>
+    <ispm:nom>IGGLIA - Geologie et Genie des Laboratoires</ispm:nom>
+    <ispm:description>Licence en geologie appliquee a la sante</ispm:description>
+    <ispm:appartientAParcours rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours_Sciences"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_Geologie"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_GeoTerrain"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_BacS"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_PhysChim"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_SVT"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_Moy10"/>
+    <ispm:prepareAMetier rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_Geologue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#BTS_Informatique">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Filiere"/>
+    <ispm:nom>BTS Informatique de Gestion</ispm:nom>
+    <ispm:description>BTS en informatique de gestion</ispm:description>
+    <ispm:appartientAParcours rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours_Gestion"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_Programmation"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_BDD"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_Compta"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_DevWeb"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_Compta"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_BacToutes"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_Moy10"/>
+    <ispm:prepareAMetier rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_DevWeb"/>
+    <ispm:prepareAMetier rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_Comptable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Mat_IA">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+    <ispm:nom>Intelligence Artificielle</ispm:nom>
+    <ispm:description>Fondamentaux de l IA et du machine learning</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Met_Nutritionniste">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Metier"/>
+    <ispm:nom>Nutritionniste</ispm:nom>
+    <ispm:description>Specialiste de la nutrition</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Comp_AdminSys">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Competence"/>
+    <ispm:nom>Administration Systeme</ispm:nom>
+    <ispm:description>Gestion et maintenance systemes</ispm:description>
+    <ispm:estRequisePour rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_AdminSys"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#BTS_Gestion">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Filiere"/>
+    <ispm:nom>BTS Gestion</ispm:nom>
+    <ispm:description>BTS en gestion et comptabilite</ispm:description>
+    <ispm:appartientAParcours rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours_Gestion"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_Compta"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_Droit"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_Compta"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_GestionProjet"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_BacToutes"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_Moy10"/>
+    <ispm:prepareAMetier rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_Comptable"/>
+    <ispm:prepareAMetier rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_ChefProjet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Comp_DevWeb">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Competence"/>
+    <ispm:nom>Developpement Web</ispm:nom>
+    <ispm:description>Creation de sites et applications web</ispm:description>
+    <ispm:estRequisePour rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_DevFullStack"/>
+    <ispm:estRequisePour rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_DevWeb"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#prepareAMetier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.ispm.mg/ontologies/orientia#Filiere"/>
+    <rdfs:range rdf:resource="http://www.ispm.mg/ontologies/orientia#Metier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Mat_Geologie">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+    <ispm:nom>Geologie et Genie des Laboratoires</ispm:nom>
+    <ispm:description>Sciences de la Terre et analyses</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Pre_PhysChim">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Prerequis"/>
+    <ispm:nom>Physique-Chimie</ispm:nom>
+    <ispm:description>Bonnes connaissances 10/20 min</ispm:description>
+    <ispm:moyenneMinimale rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</ispm:moyenneMinimale>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#ISAIA">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Filiere"/>
+    <ispm:nom>ISAIA - Informatique Appliquee</ispm:nom>
+    <ispm:description>Licence en informatique appliquee a la sante</ispm:description>
+    <ispm:appartientAParcours rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours_InfoTelecom"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_Algo"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_BDD"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_Reseaux"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_IA"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_WebMobile"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_DataScience"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_DevWeb"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_ML"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_AdminSys"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_BacS"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_MathsAvance"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_Moy10"/>
+    <ispm:prepareAMetier rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_DevFullStack"/>
+    <ispm:prepareAMetier rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_DataScientist"/>
+    <ispm:prepareAMetier rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_ChefProjet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Metier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.ispm.mg/ontologies/orientia#Concept"/>
+    <rdfs:label xml:lang="fr">Metier</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Comp_ML">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Competence"/>
+    <ispm:nom>Machine Learning</ispm:nom>
+    <ispm:description>Conception de modeles predictifs</ispm:description>
+    <ispm:estRequisePour rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_DataScientist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Comp_EpiAppliquee">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Competence"/>
+    <ispm:nom>Epidemiologie Appliquee</ispm:nom>
+    <ispm:description>Analyse epidemiologique de terrain</ispm:description>
+    <ispm:estRequisePour rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_Epidemio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Pre_BacPlus2">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Prerequis"/>
+    <ispm:nom>Bac+2 minimum</ispm:nom>
+    <ispm:description>Niveau licence 2 minimum</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Pre_MathsAvance">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Prerequis"/>
+    <ispm:nom>Mathematiques Avancees</ispm:nom>
+    <ispm:description>Niveau solide en maths 12/20 min</ispm:description>
+    <ispm:moyenneMinimale rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</ispm:moyenneMinimale>
+    <ispm:requiertMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_Maths"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Comp_Networking">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Competence"/>
+    <ispm:nom>Reseaux Informatiques</ispm:nom>
+    <ispm:description>Conception et administration de reseaux</ispm:description>
+    <ispm:estRequisePour rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_AdminReseau"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Mat_Programmation">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+    <ispm:nom>Programmation Informatique</ispm:nom>
+    <ispm:description>Developpement logiciel</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Met_DevWeb">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Metier"/>
+    <ispm:nom>Developpeur Web</ispm:nom>
+    <ispm:description>Createur de sites web</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Met_Statisticien">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Metier"/>
+    <ispm:nom>Statisticien</ispm:nom>
+    <ispm:description>Specialiste de l analyse statistique</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Parcours_Sante">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours"/>
+    <ispm:nom>Sante Publique</ispm:nom>
+    <ispm:description>Parcours sante et medecine preventive</ispm:description>
+    <ispm:dureeAnnees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ispm:dureeAnnees>
+    <ispm:niveauDiplome>Licence</ispm:niveauDiplome>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#IMAAA">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Filiere"/>
+    <ispm:nom>IMAAA - Mathematiques Appliquees</ispm:nom>
+    <ispm:description>Licence en mathematiques appliquees a la sante</ispm:description>
+    <ispm:appartientAParcours rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours_Sciences"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_Maths"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_Stats"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_IA"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_Statisticien"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_ML"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_BacS"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_MathsAvance"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_Moy12"/>
+    <ispm:prepareAMetier rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_Statisticien"/>
+    <ispm:prepareAMetier rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_Enseignant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Pre_Moy10">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Prerequis"/>
+    <ispm:nom>Moyenne generale 10/20</ispm:nom>
+    <ispm:description>Note minimale 10 sur 20</ispm:description>
+    <ispm:moyenneMinimale rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</ispm:moyenneMinimale>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Comp_Compta">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Competence"/>
+    <ispm:nom>Comptabilite</ispm:nom>
+    <ispm:description>Tenue de comptes et reporting</ispm:description>
+    <ispm:estRequisePour rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_Comptable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Met_DataScientist">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Metier"/>
+    <ispm:nom>Data Scientist</ispm:nom>
+    <ispm:description>Analyse de donnees et machine learning</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Pre_Moy12">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Prerequis"/>
+    <ispm:nom>Moyenne generale 12/20</ispm:nom>
+    <ispm:description>Note minimale 12 sur 20</ispm:description>
+    <ispm:moyenneMinimale rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</ispm:moyenneMinimale>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Mat_WebMobile">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+    <ispm:nom>Developpement Web et Mobile</ispm:nom>
+    <ispm:description>Creation d applications web et mobiles</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Met_Comptable">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Metier"/>
+    <ispm:nom>Comptable</ispm:nom>
+    <ispm:description>Gestionnaire de comptes</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#ISMP">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Filiere"/>
+    <ispm:nom>ISMP - Medecine Preventive</ispm:nom>
+    <ispm:description>Licence en medecine preventive et sante publique</ispm:description>
+    <ispm:appartientAParcours rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours_Sante"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_Epi"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_SantePub"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_Nutrition"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_EpiAppliquee"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_BacS"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_SVT"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_Moy12"/>
+    <ispm:prepareAMetier rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_Epidemio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Comp_NutriClinique">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Competence"/>
+    <ispm:nom>Nutrition Clinique</ispm:nom>
+    <ispm:description>Prise en charge nutritionnelle</ispm:description>
+    <ispm:estRequisePour rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_Nutritionniste"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#exigePrerequis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.ispm.mg/ontologies/orientia#Filiere"/>
+    <rdfs:range rdf:resource="http://www.ispm.mg/ontologies/orientia#Prerequis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#IST">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Filiere"/>
+    <ispm:nom>IST - Sciences et Technologies</ispm:nom>
+    <ispm:description>Licence en sciences et technologies</ispm:description>
+    <ispm:appartientAParcours rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours_InfoTelecom"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_Programmation"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_AdminReseau"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_BDD"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_Networking"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_AdminSys"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_BacToutes"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_Moy10"/>
+    <ispm:prepareAMetier rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_AdminReseau"/>
+    <ispm:prepareAMetier rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_AdminSys"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#estRequisePour">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.ispm.mg/ontologies/orientia#Competence"/>
+    <rdfs:range rdf:resource="http://www.ispm.mg/ontologies/orientia#Metier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#niveauDiplome">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#developpeCompetence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.ispm.mg/ontologies/orientia#Filiere"/>
+    <rdfs:range rdf:resource="http://www.ispm.mg/ontologies/orientia#Competence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#requiertMatiere">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.ispm.mg/ontologies/orientia#Prerequis"/>
+    <rdfs:range rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Pre_SVT">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Prerequis"/>
+    <ispm:nom>Sciences de la Vie et de la Terre</ispm:nom>
+    <ispm:description>Bonnes connaissances SVT 10/20 min</ispm:description>
+    <ispm:moyenneMinimale rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</ispm:moyenneMinimale>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Mat_AdminReseau">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+    <ispm:nom>Administration Reseau</ispm:nom>
+    <ispm:description>Administration et maintenance reseaux</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#enseigneMatiere">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.ispm.mg/ontologies/orientia#Filiere"/>
+    <rdfs:range rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Comp_DataScience">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Competence"/>
+    <ispm:nom>Data Science</ispm:nom>
+    <ispm:description>Analyse et interpretation de donnees complexes</ispm:description>
+    <ispm:estRequisePour rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_DataScientist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Parcours_InfoTelecom">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours"/>
+    <ispm:nom>Informatique et Telecommunication</ispm:nom>
+    <ispm:description>Parcours technologies de l information</ispm:description>
+    <ispm:dureeAnnees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ispm:dureeAnnees>
+    <ispm:niveauDiplome>Licence</ispm:niveauDiplome>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#dureeAnnees">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#appartientAParcours">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.ispm.mg/ontologies/orientia#Filiere"/>
+    <rdfs:range rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Parcours_Master">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours"/>
+    <ispm:nom>Master</ispm:nom>
+    <ispm:description>Parcours specialisation avancee</ispm:description>
+    <ispm:dureeAnnees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ispm:dureeAnnees>
+    <ispm:niveauDiplome>Master</ispm:niveauDiplome>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#ISPM_SantePublique">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Filiere"/>
+    <ispm:nom>ISPM - Sante Publique (Master)</ispm:nom>
+    <ispm:description>Master en sante publique</ispm:description>
+    <ispm:appartientAParcours rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours_Master"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_SantePub"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_Stats"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_Epi"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_EpiAppliquee"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_GestionProjet"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_BacPlus3"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_Moy12"/>
+    <ispm:prepareAMetier rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_DirecteurProgramme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#nom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.ispm.mg/ontologies/orientia#Concept"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Met_DirecteurProgramme">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Metier"/>
+    <ispm:nom>Directeur de Programme Sante</ispm:nom>
+    <ispm:description>Cadre de pilotage de programmes de sante</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Mat_Stats">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+    <ispm:nom>Statistiques Appliquees</ispm:nom>
+    <ispm:description>Analyse statistique de donnees de sante</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Met_ChefProjet">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Metier"/>
+    <ispm:nom>Chef de Projet Informatique</ispm:nom>
+    <ispm:description>Pilote de projets de developpement</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Pre_BacPlus3">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Prerequis"/>
+    <ispm:nom>Bac+3 minimum</ispm:nom>
+    <ispm:description>Niveau licence 3 minimum</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Competence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.ispm.mg/ontologies/orientia#Concept"/>
+    <rdfs:label xml:lang="fr">Competence</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Mat_Droit">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+    <ispm:nom>Droit des Affaires</ispm:nom>
+    <ispm:description>Droit commercial et droit du travail</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Parcours_Gestion">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours"/>
+    <ispm:nom>Tertiaire</ispm:nom>
+    <ispm:description>Parcours gestion et economie</ispm:description>
+    <ispm:dureeAnnees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ispm:dureeAnnees>
+    <ispm:niveauDiplome>BTS</ispm:niveauDiplome>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label xml:lang="fr">ORIENT-IA Ontology ISPM</rdfs:label>
+    <rdfs:comment xml:lang="fr">Ontologie des parcours de formation de l ISPM pour ORIENT-IA.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Met_Geologue">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Metier"/>
+    <ispm:nom>Geologue</ispm:nom>
+    <ispm:description>Specialiste des sciences de la Terre</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#moyenneMinimale">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.ispm.mg/ontologies/orientia#Prerequis"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#ISPEN">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Filiere"/>
+    <ispm:nom>ISPEN - Education Nutritive</ispm:nom>
+    <ispm:description>Licence en nutrition et education a la sante</ispm:description>
+    <ispm:appartientAParcours rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours_Sante"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_Nutrition"/>
+    <ispm:enseigneMatiere rdf:resource="http://www.ispm.mg/ontologies/orientia#Mat_SantePub"/>
+    <ispm:developpeCompetence rdf:resource="http://www.ispm.mg/ontologies/orientia#Comp_NutriClinique"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_BacS"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_SVT"/>
+    <ispm:exigePrerequis rdf:resource="http://www.ispm.mg/ontologies/orientia#Pre_Moy10"/>
+    <ispm:prepareAMetier rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_Nutritionniste"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Pre_BacToutes">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Prerequis"/>
+    <ispm:nom>Baccalaureat toutes series</ispm:nom>
+    <ispm:description>Tout baccalaureat accepte</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Mat_SantePub">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+    <ispm:nom>Sante Publique</ispm:nom>
+    <ispm:description>Politiques et programmes de sante</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Comp_GestionProjet">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Competence"/>
+    <ispm:nom>Gestion de Projet</ispm:nom>
+    <ispm:description>Planification et pilotage de projets</ispm:description>
+    <ispm:estRequisePour rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_ChefProjet"/>
+    <ispm:estRequisePour rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_DirecteurProgramme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Mat_Nutrition">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+    <ispm:nom>Nutrition et Dietetique</ispm:nom>
+    <ispm:description>Sciences de l alimentation</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Comp_Statisticien">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Competence"/>
+    <ispm:nom>Analyse Statistique</ispm:nom>
+    <ispm:description>Modelisation et interpretation statistique</ispm:description>
+    <ispm:estRequisePour rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_Statisticien"/>
+    <ispm:estRequisePour rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_Enseignant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.ispm.mg/ontologies/orientia#Concept"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Met_AdminSys">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Metier"/>
+    <ispm:nom>Administrateur Systeme</ispm:nom>
+    <ispm:description>Gestionnaire des systemes d information</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Parcours_Sciences">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Parcours"/>
+    <ispm:nom>Sciences Fondamentales</ispm:nom>
+    <ispm:description>Parcours mathematiques et geologie</ispm:description>
+    <ispm:dureeAnnees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ispm:dureeAnnees>
+    <ispm:niveauDiplome>Licence</ispm:niveauDiplome>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Comp_GeoTerrain">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Competence"/>
+    <ispm:nom>Geologie de Terrain</ispm:nom>
+    <ispm:description>Prospection et analyses geologiques</ispm:description>
+    <ispm:estRequisePour rdf:resource="http://www.ispm.mg/ontologies/orientia#Met_Geologue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Pre_BacS">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Prerequis"/>
+    <ispm:nom>Baccalaureat S ou Science Experimentales</ispm:nom>
+    <ispm:description>Diplome du baccalaureat serie S</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Prerequis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.ispm.mg/ontologies/orientia#Concept"/>
+    <rdfs:label xml:lang="fr">Prerequis</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Filiere">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.ispm.mg/ontologies/orientia#Concept"/>
+    <rdfs:label xml:lang="fr">Filiere</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Met_Enseignant">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Metier"/>
+    <ispm:nom>Enseignant</ispm:nom>
+    <ispm:description>Enseignant en maths ou sciences</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Mat_Compta">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+    <ispm:nom>Comptabilite et Gestion</ispm:nom>
+    <ispm:description>Comptabilite generale et analytique</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Met_AdminReseau">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Metier"/>
+    <ispm:nom>Administrateur Reseau</ispm:nom>
+    <ispm:description>Gestionnaire des infrastructures reseau</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Mat_Algo">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+    <ispm:nom>Algorithmique et Programmation</ispm:nom>
+    <ispm:description>Fondamentaux de la programmation</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Parcours">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.ispm.mg/ontologies/orientia#Concept"/>
+    <rdfs:label xml:lang="fr">Parcours</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Met_Epidemio">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Metier"/>
+    <ispm:nom>Epidemiologiste</ispm:nom>
+    <ispm:description>Etude des maladies dans les populations</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Matiere">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.ispm.mg/ontologies/orientia#Concept"/>
+    <rdfs:label xml:lang="fr">Matiere</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Mat_Reseaux">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+    <ispm:nom>Reseaux et Securite</ispm:nom>
+    <ispm:description>Architecture reseau et securite</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Met_DevFullStack">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Metier"/>
+    <ispm:nom>Developpeur Full Stack</ispm:nom>
+    <ispm:description>Front-end et back-end</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Mat_BDD">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+    <ispm:nom>Bases de Donnees</ispm:nom>
+    <ispm:description>Conception et gestion de BDD</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Mat_Epi">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+    <ispm:nom>Epidemiologie</ispm:nom>
+    <ispm:description>Etude des maladies dans les populations</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Mat_Maths">
+    <rdf:type rdf:resource="http://www.ispm.mg/ontologies/orientia#Matiere"/>
+    <ispm:nom>Mathematiques Appliquees</ispm:nom>
+    <ispm:description>Analyse, algebre et modelisation</ispm:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ispm.mg/ontologies/orientia#Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,1 +1,26 @@
 create_structure.bat
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Données générées
+orient_ia_project/data/bm25_corpus.json
+orient_ia_project/data/chroma_db/
+orient_ia_project/data/ml_dataset.csv
+orient_ia_project/data/survey/
+orient_ia_project/data/corpus/ispm_formations.txt
+orient_ia_project/traces/
+
+# Modèles ML
+*.pkl
+*.joblib
+
+# Environnement
+.env
+venv/
+.venv/
