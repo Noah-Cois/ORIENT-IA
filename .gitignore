@@ -5,7 +5,7 @@
 .env.*
 !.env.example
 .streamlit/secrets.toml
-
+create_structure.bat
 # ==========================================
 # 2. Environnements Virtuels Python
 # ==========================================
@@ -30,7 +30,7 @@ htmlcov/
 # ==========================================
 # 4. Base Vectorielle RAG (ChromaDB)
 # ==========================================
-chroma_db/
+data/chroma_db/
 *.chroma
 
 # ==========================================
