@@ -29,7 +29,7 @@ Cette filière forme des techniciens supérieurs et ingénieurs spécialisés da
 - Superviser les procédés de fabrication et de conditionnement des médicaments.
 
 ### 4. Prérequis et profil recherché
-- Bacc Série C ou D ou S
+- Bacc C, D, S, Techniques agricoles et A2 avec note de mathématiques >= 12
 - Français
 - Anglais
 - Chimie, Physique et SVT

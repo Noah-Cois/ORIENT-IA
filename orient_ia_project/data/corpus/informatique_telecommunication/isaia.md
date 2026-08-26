@@ -30,7 +30,7 @@ C'est une filière dont le but est de focaliser sur l'application des méthodes 
 - Concevoir des architectures logicielles automatisées.
 
 ### 4. Prérequis et profil recherché
-- Bacc Série C ou D ou S ou Technique
+- Bacc C, D, S et Techniques industrielles
 - Français
 - Anglais
 - Mathématiques

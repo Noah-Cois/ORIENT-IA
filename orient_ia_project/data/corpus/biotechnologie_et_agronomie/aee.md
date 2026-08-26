@@ -29,7 +29,7 @@ La filière AEE prépare des cadres capables de moderniser les exploitations agr
 - Appliquer des itinéraires techniques agroécologiques adaptés aux sols et au climat.
 
 ### 4. Prérequis et profil recherché
-- Bacc Série C ou D ou S ou TV ou Technique
+- Bacc C, D, S, Techniques agricoles et A2 avec note de mathématiques >= 12
 - Français
 - Anglais
 - SVT, Chimie et Géographie

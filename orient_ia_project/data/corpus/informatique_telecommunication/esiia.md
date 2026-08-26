@@ -29,7 +29,7 @@ La filière ESIIA combine l'électronique numérique, l'informatique industriell
 - Développer des logiciels d'interface et d'asservissement pour systèmes embarqués et robots.
 
 ### 4. Prérequis et profil recherché
-- Bacc Série C ou D ou S ou Technique
+- Bacc C, D, S et Techniques industrielles
 - Français
 - Anglais
 - Physique-Chimie et Mathématiques

@@ -29,7 +29,7 @@ Cette filière forme des experts capables de concevoir, développer et maintenir
 - Intégrer des fonctionnalités avancées d'intelligence artificielle dans des applications métiers.
 
 ### 4. Prérequis et profil recherché
-- Bacc Série C ou D ou S ou Technique
+- Bacc C, D, S et Techniques industrielles
 - Français
 - Anglais
 - Mathématiques et Logique
