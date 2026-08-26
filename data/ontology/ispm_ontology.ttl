@@ -1,0 +1,501 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix ispm: <http://www.ispm.mg/ontologies/orientia#> .
+
+<http://www.ispm.mg/ontologies/orientia> a owl:Ontology ;
+    rdfs:label "ORIENT-IA Ontology ISPM"@fr ;
+    rdfs:comment "Ontologie des parcours de formation de l ISPM pour ORIENT-IA."@fr .
+
+# ============================================================
+# DATATYPE PROPERTIES
+# ============================================================
+
+ispm:nom a owl:DatatypeProperty ;
+    rdfs:domain ispm:Concept ;
+    rdfs:range xsd:string .
+
+ispm:description a owl:DatatypeProperty ;
+    rdfs:domain ispm:Concept ;
+    rdfs:range xsd:string .
+
+ispm:dureeAnnees a owl:DatatypeProperty ;
+    rdfs:domain ispm:Parcours ;
+    rdfs:range xsd:integer .
+
+ispm:niveauDiplome a owl:DatatypeProperty ;
+    rdfs:domain ispm:Parcours ;
+    rdfs:range xsd:string .
+
+ispm:moyenneMinimale a owl:DatatypeProperty ;
+    rdfs:domain ispm:Prerequis ;
+    rdfs:range xsd:float .
+
+# ============================================================
+# OBJECT PROPERTIES
+# ============================================================
+
+ispm:appartientAParcours a owl:ObjectProperty ;
+    rdfs:domain ispm:Filiere ;
+    rdfs:range ispm:Parcours .
+
+ispm:enseigneMatiere a owl:ObjectProperty ;
+    rdfs:domain ispm:Filiere ;
+    rdfs:range ispm:Matiere .
+
+ispm:developpeCompetence a owl:ObjectProperty ;
+    rdfs:domain ispm:Filiere ;
+    rdfs:range ispm:Competence .
+
+ispm:exigePrerequis a owl:ObjectProperty ;
+    rdfs:domain ispm:Filiere ;
+    rdfs:range ispm:Prerequis .
+
+ispm:prepareAMetier a owl:ObjectProperty ;
+    rdfs:domain ispm:Filiere ;
+    rdfs:range ispm:Metier .
+
+ispm:estRequisePour a owl:ObjectProperty ;
+    rdfs:domain ispm:Competence ;
+    rdfs:range ispm:Metier .
+
+ispm:requiertMatiere a owl:ObjectProperty ;
+    rdfs:domain ispm:Prerequis ;
+    rdfs:range ispm:Matiere .
+
+# ============================================================
+# CLASSES
+# ============================================================
+
+ispm:Concept a owl:Class .
+
+ispm:Parcours a owl:Class ;
+    rdfs:subClassOf ispm:Concept ;
+    rdfs:label "Parcours"@fr .
+
+ispm:Filiere a owl:Class ;
+    rdfs:subClassOf ispm:Concept ;
+    rdfs:label "Filiere"@fr .
+
+ispm:Matiere a owl:Class ;
+    rdfs:subClassOf ispm:Concept ;
+    rdfs:label "Matiere"@fr .
+
+ispm:Competence a owl:Class ;
+    rdfs:subClassOf ispm:Concept ;
+    rdfs:label "Competence"@fr .
+
+ispm:Prerequis a owl:Class ;
+    rdfs:subClassOf ispm:Concept ;
+    rdfs:label "Prerequis"@fr .
+
+ispm:Metier a owl:Class ;
+    rdfs:subClassOf ispm:Concept ;
+    rdfs:label "Metier"@fr .
+
+# ============================================================
+# INDIVIDUS - PARCOURS
+# ============================================================
+
+ispm:Parcours_InfoTelecom a ispm:Parcours ;
+    ispm:nom "Informatique et Telecommunication" ;
+    ispm:description "Parcours technologies de l information" ;
+    ispm:dureeAnnees 3 ;
+    ispm:niveauDiplome "Licence" .
+
+ispm:Parcours_Sante a ispm:Parcours ;
+    ispm:nom "Sante Publique" ;
+    ispm:description "Parcours sante et medecine preventive" ;
+    ispm:dureeAnnees 3 ;
+    ispm:niveauDiplome "Licence" .
+
+ispm:Parcours_Gestion a ispm:Parcours ;
+    ispm:nom "Tertiaire" ;
+    ispm:description "Parcours gestion et economie" ;
+    ispm:dureeAnnees 2 ;
+    ispm:niveauDiplome "BTS" .
+
+ispm:Parcours_Sciences a ispm:Parcours ;
+    ispm:nom "Sciences Fondamentales" ;
+    ispm:description "Parcours mathematiques et geologie" ;
+    ispm:dureeAnnees 3 ;
+    ispm:niveauDiplome "Licence" .
+
+ispm:Parcours_Master a ispm:Parcours ;
+    ispm:nom "Master" ;
+    ispm:description "Parcours specialisation avancee" ;
+    ispm:dureeAnnees 2 ;
+    ispm:niveauDiplome "Master" .
+
+# ============================================================
+# INDIVIDUS - MATIERES
+# ============================================================
+
+ispm:Mat_Algo a ispm:Matiere ;
+    ispm:nom "Algorithmique et Programmation" ;
+    ispm:description "Fondamentaux de la programmation" .
+
+ispm:Mat_BDD a ispm:Matiere ;
+    ispm:nom "Bases de Donnees" ;
+    ispm:description "Conception et gestion de BDD" .
+
+ispm:Mat_Reseaux a ispm:Matiere ;
+    ispm:nom "Reseaux et Securite" ;
+    ispm:description "Architecture reseau et securite" .
+
+ispm:Mat_IA a ispm:Matiere ;
+    ispm:nom "Intelligence Artificielle" ;
+    ispm:description "Fondamentaux de l IA et du machine learning" .
+
+ispm:Mat_WebMobile a ispm:Matiere ;
+    ispm:nom "Developpement Web et Mobile" ;
+    ispm:description "Creation d applications web et mobiles" .
+
+ispm:Mat_Stats a ispm:Matiere ;
+    ispm:nom "Statistiques Appliquees" ;
+    ispm:description "Analyse statistique de donnees de sante" .
+
+ispm:Mat_Epi a ispm:Matiere ;
+    ispm:nom "Epidemiologie" ;
+    ispm:description "Etude des maladies dans les populations" .
+
+ispm:Mat_SantePub a ispm:Matiere ;
+    ispm:nom "Sante Publique" ;
+    ispm:description "Politiques et programmes de sante" .
+
+ispm:Mat_Nutrition a ispm:Matiere ;
+    ispm:nom "Nutrition et Dietetique" ;
+    ispm:description "Sciences de l alimentation" .
+
+ispm:Mat_Geologie a ispm:Matiere ;
+    ispm:nom "Geologie et Genie des Laboratoires" ;
+    ispm:description "Sciences de la Terre et analyses" .
+
+ispm:Mat_Maths a ispm:Matiere ;
+    ispm:nom "Mathematiques Appliquees" ;
+    ispm:description "Analyse, algebre et modelisation" .
+
+ispm:Mat_Compta a ispm:Matiere ;
+    ispm:nom "Comptabilite et Gestion" ;
+    ispm:description "Comptabilite generale et analytique" .
+
+ispm:Mat_Droit a ispm:Matiere ;
+    ispm:nom "Droit des Affaires" ;
+    ispm:description "Droit commercial et droit du travail" .
+
+ispm:Mat_Programmation a ispm:Matiere ;
+    ispm:nom "Programmation Informatique" ;
+    ispm:description "Developpement logiciel" .
+
+ispm:Mat_AdminReseau a ispm:Matiere ;
+    ispm:nom "Administration Reseau" ;
+    ispm:description "Administration et maintenance reseaux" .
+
+# ============================================================
+# INDIVIDUS - COMPETENCES
+# ============================================================
+
+ispm:Comp_DataScience a ispm:Competence ;
+    ispm:nom "Data Science" ;
+    ispm:description "Analyse et interpretation de donnees complexes" .
+
+ispm:Comp_DevWeb a ispm:Competence ;
+    ispm:nom "Developpement Web" ;
+    ispm:description "Creation de sites et applications web" .
+
+ispm:Comp_ML a ispm:Competence ;
+    ispm:nom "Machine Learning" ;
+    ispm:description "Conception de modeles predictifs" .
+
+ispm:Comp_AdminSys a ispm:Competence ;
+    ispm:nom "Administration Systeme" ;
+    ispm:description "Gestion et maintenance systemes" .
+
+ispm:Comp_GestionProjet a ispm:Competence ;
+    ispm:nom "Gestion de Projet" ;
+    ispm:description "Planification et pilotage de projets" .
+
+ispm:Comp_EpiAppliquee a ispm:Competence ;
+    ispm:nom "Epidemiologie Appliquee" ;
+    ispm:description "Analyse epidemiologique de terrain" .
+
+ispm:Comp_NutriClinique a ispm:Competence ;
+    ispm:nom "Nutrition Clinique" ;
+    ispm:description "Prise en charge nutritionnelle" .
+
+ispm:Comp_GeoTerrain a ispm:Competence ;
+    ispm:nom "Geologie de Terrain" ;
+    ispm:description "Prospection et analyses geologiques" .
+
+ispm:Comp_Statisticien a ispm:Competence ;
+    ispm:nom "Analyse Statistique" ;
+    ispm:description "Modelisation et interpretation statistique" .
+
+ispm:Comp_Compta a ispm:Competence ;
+    ispm:nom "Comptabilite" ;
+    ispm:description "Tenue de comptes et reporting" .
+
+ispm:Comp_Networking a ispm:Competence ;
+    ispm:nom "Reseaux Informatiques" ;
+    ispm:description "Conception et administration de reseaux" .
+
+# ============================================================
+# INDIVIDUS - PREREQUIS
+# ============================================================
+
+ispm:Pre_BacS a ispm:Prerequis ;
+    ispm:nom "Baccalaureat S ou Science Experimentales" ;
+    ispm:description "Diplome du baccalaureat serie S" .
+
+ispm:Pre_BacToutes a ispm:Prerequis ;
+    ispm:nom "Baccalaureat toutes series" ;
+    ispm:description "Tout baccalaureat accepte" .
+
+ispm:Pre_MathsAvance a ispm:Prerequis ;
+    ispm:nom "Mathematiques Avancees" ;
+    ispm:description "Niveau solide en maths 12/20 min" ;
+    ispm:moyenneMinimale 12.0 ;
+    ispm:requiertMatiere ispm:Mat_Maths .
+
+ispm:Pre_PhysChim a ispm:Prerequis ;
+    ispm:nom "Physique-Chimie" ;
+    ispm:description "Bonnes connaissances 10/20 min" ;
+    ispm:moyenneMinimale 10.0 .
+
+ispm:Pre_SVT a ispm:Prerequis ;
+    ispm:nom "Sciences de la Vie et de la Terre" ;
+    ispm:description "Bonnes connaissances SVT 10/20 min" ;
+    ispm:moyenneMinimale 10.0 .
+
+ispm:Pre_Moy10 a ispm:Prerequis ;
+    ispm:nom "Moyenne generale 10/20" ;
+    ispm:description "Note minimale 10 sur 20" ;
+    ispm:moyenneMinimale 10.0 .
+
+ispm:Pre_Moy12 a ispm:Prerequis ;
+    ispm:nom "Moyenne generale 12/20" ;
+    ispm:description "Note minimale 12 sur 20" ;
+    ispm:moyenneMinimale 12.0 .
+
+ispm:Pre_BacPlus2 a ispm:Prerequis ;
+    ispm:nom "Bac+2 minimum" ;
+    ispm:description "Niveau licence 2 minimum" .
+
+ispm:Pre_BacPlus3 a ispm:Prerequis ;
+    ispm:nom "Bac+3 minimum" ;
+    ispm:description "Niveau licence 3 minimum" .
+
+# ============================================================
+# INDIVIDUS - METIERS
+# ============================================================
+
+ispm:Met_DevFullStack a ispm:Metier ;
+    ispm:nom "Developpeur Full Stack" ;
+    ispm:description "Front-end et back-end" .
+
+ispm:Met_DataScientist a ispm:Metier ;
+    ispm:nom "Data Scientist" ;
+    ispm:description "Analyse de donnees et machine learning" .
+
+ispm:Met_AdminSys a ispm:Metier ;
+    ispm:nom "Administrateur Systeme" ;
+    ispm:description "Gestionnaire des systemes d information" .
+
+ispm:Met_DevWeb a ispm:Metier ;
+    ispm:nom "Developpeur Web" ;
+    ispm:description "Createur de sites web" .
+
+ispm:Met_Epidemio a ispm:Metier ;
+    ispm:nom "Epidemiologiste" ;
+    ispm:description "Etude des maladies dans les populations" .
+
+ispm:Met_Nutritionniste a ispm:Metier ;
+    ispm:nom "Nutritionniste" ;
+    ispm:description "Specialiste de la nutrition" .
+
+ispm:Met_Geologue a ispm:Metier ;
+    ispm:nom "Geologue" ;
+    ispm:description "Specialiste des sciences de la Terre" .
+
+ispm:Met_Statisticien a ispm:Metier ;
+    ispm:nom "Statisticien" ;
+    ispm:description "Specialiste de l analyse statistique" .
+
+ispm:Met_Comptable a ispm:Metier ;
+    ispm:nom "Comptable" ;
+    ispm:description "Gestionnaire de comptes" .
+
+ispm:Met_ChefProjet a ispm:Metier ;
+    ispm:nom "Chef de Projet Informatique" ;
+    ispm:description "Pilote de projets de developpement" .
+
+ispm:Met_AdminReseau a ispm:Metier ;
+    ispm:nom "Administrateur Reseau" ;
+    ispm:description "Gestionnaire des infrastructures reseau" .
+
+ispm:Met_Enseignant a ispm:Metier ;
+    ispm:nom "Enseignant" ;
+    ispm:description "Enseignant en maths ou sciences" .
+
+ispm:Met_DirecteurProgramme a ispm:Metier ;
+    ispm:nom "Directeur de Programme Sante" ;
+    ispm:description "Cadre de pilotage de programmes de sante" .
+
+# ============================================================
+# INDIVIDUS - FILIERES (avec relations)
+# ============================================================
+
+# --- ISAIA ---
+ispm:ISAIA a ispm:Filiere ;
+    ispm:nom "ISAIA - Informatique Appliquee" ;
+    ispm:description "Licence en informatique appliquee a la sante" ;
+    ispm:appartientAParcours ispm:Parcours_InfoTelecom ;
+    ispm:enseigneMatiere ispm:Mat_Algo ;
+    ispm:enseigneMatiere ispm:Mat_BDD ;
+    ispm:enseigneMatiere ispm:Mat_Reseaux ;
+    ispm:enseigneMatiere ispm:Mat_IA ;
+    ispm:enseigneMatiere ispm:Mat_WebMobile ;
+    ispm:developpeCompetence ispm:Comp_DataScience ;
+    ispm:developpeCompetence ispm:Comp_DevWeb ;
+    ispm:developpeCompetence ispm:Comp_ML ;
+    ispm:developpeCompetence ispm:Comp_AdminSys ;
+    ispm:exigePrerequis ispm:Pre_BacS ;
+    ispm:exigePrerequis ispm:Pre_MathsAvance ;
+    ispm:exigePrerequis ispm:Pre_Moy10 ;
+    ispm:prepareAMetier ispm:Met_DevFullStack ;
+    ispm:prepareAMetier ispm:Met_DataScientist ;
+    ispm:prepareAMetier ispm:Met_ChefProjet .
+
+# --- IGGLIA ---
+ispm:IGGLIA a ispm:Filiere ;
+    ispm:nom "IGGLIA - Geologie et Genie des Laboratoires" ;
+    ispm:description "Licence en geologie appliquee a la sante" ;
+    ispm:appartientAParcours ispm:Parcours_Sciences ;
+    ispm:enseigneMatiere ispm:Mat_Geologie ;
+    ispm:developpeCompetence ispm:Comp_GeoTerrain ;
+    ispm:exigePrerequis ispm:Pre_BacS ;
+    ispm:exigePrerequis ispm:Pre_PhysChim ;
+    ispm:exigePrerequis ispm:Pre_SVT ;
+    ispm:exigePrerequis ispm:Pre_Moy10 ;
+    ispm:prepareAMetier ispm:Met_Geologue .
+
+# --- IMAAA ---
+ispm:IMAAA a ispm:Filiere ;
+    ispm:nom "IMAAA - Mathematiques Appliquees" ;
+    ispm:description "Licence en mathematiques appliquees a la sante" ;
+    ispm:appartientAParcours ispm:Parcours_Sciences ;
+    ispm:enseigneMatiere ispm:Mat_Maths ;
+    ispm:enseigneMatiere ispm:Mat_Stats ;
+    ispm:enseigneMatiere ispm:Mat_IA ;
+    ispm:developpeCompetence ispm:Comp_Statisticien ;
+    ispm:developpeCompetence ispm:Comp_ML ;
+    ispm:exigePrerequis ispm:Pre_BacS ;
+    ispm:exigePrerequis ispm:Pre_MathsAvance ;
+    ispm:exigePrerequis ispm:Pre_Moy12 ;
+    ispm:prepareAMetier ispm:Met_Statisticien ;
+    ispm:prepareAMetier ispm:Met_Enseignant .
+
+# --- ISMP ---
+ispm:ISMP a ispm:Filiere ;
+    ispm:nom "ISMP - Medecine Preventive" ;
+    ispm:description "Licence en medecine preventive et sante publique" ;
+    ispm:appartientAParcours ispm:Parcours_Sante ;
+    ispm:enseigneMatiere ispm:Mat_Epi ;
+    ispm:enseigneMatiere ispm:Mat_SantePub ;
+    ispm:enseigneMatiere ispm:Mat_Nutrition ;
+    ispm:developpeCompetence ispm:Comp_EpiAppliquee ;
+    ispm:exigePrerequis ispm:Pre_BacS ;
+    ispm:exigePrerequis ispm:Pre_SVT ;
+    ispm:exigePrerequis ispm:Pre_Moy12 ;
+    ispm:prepareAMetier ispm:Met_Epidemio .
+
+# --- ISPEN ---
+ispm:ISPEN a ispm:Filiere ;
+    ispm:nom "ISPEN - Education Nutritive" ;
+    ispm:description "Licence en nutrition et education a la sante" ;
+    ispm:appartientAParcours ispm:Parcours_Sante ;
+    ispm:enseigneMatiere ispm:Mat_Nutrition ;
+    ispm:enseigneMatiere ispm:Mat_SantePub ;
+    ispm:developpeCompetence ispm:Comp_NutriClinique ;
+    ispm:exigePrerequis ispm:Pre_BacS ;
+    ispm:exigePrerequis ispm:Pre_SVT ;
+    ispm:exigePrerequis ispm:Pre_Moy10 ;
+    ispm:prepareAMetier ispm:Met_Nutritionniste .
+
+# --- IST ---
+ispm:IST a ispm:Filiere ;
+    ispm:nom "IST - Sciences et Technologies" ;
+    ispm:description "Licence en sciences et technologies" ;
+    ispm:appartientAParcours ispm:Parcours_InfoTelecom ;
+    ispm:enseigneMatiere ispm:Mat_Programmation ;
+    ispm:enseigneMatiere ispm:Mat_AdminReseau ;
+    ispm:enseigneMatiere ispm:Mat_BDD ;
+    ispm:developpeCompetence ispm:Comp_Networking ;
+    ispm:developpeCompetence ispm:Comp_AdminSys ;
+    ispm:exigePrerequis ispm:Pre_BacToutes ;
+    ispm:exigePrerequis ispm:Pre_Moy10 ;
+    ispm:prepareAMetier ispm:Met_AdminReseau ;
+    ispm:prepareAMetier ispm:Met_AdminSys .
+
+# --- ISPM-SANTE PUBLIQUE (Master) ---
+ispm:ISPM_SantePublique a ispm:Filiere ;
+    ispm:nom "ISPM - Sante Publique (Master)" ;
+    ispm:description "Master en sante publique" ;
+    ispm:appartientAParcours ispm:Parcours_Master ;
+    ispm:enseigneMatiere ispm:Mat_SantePub ;
+    ispm:enseigneMatiere ispm:Mat_Stats ;
+    ispm:enseigneMatiere ispm:Mat_Epi ;
+    ispm:developpeCompetence ispm:Comp_EpiAppliquee ;
+    ispm:developpeCompetence ispm:Comp_GestionProjet ;
+    ispm:exigePrerequis ispm:Pre_BacPlus3 ;
+    ispm:exigePrerequis ispm:Pre_Moy12 ;
+    ispm:prepareAMetier ispm:Met_DirecteurProgramme .
+
+# --- BTS INFORMATIQUE ---
+ispm:BTS_Informatique a ispm:Filiere ;
+    ispm:nom "BTS Informatique de Gestion" ;
+    ispm:description "BTS en informatique de gestion" ;
+    ispm:appartientAParcours ispm:Parcours_Gestion ;
+    ispm:enseigneMatiere ispm:Mat_Programmation ;
+    ispm:enseigneMatiere ispm:Mat_BDD ;
+    ispm:enseigneMatiere ispm:Mat_Compta ;
+    ispm:developpeCompetence ispm:Comp_DevWeb ;
+    ispm:developpeCompetence ispm:Comp_Compta ;
+    ispm:exigePrerequis ispm:Pre_BacToutes ;
+    ispm:exigePrerequis ispm:Pre_Moy10 ;
+    ispm:prepareAMetier ispm:Met_DevWeb ;
+    ispm:prepareAMetier ispm:Met_Comptable .
+
+# --- BTS GESTION ---
+ispm:BTS_Gestion a ispm:Filiere ;
+    ispm:nom "BTS Gestion" ;
+    ispm:description "BTS en gestion et comptabilite" ;
+    ispm:appartientAParcours ispm:Parcours_Gestion ;
+    ispm:enseigneMatiere ispm:Mat_Compta ;
+    ispm:enseigneMatiere ispm:Mat_Droit ;
+    ispm:developpeCompetence ispm:Comp_Compta ;
+    ispm:developpeCompetence ispm:Comp_GestionProjet ;
+    ispm:exigePrerequis ispm:Pre_BacToutes ;
+    ispm:exigePrerequis ispm:Pre_Moy10 ;
+    ispm:prepareAMetier ispm:Met_Comptable ;
+    ispm:prepareAMetier ispm:Met_ChefProjet .
+
+# ============================================================
+# RELATIONS COMPETENCE -> METIER
+# ============================================================
+
+ispm:Comp_DataScience ispm:estRequisePour ispm:Met_DataScientist .
+ispm:Comp_ML ispm:estRequisePour ispm:Met_DataScientist .
+ispm:Comp_DevWeb ispm:estRequisePour ispm:Met_DevFullStack .
+ispm:Comp_DevWeb ispm:estRequisePour ispm:Met_DevWeb .
+ispm:Comp_AdminSys ispm:estRequisePour ispm:Met_AdminSys .
+ispm:Comp_Networking ispm:estRequisePour ispm:Met_AdminReseau .
+ispm:Comp_EpiAppliquee ispm:estRequisePour ispm:Met_Epidemio .
+ispm:Comp_NutriClinique ispm:estRequisePour ispm:Met_Nutritionniste .
+ispm:Comp_GeoTerrain ispm:estRequisePour ispm:Met_Geologue .
+ispm:Comp_Statisticien ispm:estRequisePour ispm:Met_Statisticien .
+ispm:Comp_Statisticien ispm:estRequisePour ispm:Met_Enseignant .
+ispm:Comp_Compta ispm:estRequisePour ispm:Met_Comptable .
+ispm:Comp_GestionProjet ispm:estRequisePour ispm:Met_ChefProjet .
+ispm:Comp_GestionProjet ispm:estRequisePour ispm:Met_DirecteurProgramme .
