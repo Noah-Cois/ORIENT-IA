@@ -1,0 +1,65 @@
+competence_id,nom_competence,filiere_code,secteur
+COMP_001,Agronomie,AEE,Agriculture / Agronomie
+COMP_002,Zootechnie,AEE,Agriculture / Agronomie
+COMP_003,Analyse des sols,AEE,Agriculture / Agronomie
+COMP_004,Gestion d'exploitation,AEE,Agriculture / Agronomie
+COMP_005,Biochimie alimentaire,IAA,Industrie Agroalimentaire
+COMP_006,Contrôle qualité HACCP,IAA,Industrie Agroalimentaire
+COMP_007,Process agroalimentaires,IAA,Industrie Agroalimentaire
+COMP_008,Microbiologie,IAA,Industrie Agroalimentaire
+COMP_009,Chimie organique,PIP,Industrie Pharmaceutique & Santé
+COMP_010,Pharmacologie,PIP,Industrie Pharmaceutique & Santé
+COMP_011,Analyse en laboratoire,PIP,Industrie Pharmaceutique & Santé
+COMP_012,Normes GMP/BPF,PIP,Industrie Pharmaceutique & Santé
+COMP_013,Automatisme PLC,EMII,Industrie & Automatisme
+COMP_014,Électrotechnique,EMII,Industrie & Automatisme
+COMP_015,Maintenance industrielle,EMII,Industrie & Automatisme
+COMP_016,CAO Mécanique,EMII,Industrie & Automatisme
+COMP_017,Calcul de structures,GCA,Bâtiment et Travaux Publics (BTP)
+COMP_018,AutoCAD/Revit,GCA,Bâtiment et Travaux Publics (BTP)
+COMP_019,Métré et devis,GCA,Bâtiment et Travaux Publics (BTP)
+COMP_020,Conduite de chantier BTP,GCA,Bâtiment et Travaux Publics (BTP)
+COMP_021,Génie des procédés,ICMP,"Mines, Énergie & Chimie"
+COMP_022,Géologie minière,ICMP,"Mines, Énergie & Chimie"
+COMP_023,Normes QHSE,ICMP,"Mines, Énergie & Chimie"
+COMP_024,Raffinage et extraction,ICMP,"Mines, Énergie & Chimie"
+COMP_025,C/C++ embarqué,ESIIA,Électronique & High-Tech
+COMP_026,Microcontrôleurs IoT,ESIIA,Électronique & High-Tech
+COMP_027,Électronique numérique,ESIIA,Électronique & High-Tech
+COMP_028,Signal & Traitement,ESIIA,Électronique & High-Tech
+COMP_029,Algorithmique & Python,IGGLIA,Informatique & Édition de Logiciels
+COMP_030,Génie Logiciel & Java/Web,IGGLIA,Informatique & Édition de Logiciels
+COMP_031,SQL & Bases de données,IGGLIA,Informatique & Édition de Logiciels
+COMP_032,Machine Learning,IGGLIA,Informatique & Édition de Logiciels
+COMP_033,UI/UX Design,IMTICIA,Numérique & Multimédia
+COMP_034,Développement Web/Mobile,IMTICIA,Numérique & Multimédia
+COMP_035,Infographie & 3D,IMTICIA,Numérique & Multimédia
+COMP_036,Réseaux informatiques,IMTICIA,Numérique & Multimédia
+COMP_037,Statistiques inférentielles,ISAIA,Data & Intelligence Artificielle
+COMP_038,Python / R Data,ISAIA,Data & Intelligence Artificielle
+COMP_039,Machine Learning & Deep Learning,ISAIA,Data & Intelligence Artificielle
+COMP_040,PowerBI & Analytics,ISAIA,Data & Intelligence Artificielle
+COMP_041,Ingénierie touristique,TEE,Tourisme & Environnement
+COMP_042,Écotourisme & Biodiversité,TEE,Tourisme & Environnement
+COMP_043,Gestion de projets durables,TEE,Tourisme & Environnement
+COMP_044,Guide & Médiation,TEE,Tourisme & Environnement
+COMP_045,Management hôtelier,TEH,Hôtellerie & Restauration
+COMP_046,Gestion événementielle,TEH,Hôtellerie & Restauration
+COMP_047,Communication interculturelle,TEH,Hôtellerie & Restauration
+COMP_048,Yield Management,TEH,Hôtellerie & Restauration
+COMP_049,Marketing Digital,CAA,Commerce & Marketing
+COMP_050,Techniques de Vente,CAA,Commerce & Marketing
+COMP_051,Negociation internationale,CAA,Commerce & Marketing
+COMP_052,Analyse Marché,CAA,Commerce & Marketing
+COMP_053,Rédaction juridique,DTJA,Droit & Juridique
+COMP_054,Droit des contrats,DTJA,Droit & Juridique
+COMP_055,Analyse fiscale,DTJA,Droit & Juridique
+COMP_056,Conseil d'entreprise,DTJA,Droit & Juridique
+COMP_057,Gestion de projet Agile/PMP,EMP,Management & Conseil
+COMP_058,Analyse financière,EMP,Management & Conseil
+COMP_059,Étude d'impact économique,EMP,Management & Conseil
+COMP_060,Gestion des risques,EMP,Management & Conseil
+COMP_061,Comptabilité générale & analytique,FIC,Finance & Comptabilité
+COMP_062,Audit financier,FIC,Finance & Comptabilité
+COMP_063,Contrôle de gestion,FIC,Finance & Comptabilité
+COMP_064,Gestion de trésorerie,FIC,Finance & Comptabilité
