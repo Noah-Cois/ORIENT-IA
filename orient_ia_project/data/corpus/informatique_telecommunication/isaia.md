@@ -22,6 +22,8 @@ C'est une filière dont le but est de focaliser sur l'application des méthodes 
 - Visualisation de données
 - Big Data et Cloud Computing
 - Programmation statistique (R, Python)
+- HTML5 / CSS3 / PHP
+- Comptabilité générale
 
 ### 3. Compétences visées
 - Développer des modèles prédictifs et d'apprentissage profond.
