@@ -1,149 +1,210 @@
 import streamlit as st
-import time
 
-# Configuration de la page Streamlit
+# Configuration de la page en mode "wide" pour profiter de tout l'écran côte à côte
 st.set_page_config(
-    page_title="ORIENT’IA - Assistant d'Orientation ISPM",
-    page_icon="🎓",
+    page_title="ORIENT'IA - Assistant d'Orientation",
+    page_icon="logo_ispm.png",
     layout="wide"
 )
 
-# 1. Mention légale obligatoire (Exigence stricte du cahier des charges)
-st.warning(
-    "⚠️ **Avertissement obligatoire :** *ORIENT’IA constitue un outil d’aide à l’orientation. "
-    "Ses recommandations ne remplacent ni l’avis d’un conseiller pédagogique ni une décision officielle d’admission.*"
-)
+# CSS personnalisé pour embellir l'interface (Champs de saisie + Logo)
+st.markdown("""
+    <style>
+    /* 1. Cache les flèches haut/bas des champs numériques (number_input) */
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+    
+    /* 2. Arrondit les coins des champs de saisie pour un look moderne */
+    div.stNumberInput input {
+        border-radius: 8px;
+        border: 1px solid #d1d5db;
+    }
+    
+    /* 3. Boîte pour faire ressortir le logo s'il a un fond sombre */
+    .logo-container {
+        background: radial-gradient(circle, #f8fafc 0%, #e2e8f0 100%);
+        padding: 10px;
+        border-radius: 15px;
+        display: inline-block;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
-st.title("🎓 ORIENT’IA - Système d'Aide à l'Orientation ISPM")
-
-# Initialisation de l'état de la session
+# Initialisation de l'historique du chat dans la session
 if "messages" not in st.session_state:
-    st.session_state.messages = []
-if "user_profile" not in st.session_state:
-    st.session_state.user_profile = {}
+    st.session_state.messages = [
+        {"role": "assistant", "content": "Bonjour ! Une question sur les filières de l'ISPM ? Posez-la-moi ici."}
+    ]
 
-# 2. Barre latérale : Saisie explicite du profil (Aucune inférence implicite/psychologique)
-with st.sidebar:
-    st.header("👤 Profil déclaré par l'étudiant")
-    st.caption("Saisie explicite des préférences et du niveau académique.")
+# --- FONCTION D'AFFICHAGE DES DONNÉES D'ENTRÉE ET DES RÉSULTATS ---
+def afficher_resultats_orientation(donnees_profil, t1, s1, t2, s2, t3, s3):
+    """
+    Affiche le récapitulatif des données d'entrée saisies par l'utilisateur 
+    ainsi que les résultats de l'orientation (métriques).
+    """
+    st.markdown("---")
+    st.markdown("### Récapitulatif de votre profil")
     
-    parcours = st.selectbox(
-        "Parcours d'origine :",
-        ["Baccalauréat Scientifique (C/D/S)", "Baccalauréat Technique", "Licence L1/L2", "Autre"]
-    )
-    domaines_interet = st.multiselect(
-        "Centres d'intérêt déclarés :",
-        ["Informatique & Génie Logiciel", "Électronique & Automatisme", "Réseaux & Télécoms", "Management & Digital"]
-    )
-    niveau_math_info = st.slider("Niveau auto-évalué en Math/Info (0 à 20) :", 0, 20, 12)
-    
-    if st.button("💾 Mettre à jour le profil"):
-        st.session_state.user_profile = {
-            "parcours": parcours,
-            "domaines": domaines_interet,
-            "niveau_math_info": niveau_math_info
-        }
-        st.success("Profil mis à jour !")
+    # Affichage des données d'entrée sous forme de colonnes / texte
+    col_p1, col_p2 = st.columns(2)
+    with col_p1:
+        st.write(f"- **Série du Bac :** {donnees_profil['serie']}")
+        st.write(f"- **Centre d'intérêt :** {donnees_profil['interet']}")
+        st.write(f"- **Mathématiques :** {donnees_profil['note_maths']}/20")
+        st.write(f"- **Physique-Chimie :** {donnees_profil['note_pc']}/20")
+    with col_p2:
+        st.write(f"- **SVT :** {donnees_profil['note_svt']}/20")
+        st.write(f"- **Français :** {donnees_profil['note_francais']}/20")
+        st.write(f"- **Anglais :** {donnees_profil['note_anglais']}/20")
+        st.write(f"- **Gestion / Éco / Philo :** {donnees_profil['note_gestion']}/20")
 
-    st.divider()
-    
-    # Toggle d'observabilité pour la soutenance / le suivi des tests
-    st.header("⚙️ Observabilité")
-    show_traces = st.checkbox("Afficher le panneau d'observabilité (Traces & Outils)", value=True)
+    st.markdown("---")
+    st.markdown("### Résultat de l'orientation")
+    st.info(f"**Filière principale recommandée :** {t1}")
 
-# 3. Zone Conversationnelle Principale
-# Affichage de l'historique du chat
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.markdown(message["content"])
+    st.markdown("#### Top 3 des parcours suggérés :")
+    col_res1, col_res2, col_res3 = st.columns(3)
+    with col_res1:
+        st.metric(label="1er Choix", value=t1, delta=s1)
+    with col_res2:
+        st.metric(label="2ème Choix", value=t2, delta=s2)
+    with col_res3:
+        st.metric(label="3ème Choix", value=t3, delta=s3)
+
+
+# --- FONCTION DE GESTION DU CHAT ---
+def gerer_interface_chat():
+    """
+    Gère l'affichage de l'historique des messages et la saisie utilisateur.
+    """
+    st.subheader("Assistant Conversationnel (IA)")
+    
+    chat_container = st.container(height=500)
+    
+    with chat_container:
+        for message in st.session_state.messages:
+            with st.chat_message(message["role"]):
+                st.markdown(message["content"])
+
+    if prompt := st.chat_input("Posez votre question à l'assistant..."):
+        st.session_state.messages.append({"role": "user", "content": prompt})
         
-        # Affichage structuré des métadonnées (Confiance, Sources, Traces)
-        if "metadata" in message:
-            meta = message["metadata"]
-            
-            # Affichage de l'incertitude et de la confiance
-            if "confiance" in meta:
-                st.metric(
-                    label="Niveau de confiance de la recommandation", 
-                    value=f"{meta['confiance']}%", 
-                    delta=f"Incertitude déclarée: {meta['incertitude']}"
-                )
-            
-            # Affichage des sources citées RAG
-            if "sources" in meta and meta["sources"]:
-                with st.expander("📚 Sources citées (Corpus ISPM)"):
-                    for src in meta["sources"]:
-                        st.markdown(f"- `{src}`")
-            
-            # Panneau technique des traces capturées
-            if show_traces and "traces" in meta:
-                with st.expander("🔍 Traces d'observabilité (Audit & Logs)"):
-                    st.json(meta["traces"])
+        # =====================================================================
+        # [ZONE BACKEND / RAG / AGENT]
+        # Remplacez cette réponse simulée par l'appel à votre agent/RAG plus tard
+        # =====================================================================
+        reponse_assistant = f"J'ai bien reçu votre message : '{prompt}'. En tant qu'assistant ISPM, je vous aide à y voir clair !"
+        
+        st.session_state.messages.append({"role": "assistant", "content": reponse_assistant})
+        st.rerun()
 
-# 4. Saisie utilisateur et boucle d'exécution de l'Agent
-if prompt := st.chat_input("Posez une question sur les formations ISPM ou demandez une recommandation..."):
-    # Stockage du message utilisateur
-    st.session_state.messages.append({"role": "user", "content": prompt})
-    with st.chat_message("user"):
-        st.markdown(prompt)
 
-    # Réponse de l'Agent (Simulée pour le composant UI, à relier à l'agent backend)
-    with st.chat_message("assistant"):
-        with st.spinner("Traitement par l'agent : interrogation des outils RAG et prédictions ML..."):
-            time.sleep(1) # Latence simulée des appels d'outils
-            
-            # Exemple de réponse argumentée, traçable et prudente
-            response_text = (
-                "Sur la base de votre profil explicitement déclaré et de l'analyse du corpus ISPM :\n\n"
-                "### Recommandation\n"
-                "Nous vous orientons vers la filière **Génie Logiciel & Systèmes d'Information (GLSI)**.\n\n"
-                "### Argumentation & Prudence\n"
-                "* **Adéquation avec votre profil :** Vos centres d'intérêt pour le développement et votre score auto-évalué correspondent aux prérequis académiques de la filière.\n"
-                "* **Remarque prudentielle :** Le volume d'heures en algorithmique au 1er semestre nécessite une bonne maîtrise préalable des bases de la logique mathématique."
-            )
-            
-            # Structure des données d'observabilité capturées
-            metadata_example = {
-                "confiance": 88,
-                "incertitude": "Faible (0.12)",
-                "sources": [
-                    "Maquette_Pedagogique_ISPM_2025.pdf (Page 12, Section GLSI)",
-                    "Brochure_Admissions_ISPM_2024-2025.pdf (Page 4)"
-                ],
-                "traces": {
-                    "question_initiale": prompt,
-                    "profil_transmis": st.session_state.user_profile,
-                    "outils_appeles": ["analyser_profil_ml", "rechercher_formation", "verifier_prerequis"],
-                    "scores_rag": [0.94, 0.87],
-                    "entrees_sorties_ml": {
-                        "input_vector": [st.session_state.user_profile.get("niveau_math_info", 0)],
-                        "output_prediction": "GLSI",
-                        "proba": 0.88
-                    },
-                    "temps_execution_ms": 520
-                }
-            }
-            
-            # Affichage dans l'UI
-            st.markdown(response_text)
-            
-            st.metric(
-                label="Niveau de confiance", 
-                value=f"{metadata_example['confiance']}%", 
-                delta=f"Incertitude: {metadata_example['incertitude']}"
-            )
-            
-            with st.expander("📚 Sources citées (Corpus ISPM)"):
-                for src in metadata_example["sources"]:
-                    st.markdown(f"- `{src}`")
-                    
-            if show_traces:
-                with st.expander("🔍 Traces d'observabilité (Audit & Logs)"):
-                    st.json(metadata_example["traces"])
-            
-            # Enregistrement dans la session
-            st.session_state.messages.append({
-                "role": "assistant",
-                "content": response_text,
-                "metadata": metadata_example
-            })
+# --- EN-TÊTE ---
+col_logo, col_titre = st.columns([0.1, 0.9])
+
+with col_logo:
+    st.image("logo_ispm.png", width=130)
+    st.markdown('</div>', unsafe_allow_html=True)
+
+with col_titre:
+    st.title("ORIENT'IA - Plateforme d'Orientation & Assistant")
+    st.markdown("Institut Supérieur Polytechnique de Madagascar (ISPM)")
+    
+    st.markdown(
+        """
+        <div style='background-color: #262730; padding: 8px 12px; border-radius: 6px; border-left: 4px solid #F60000; font-size: 20px; color: #fff; margin-top: 8px; margin-bottom: 12px;'>
+            <b>Avertissement :</b> ORIENT'IA constitue un outil d'aide à l'orientation. Ses recommandations ne remplacent ni l'avis d'un conseiller pédagogique ni une décision officielle d'admission.
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+# --- DIVISION DE L'ÉCRAN EN 2 COLONNES ---
+col_form, col_chat = st.columns([1.2, 1], gap="large")
+
+# Colonne de gauche (Formulaire de profil)
+with col_form:
+    st.subheader(" Votre Profil Académique")
+    
+    with st.form("formulaire_profil_utilisateur"):
+        serie = st.selectbox(
+            "Série du Baccalauréat",
+            ['Série C', 'Série D', 'Série A1', 'Série A2', 'Série S', 'Série Tertiaire/Gestion', 'Série Technique']
+        )
+        
+        interet = st.selectbox(
+            "Centre d'intérêt principal",
+            [
+                'Informatique_Logiciel', 'Electronique_Robotique', 'Finance_Comptabilite',
+                'Droit_Affaires', 'Biologie_Pharmacie', 'Agronomie_Elevage', 
+                'Tourisme_Environnement', 'Genie_Civil'
+            ]
+        )
+
+        st.markdown("**Vos Notes au Bac (sur 20)**")
+        c1, c2 = st.columns(2)
+        with c1:
+            note_maths = st.number_input("Mathématiques", min_value=0.0, max_value=20.0, value=12.0, step=0.5)
+            note_pc = st.number_input("Physique-Chimie", min_value=0.0, max_value=20.0, value=12.0, step=0.5)
+            note_svt = st.number_input("SVT", min_value=0.0, max_value=20.0, value=12.0, step=0.5)
+        with c2:
+            note_francais = st.number_input("Français", min_value=0.0, max_value=20.0, value=12.0, step=0.5)
+            note_anglais = st.number_input("Anglais", min_value=0.0, max_value=20.0, value=12.0, step=0.5)
+            note_gestion = st.number_input("Gestion / Éco / Philo", min_value=0.0, max_value=20.0, value=12.0, step=0.5)
+
+        soumis = st.form_submit_button("Analyser mon profil", use_container_width=True)
+        
+    if soumis:
+        st.success("Analyse du profil en cours...")
+        
+        # Collecte des données d'entrée dans un dictionnaire propre
+        profil_saisi = {
+            "serie": serie,
+            "interet": interet,
+            "note_maths": note_maths,
+            "note_pc": note_pc,
+            "note_svt": note_svt,
+            "note_francais": note_francais,
+            "note_anglais": note_anglais,
+            "note_gestion": note_gestion
+        }
+        
+        # =====================================================================
+        # [ZONE BACKEND / ML]
+        # C'est ici que vous passerez 'profil_saisi' à votre modèle/backend
+        # =====================================================================
+        
+        # Logique simulée actuelle
+        if serie in ['Série C', 'Série S']:
+            top_1, score_1 = "IGGLIA", "94.4%"
+            top_2, score_2 = "ESIIA", "3.2%"
+            top_3, score_3 = "IMTICIA", "2.4%"
+        elif serie in ['Série A1', 'Série A2']:
+            top_1, score_1 = "CAA", "85.0%"
+            top_2, score_2 = "DTJA", "10.5%"
+            top_3, score_3 = "TEH", "4.5%"
+        else:
+            top_1, score_1 = "FIC", "78.0%"
+            top_2, score_2 = "IMTICIA", "15.0%"
+            top_3, score_3 = "CAA", "7.0%"
+
+        # Affichage couplé des données d'entrée et des résultats
+        afficher_resultats_orientation(profil_saisi, top_1, score_1, top_2, score_2, top_3, score_3)
+
+# Colonne de droite (Assistant Conversationnel)
+with col_chat:
+    gerer_interface_chat()
+
+# --- FOOTER DE LA PAGE ---
+st.markdown(
+    """
+    <div style='text-align: center; color: #6b7280; padding: 15px; font-size: 14px;'>
+         <b>ORIENT'IA</b> — <b>Institut Supérieur Polytechnique de Madagascar (ISPM)</b>   <b >  — ISAIA 5</b>
+         | Plateforme d'Aide à l'Orientation Intelligente
+    </div>
+    """,
+    unsafe_allow_html=True
+)

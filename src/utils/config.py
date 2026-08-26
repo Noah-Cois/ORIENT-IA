@@ -29,3 +29,23 @@ def get_hf_token() -> str:
         "❌ Clé HUGGINGFACEHUB_API_TOKEN introuvable. "
         "Ajoutez-la dans .env (local) ou dans les Secrets Streamlit (cloud)."
     )
+
+def get_gemini_token() -> str:
+    """Récupère la clé API Google Gemini (compatible Local & Streamlit Cloud)."""
+    # 1. Vérification dans le fichier .env local
+    token = os.getenv("GEMINI_API_KEY")
+    if token:
+        return token
+
+    # 2. Vérification dans Streamlit Secrets (Déploiement Cloud)
+    try:
+        import streamlit as st
+        if "GEMINI_API_KEY" in st.secrets:
+            return st.secrets["GEMINI_API_KEY"]
+    except Exception:
+        pass
+
+    raise ValueError(
+        "❌ Clé GEMINI_API_KEY introuvable. "
+        "Ajoutez-la dans .env (local) ou dans les Secrets Streamlit (cloud)."
+    )
