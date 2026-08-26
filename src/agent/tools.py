@@ -13,7 +13,7 @@ from typing import Dict, List, Any, Optional
 # ==============================================================================
 # 1. OUTIL MACHINE LEARNING : ANALYSER PROFIL ML
 # ==============================================================================
-
+@tool
 def analyser_profil_ml(profil: Dict[str, Any]) -> Dict[str, Any]:
     """
     Consomme les caractéristiques déclarées de l'étudiant et retourne les prédictions
@@ -82,7 +82,7 @@ def analyser_profil_ml(profil: Dict[str, Any]) -> Dict[str, Any]:
 # ==============================================================================
 # 2. OUTIL RAG / RECHERCHE DOCUMENTAIRE : RECHERCHER FORMATION
 # ==============================================================================
-
+@tool
 def rechercher_formation(query: str, filiere: Optional[str] = None) -> List[Dict[str, Any]]:
     """
     Interroge la base de connaissances documentaire (index vectoriel/lexical ISPM)
@@ -156,6 +156,7 @@ def rechercher_formation(query: str, filiere: Optional[str] = None) -> List[Dict
 # 3. OUTIL IA SYMBOLIQUE / ONTOLOGIE : VÉRIFIER PRÉREQUIS
 # ==============================================================================
 
+@tool
 def verifier_prerequis(parcours: str, profil: Dict[str, Any]) -> Dict[str, Any]:
     """
     Vérifie formellement l'éligibilité d'un candidat selon les règles strictes
@@ -221,7 +222,7 @@ def verifier_prerequis(parcours: str, profil: Dict[str, Any]) -> Dict[str, Any]:
 # ==============================================================================
 # 4. OUTIL COMPARATIF : COMPARER PARCOURS
 # ==============================================================================
-
+@tool
 def comparer_parcours(a: str, b: str) -> Dict[str, Any]:
     """
     Effectue une comparaison neutre et structurée entre deux filières académiques.
