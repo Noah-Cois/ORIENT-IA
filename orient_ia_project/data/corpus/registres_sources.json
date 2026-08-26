@@ -1,0 +1,37 @@
+[
+  {
+    "source_id": "SRC_SITE_ISPM",
+    "titre": "Page Officielle ISPM",
+    "url_origine": "https://ispm-edu.com/filieres.php#",
+    "date_consultation": "2026-08-26",
+    "statut": "officiel"
+  },
+  {
+    "source_id": "SRC_SITE_TOROHAY",
+    "titre": "Page Officielle TOROHAY",
+    "url_origine": "https://torohay.xyz/listing/institut-superieur-polytechnique-de-madagascar/",
+    "date_consultation": "2026-08-26",
+    "statut": "officiel"
+  },
+  {
+    "source_id": "SRC_SITE_EDM",
+    "titre": "Page Officielle EDM-Talent",
+    "url_origine": "https://www.edm-talent.com/universites-informatiques-madagascar/ispm.html",
+    "date_consultation": "2026-08-26",
+    "statut": "officiel"
+  },
+  {
+    "source_id": "SRC_SITE_ANNUAIRE",
+    "titre": "Page Officielle Annuaire.mg",
+    "url_origine": "https://annuaire.mg/ispm/",
+    "date_consultation": "2026-08-26",
+    "statut": "officiel"
+  },
+  {
+    "source_id": "SRC_PDF_BROCHURE_2025",
+    "titre": "Brochure Institutionnelle ISPM 2025-2026",
+    "url_origine": "fichier_local://docs/brochure_2025.pdf",
+    "date_consultation": "2026-08-26",
+    "statut": "institutionnel"
+  }
+]
