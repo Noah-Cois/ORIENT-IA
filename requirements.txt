@@ -4,3 +4,4 @@ langchain-huggingface
 python-frontmatter
 python-dotenv
 chromadb
+rdflib
