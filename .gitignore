@@ -1,0 +1,67 @@
+# ==========================================
+# 1. Secrets et Clés API (CRITIQUE)
+# ==========================================
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# ==========================================
+# 2. Environnements Virtuels Python
+# ==========================================
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# ==========================================
+# 3. Cache Python et Fichiers Compilés
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# 4. Base Vectorielle RAG (ChromaDB)
+# ==========================================
+chroma_db/
+*.chroma
+
+# ==========================================
+# 5. Modèles ML et Artefacts Lourds
+# ==========================================
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+*.onnx
+src/ml/*.pkl
+
+# ==========================================
+# 6. Traces d'Exécution et Logs
+# ==========================================
+*.log
+traces/execution_logs.json
+
+# ==========================================
+# 7. Bases de Données Locales
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ==========================================
+# 8. Fichiers IDE et Système
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp

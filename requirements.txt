@@ -1,0 +1,6 @@
+langchain-core
+langchain-chroma
+langchain-huggingface
+python-frontmatter
+python-dotenv
+chromadb
