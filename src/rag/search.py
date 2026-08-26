@@ -15,7 +15,7 @@ CHROMA_DB_DIR = ROOT_DIR / "data" / "chroma_db"
 EMBEDDING_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
 # Liste des filières gérées par l'ISPM
-LISTE_FILIERES = ["ISAIA", "EMII", "IGGLIA", "GCA", "IAA", "TIM", "MB"]
+LISTE_FILIERES = ["ISAIA", "IGGLIA", "IMTICIA", "ESIIA", "IAA", "AEE", "PIP", "EMII", "GCA", "ICMP", "TEE", "TEH", "CAA", "DTJA", "EMP", "FIC"]
 
 def detecter_filiere(question: str) -> str | None:
     """Détecte la présence d'un acronyme de filière dans la question."""
@@ -60,6 +60,38 @@ def tester_recherche(question: str, top_k: int = 3):
         print(f"Fichier  : {doc.metadata.get('chemin_fichier', 'N/A')}")
         print(f"Filière  : {doc.metadata.get('filiere', 'Général')}")
         print(f"Extrait  : {doc.page_content[:250]}...")
+
+def recherche_rag(question: str, top_k: int = 3) -> str:
+    """Effectue la recherche et renvoie un texte formaté avec les sources pour le LLM."""
+    HF_TOKEN = get_hf_token()
+    embeddings = HuggingFaceEndpointEmbeddings(
+        model=EMBEDDING_MODEL_NAME,
+        huggingfacehub_api_token=HF_TOKEN
+    )
+    vectorstore = Chroma(persist_directory=str(CHROMA_DB_DIR), embedding_function=embeddings)
+    
+    filiere_target = detecter_filiere(question)
+    search_kwargs = {"k": top_k}
+    
+    if filiere_target:
+        search_kwargs["filter"] = {"filiere": filiere_target}
+        query_text = f"Filière {filiere_target} : {question}"
+    else:
+        query_text = question
+
+    resultats = vectorstore.similarity_search(query_text, **search_kwargs)
+    
+    if not resultats and filiere_target:
+        resultats = vectorstore.similarity_search(query_text, k=top_k)
+
+    # Formatage pour le LLM avec citations obligatoires
+    contexte_formate = f"Voici les documents trouvés pour répondre à la question '{question}':\n\n"
+    for i, doc in enumerate(resultats, 1):
+        nom_fichier = Path(doc.metadata.get('chemin_fichier', 'inconnu')).name
+        contexte_formate += f"[Source {i} : {nom_fichier} | Filière: {doc.metadata.get('filiere', 'Général')}]\n"
+        contexte_formate += f"{doc.page_content}\n\n"
+        
+    return contexte_formate
 
 if __name__ == "__main__":
     # Test 1 : Avec acronyme spécifique (Filtre + Enrichissement)
