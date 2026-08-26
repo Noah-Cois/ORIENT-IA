@@ -1,0 +1,64 @@
+@prefix : <http://www.ispm.mg/ontologies/orientia#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.ispm.mg/ontologies/orientia> a owl:Ontology .
+
+# --- Classes ---
+:Parcours a owl:Class .
+:Filiere a owl:Class .
+:Matiere a owl:Class .
+:Competence a owl:Class .
+:Prerequis a owl:Class .
+:Metier a owl:Class .
+
+# --- Properties ---
+:appartientAParcours a owl:ObjectProperty .
+:enseigneMatiere a owl:ObjectProperty .
+:developpeCompetence a owl:ObjectProperty .
+:exigePrerequis a owl:ObjectProperty .
+:prepareAMetier a owl:ObjectProperty .
+
+# --- Individus : Parcours ---
+:Parcours_InfoTelecom a :Parcours .
+:Parcours_Tertiaire a :Parcours .
+
+# --- Individus : Prerequis & Metiers ---
+:Prerequis_MathsAvance a :Prerequis .
+:Prerequis_LogiqueAlgo a :Prerequis .
+:Prerequis_GestionDeBase a :Prerequis .
+
+:Metier_DataScientist a :Metier .
+:Metier_DevFullStack a :Metier .
+:Metier_Comptable a :Metier .
+
+# --- Individus : Filières ---
+:ISAIA a :Filiere ;
+    :appartientAParcours :Parcours_InfoTelecom ;
+    :exigePrerequis :Prerequis_MathsAvance ;
+    :prepareAMetier :Metier_DataScientist .
+
+:IGGLIA a :Filiere ;
+    :appartientAParcours :Parcours_InfoTelecom ;
+    :exigePrerequis :Prerequis_LogiqueAlgo ;
+    :prepareAMetier :Metier_DevFullStack .
+
+:ESIIA a :Filiere ;
+    :appartientAParcours :Parcours_InfoTelecom .
+
+:IMTICIA a :Filiere ;
+    :appartientAParcours :Parcours_InfoTelecom .
+
+:CAA a :Filiere ;
+    :appartientAParcours :Parcours_Tertiaire .
+
+:FIC a :Filiere ;
+    :appartientAParcours :Parcours_Tertiaire ;
+    :exigePrerequis :Prerequis_GestionDeBase ;
+    :prepareAMetier :Metier_Comptable .
+
+:EMP a :Filiere ;
+    :appartientAParcours :Parcours_Tertiaire .
