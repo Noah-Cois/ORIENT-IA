@@ -106,6 +106,23 @@ class OrientIAAgent:
             verifier_prerequis,
             comparer_parcours,
         ]
+    @property
+    def llm(self) -> ChatGoogleGenerativeAI:
+        """
+        Génère dynamiquement l'instance LLM avec la clé Gemini active 
+        provenant du KeyManager (permet la rétrocompatibilité avec agent.llm).
+        """
+        key_manager = get_api_key_manager()
+        current_key = key_manager.get_current_key()
+        
+        if not current_key:
+            raise ValueError("❌ Aucune clé API Gemini valide n'est disponible (quotas épuisés).")
+            
+        return ChatGoogleGenerativeAI(
+            model=self.model_name,
+            google_api_key=current_key,
+            temperature=0.2
+        )
 
     def _check_security(self, text: str) -> Dict[str, bool]:
         """Détecte les tentatives de contournement."""
