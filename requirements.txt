@@ -8,3 +8,8 @@ huggingface-hub
 python-frontmatter
 python-dotenv
 chromadb
+langchain-google-genai
+joblib
+streamlit
+pandas
+scikit-learn

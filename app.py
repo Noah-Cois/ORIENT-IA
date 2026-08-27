@@ -1,4 +1,41 @@
+import sys
+from pathlib import Path
+
 import streamlit as st
+
+# Permet d'importer les modules src.* quel que soit le dossier de lancement
+ROOT_DIR = Path(__file__).resolve().parent.parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
+from src.agent.chatbot import OrientIAAgent
+from src.agent.tools import traduire_profil_vers_vocabulaire_ml, analyser_profil_ml
+from src.rag.search import CHROMA_DB_DIR
+from src.rag.ingest import executer_ingestion
+
+
+def _base_vectorielle_existe() -> bool:
+    """
+    Vérifie si la base Chroma a déjà été générée et contient des données.
+    Nécessaire car data/chroma_db n'est pas versionné sur Git (trop volumineux),
+    donc absent lors d'un déploiement Streamlit Cloud frais.
+    """
+    if not CHROMA_DB_DIR.exists():
+        return False
+    # Chroma persiste au moins un fichier sqlite dans ce dossier une fois indexé
+    return any(CHROMA_DB_DIR.iterdir())
+
+
+@st.cache_resource(show_spinner=False)
+def assurer_base_vectorielle():
+    """
+    Exécuté une seule fois par session (grâce au cache) : si la base vectorielle
+    n'existe pas encore sur le disque, on l'ingère depuis data/corpus avant de
+    laisser le reste de l'application démarrer.
+    """
+    if not _base_vectorielle_existe():
+        executer_ingestion()
+    return True
 
 # Configuration de la page en mode "wide" pour profiter de tout l'écran côte à côte
 st.set_page_config(
@@ -33,11 +70,86 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+
+# --- INITIALISATION DE L'AGENT (une seule fois par session, pas à chaque rerun) ---
+@st.cache_resource(show_spinner=False)
+def charger_agent() -> OrientIAAgent:
+    return OrientIAAgent()
+
+
+with st.spinner("Préparation de la base de connaissances (première utilisation uniquement)..."):
+    assurer_base_vectorielle()
+
+agent = charger_agent()
+
 # Initialisation de l'historique du chat dans la session
 if "messages" not in st.session_state:
     st.session_state.messages = [
         {"role": "assistant", "content": "Bonjour ! Une question sur les filières de l'ISPM ? Posez-la-moi ici."}
     ]
+
+# Stocke le dernier profil analysé, pour que le chat en tienne compte
+if "dernier_profil" not in st.session_state:
+    st.session_state.dernier_profil = None
+
+
+# --- MAPPING SÉRIE DU FORMULAIRE -> CODE UTILISÉ PAR LE MODÈLE ---
+MAPPING_SERIE = {
+    "Série C": "C",
+    "Série D": "D",
+    "Série A1": "A1",
+    "Série A2": "A2",
+    "Série S": "S",
+    "Série Tertiaire/Gestion": "G",
+    "Série Technique": "Technique",
+}
+
+
+def construire_profil_libre(donnees_profil: dict) -> dict:
+    """
+    Transforme les données brutes du formulaire (notes par matière + série +
+    centre d'intérêt) en un profil "libre" prêt à être traduit vers le
+    vocabulaire exact du modèle ML via traduire_profil_vers_vocabulaire_ml.
+    """
+    notes = {
+        "Mathématiques": donnees_profil["note_maths"],
+        "Physique-Chimie": donnees_profil["note_pc"],
+        "SVT": donnees_profil["note_svt"],
+        "Français": donnees_profil["note_francais"],
+        "Anglais": donnees_profil["note_anglais"],
+        "Gestion/Eco/Philo": donnees_profil["note_gestion"],
+    }
+    matieres_triees = sorted(notes.items(), key=lambda kv: kv[1], reverse=True)
+    matieres_fortes = [nom for nom, _ in matieres_triees[:2]]
+    matieres_faibles = [nom for nom, _ in matieres_triees[-2:]]
+    moyenne_generale = sum(notes.values()) / len(notes)
+
+    return {
+        "serie": MAPPING_SERIE.get(donnees_profil["serie"], donnees_profil["serie"]),
+        "moyenne_generale": moyenne_generale,
+        "notes": notes,
+        "matieres_fortes": matieres_fortes,
+        "matieres_faibles": matieres_faibles,
+        "centres_interet": [donnees_profil["interet"].replace("_", " ")],
+        "competences": [],
+    }
+
+
+def analyser_profil_complet(donnees_profil: dict) -> dict:
+    """
+    Pipeline complet : profil libre -> traduction LLM vers vocabulaire exact
+    -> appel au vrai modèle ML entraîné. Retourne le contrat de analyser_profil_ml.
+    """
+    profil_libre = construire_profil_libre(donnees_profil)
+
+    if agent.llm:
+        profil_traduit = traduire_profil_vers_vocabulaire_ml(profil_libre, agent.llm)
+    else:
+        # Mode dégradé : pas de LLM disponible, on tente avec le profil brut
+        profil_traduit = profil_libre
+
+    return analyser_profil_ml.invoke({"profil": profil_traduit})
+
 
 # --- FONCTION D'AFFICHAGE DES DONNÉES D'ENTRÉE ET DES RÉSULTATS ---
 def afficher_resultats_orientation(donnees_profil, t1, s1, t2, s2, t3, s3):
@@ -91,13 +203,11 @@ def gerer_interface_chat():
 
     if prompt := st.chat_input("Posez votre question à l'assistant..."):
         st.session_state.messages.append({"role": "user", "content": prompt})
-        
-        # =====================================================================
-        # [ZONE BACKEND / RAG / AGENT]
-        # Remplacez cette réponse simulée par l'appel à votre agent/RAG plus tard
-        # =====================================================================
-        reponse_assistant = f"J'ai bien reçu votre message : '{prompt}'. En tant qu'assistant ISPM, je vous aide à y voir clair !"
-        
+
+        with st.spinner("ORIENT'IA réfléchit..."):
+            resultat = agent.process_query(prompt, st.session_state.dernier_profil)
+            reponse_assistant = resultat["response"]
+
         st.session_state.messages.append({"role": "assistant", "content": reponse_assistant})
         st.rerun()
 
@@ -158,8 +268,6 @@ with col_form:
         soumis = st.form_submit_button("Analyser mon profil", use_container_width=True)
         
     if soumis:
-        st.success("Analyse du profil en cours...")
-        
         # Collecte des données d'entrée dans un dictionnaire propre
         profil_saisi = {
             "serie": serie,
@@ -171,28 +279,33 @@ with col_form:
             "note_anglais": note_anglais,
             "note_gestion": note_gestion
         }
-        
-        # =====================================================================
-        # [ZONE BACKEND / ML]
-        # C'est ici que vous passerez 'profil_saisi' à votre modèle/backend
-        # =====================================================================
-        
-        # Logique simulée actuelle
-        if serie in ['Série C', 'Série S']:
-            top_1, score_1 = "IGGLIA", "94.4%"
-            top_2, score_2 = "ESIIA", "3.2%"
-            top_3, score_3 = "IMTICIA", "2.4%"
-        elif serie in ['Série A1', 'Série A2']:
-            top_1, score_1 = "CAA", "85.0%"
-            top_2, score_2 = "DTJA", "10.5%"
-            top_3, score_3 = "TEH", "4.5%"
-        else:
-            top_1, score_1 = "FIC", "78.0%"
-            top_2, score_2 = "IMTICIA", "15.0%"
-            top_3, score_3 = "CAA", "7.0%"
 
-        # Affichage couplé des données d'entrée et des résultats
-        afficher_resultats_orientation(profil_saisi, top_1, score_1, top_2, score_2, top_3, score_3)
+        with st.spinner("Analyse du profil en cours (traduction + modèle ML)..."):
+            try:
+                ml_result = analyser_profil_complet(profil_saisi)
+            except Exception as e:
+                st.error(f"Erreur lors de l'analyse du profil : {e}")
+                ml_result = None
+
+        if ml_result and ml_result.get("status") == "SUCCESS":
+            st.success("Analyse du profil terminée.")
+
+            probas_triees = sorted(
+                ml_result["predict_proba"].items(), key=lambda kv: kv[1], reverse=True
+            )
+            # Complète à 3 entrées si le modèle en renvoie moins
+            while len(probas_triees) < 3:
+                probas_triees.append(("N/A", 0.0))
+
+            (t1, p1), (t2, p2), (t3, p3) = probas_triees[:3]
+            s1, s2, s3 = f"{p1 * 100:.1f}%", f"{p2 * 100:.1f}%", f"{p3 * 100:.1f}%"
+
+            # Mémorise le profil pour que le chat puisse en tenir compte ensuite
+            st.session_state.dernier_profil = construire_profil_libre(profil_saisi)
+
+            afficher_resultats_orientation(profil_saisi, t1, s1, t2, s2, t3, s3)
+        elif ml_result:
+            st.warning(f"Analyse incomplète : {', '.join(ml_result.get('facteurs_cles', ['Erreur inconnue']))}")
 
 # Colonne de droite (Assistant Conversationnel)
 with col_chat:

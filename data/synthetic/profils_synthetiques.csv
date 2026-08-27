@@ -1,0 +1,1001 @@
+profile_id,type_profil,age,sexe,serie_ou_filiere,competences_clefs,objectif_ou_metier,filiere_associee,score_adéquation_global
+STD_2026_0001,Étudiant,21,M,A1,Contrôle qualité HACCP; Process agroalimentaires; Résolution de problèmes,Biologiste industriel,IAA,50.94
+STD_2026_0002,Étudiant,18,F,A2,Analyse en laboratoire; Pharmacologie; Résolution de problèmes,Responsable contrôle qualité labo,PIP,52.97
+STD_2026_0003,Étudiant,21,F,L,CAO Mécanique; Automatisme PLC; Résolution de problèmes,Ingénieur Électromécanicien,EMII,43.66
+STD_2026_0004,Étudiant,21,F,C,Métré et devis; AutoCAD/Revit; Résolution de problèmes,Ingénieur Génie Civil,GCA,81.7
+STD_2026_0005,Étudiant,21,M,D,Génie des procédés; Raffinage et extraction; Résolution de problèmes,Ingénieur Procédés,ICMP,82.44
+STD_2026_0006,Étudiant,21,M,S,C/C++ embarqué; Signal & Traitement; Résolution de problèmes,Ingénieur Systèmes Embarqués,ESIIA,80.19
+STD_2026_0007,Étudiant,16,M,G,Algorithmique & Python; SQL & Bases de données; Résolution de problèmes,Ingénieur Génie Logiciel,IGGLIA,74.52
+STD_2026_0008,Étudiant,20,M,Technique,UI/UX Design; Infographie & 3D; Résolution de problèmes,Administrateur Réseaux & TIC,IMTICIA,90.32
+STD_2026_0009,Étudiant,17,F,A,PowerBI & Analytics; Statistiques inférentielles; Résolution de problèmes,Data Analyst,ISAIA,58.02
+STD_2026_0010,Étudiant,19,M,A1,Ingénierie touristique; Gestion de projets durables; Résolution de problèmes,Chef de projet Développement Durable,TEE,84.78
+STD_2026_0011,Étudiant,16,F,A2,Communication interculturelle; Yield Management; Résolution de problèmes,Responsable d'Agence de Voyage,TEH,73.05
+STD_2026_0012,Étudiant,21,F,L,Techniques de Vente; Marketing Digital; Résolution de problèmes,Chef de Produit Marketing,CAA,74.32
+STD_2026_0013,Étudiant,20,F,C,Conseil d'entreprise; Analyse fiscale; Résolution de problèmes,Gestionnaire de Contrats,DTJA,56.4
+STD_2026_0014,Étudiant,19,F,D,Étude d'impact économique; Analyse financière; Résolution de problèmes,Scrum Master,EMP,86.66
+STD_2026_0015,Étudiant,16,F,S,Gestion de trésorerie; Comptabilité générale & analytique; Résolution de problèmes,Comptable Senior,FIC,81.04
+STD_2026_0016,Étudiant,16,M,G,Analyse des sols; Gestion d'exploitation; Résolution de problèmes,Agronome,AEE,44.17
+STD_2026_0017,Étudiant,20,F,Technique,Process agroalimentaires; Biochimie alimentaire; Résolution de problèmes,Biologiste industriel,IAA,76.13
+STD_2026_0018,Étudiant,18,M,A,Pharmacologie; Chimie organique; Résolution de problèmes,Responsable contrôle qualité labo,PIP,53.51
+STD_2026_0019,Étudiant,17,F,A1,Automatisme PLC; CAO Mécanique; Résolution de problèmes,Automaticien,EMII,42.1
+STD_2026_0020,Étudiant,17,F,A2,AutoCAD/Revit; Conduite de chantier BTP; Résolution de problèmes,Architecte collaborateur,GCA,50.16
+STD_2026_0021,Étudiant,19,F,L,Normes QHSE; Génie des procédés; Résolution de problèmes,Responsable d'extraction,ICMP,44.8
+STD_2026_0022,Étudiant,16,F,C,C/C++ embarqué; Électronique numérique; Résolution de problèmes,Concepteur Électronique,ESIIA,82.22
+STD_2026_0023,Étudiant,20,M,D,Machine Learning; SQL & Bases de données; Résolution de problèmes,Data Scientist / IA,IGGLIA,75.29
+STD_2026_0024,Étudiant,16,M,S,Réseaux informatiques; Développement Web/Mobile; Résolution de problèmes,Administrateur Réseaux & TIC,IMTICIA,74.08
+STD_2026_0025,Étudiant,16,F,G,Python / R Data; Statistiques inférentielles; Résolution de problèmes,Data Analyst,ISAIA,83.5
+STD_2026_0026,Étudiant,19,F,Technique,Ingénierie touristique; Gestion de projets durables; Résolution de problèmes,Consultant Écotourisme,TEE,46.26
+STD_2026_0027,Étudiant,18,F,A,Communication interculturelle; Management hôtelier; Résolution de problèmes,Directeur de l'Hébergement,TEH,87.02
+STD_2026_0028,Étudiant,17,M,A1,Analyse Marché; Techniques de Vente; Résolution de problèmes,Directeur des Ventes,CAA,83.0
+STD_2026_0029,Étudiant,18,M,A2,Droit des contrats; Rédaction juridique; Résolution de problèmes,Consultant Fiscaliste,DTJA,79.33
+STD_2026_0030,Étudiant,19,M,L,Gestion des risques; Analyse financière; Résolution de problèmes,Scrum Master,EMP,45.15
+STD_2026_0031,Étudiant,20,M,C,Comptabilité générale & analytique; Gestion de trésorerie; Résolution de problèmes,Comptable Senior,FIC,77.27
+STD_2026_0032,Étudiant,16,F,D,Agronomie; Gestion d'exploitation; Résolution de problèmes,Chef d'exploitation,AEE,80.58
+STD_2026_0033,Étudiant,16,M,S,Process agroalimentaires; Microbiologie; Résolution de problèmes,Biologiste industriel,IAA,82.1
+STD_2026_0034,Étudiant,16,F,G,Chimie organique; Pharmacologie; Résolution de problèmes,Technicien supérieur en pharmacologie,PIP,51.52
+STD_2026_0035,Étudiant,21,M,Technique,CAO Mécanique; Maintenance industrielle; Résolution de problèmes,Responsable Maintenance,EMII,88.38
+STD_2026_0036,Étudiant,20,M,A,AutoCAD/Revit; Calcul de structures; Résolution de problèmes,Architecte collaborateur,GCA,44.04
+STD_2026_0037,Étudiant,17,F,A1,Génie des procédés; Normes QHSE; Résolution de problèmes,Responsable d'extraction,ICMP,54.04
+STD_2026_0038,Étudiant,19,M,A2,Microcontrôleurs IoT; Électronique numérique; Résolution de problèmes,Concepteur Électronique,ESIIA,47.26
+STD_2026_0039,Étudiant,20,M,L,Génie Logiciel & Java/Web; Machine Learning; Résolution de problèmes,Développeur Fullstack,IGGLIA,54.76
+STD_2026_0040,Étudiant,20,F,C,Développement Web/Mobile; Infographie & 3D; Résolution de problèmes,Designer UI/UX,IMTICIA,84.1
+STD_2026_0041,Étudiant,16,F,D,Python / R Data; Statistiques inférentielles; Résolution de problèmes,Data Analyst,ISAIA,77.89
+STD_2026_0042,Étudiant,19,F,S,Écotourisme & Biodiversité; Gestion de projets durables; Résolution de problèmes,Guide Patrimoine,TEE,72.92
+STD_2026_0043,Étudiant,21,M,G,Gestion événementielle; Communication interculturelle; Résolution de problèmes,Directeur de l'Hébergement,TEH,73.5
+STD_2026_0044,Étudiant,17,M,Technique,Negociation internationale; Techniques de Vente; Résolution de problèmes,Chef de Produit Marketing,CAA,61.42
+STD_2026_0045,Étudiant,19,M,A,Rédaction juridique; Conseil d'entreprise; Résolution de problèmes,Consultant Fiscaliste,DTJA,78.6
+STD_2026_0046,Étudiant,20,F,A1,Étude d'impact économique; Gestion des risques; Résolution de problèmes,Analyste Économique,EMP,69.44
+STD_2026_0047,Étudiant,18,F,A2,Audit financier; Gestion de trésorerie; Résolution de problèmes,Directeur Financier (CFO),FIC,57.9
+STD_2026_0048,Étudiant,18,M,L,Analyse des sols; Gestion d'exploitation; Résolution de problèmes,Chef d'exploitation,AEE,57.94
+STD_2026_0049,Étudiant,20,F,C,Process agroalimentaires; Microbiologie; Résolution de problèmes,Responsable Qualité HACCP,IAA,71.82
+STD_2026_0050,Étudiant,21,M,D,Pharmacologie; Chimie organique; Résolution de problèmes,Assistant de recherche galénique,PIP,69.54
+STD_2026_0051,Étudiant,21,M,S,Électrotechnique; Automatisme PLC; Résolution de problèmes,Automaticien,EMII,87.26
+STD_2026_0052,Étudiant,21,M,G,AutoCAD/Revit; Métré et devis; Résolution de problèmes,Chef de chantier BTP,GCA,65.37
+STD_2026_0053,Étudiant,18,F,Technique,Géologie minière; Raffinage et extraction; Résolution de problèmes,Ingénieur QHSE,ICMP,74.89
+STD_2026_0054,Étudiant,16,F,A,C/C++ embarqué; Électronique numérique; Résolution de problèmes,Développeur IoT,ESIIA,29.23
+STD_2026_0055,Étudiant,20,M,A1,Algorithmique & Python; Génie Logiciel & Java/Web; Résolution de problèmes,Développeur Fullstack,IGGLIA,75.99
+STD_2026_0056,Étudiant,16,F,A2,UI/UX Design; Réseaux informatiques; Résolution de problèmes,Designer UI/UX,IMTICIA,73.57
+STD_2026_0057,Étudiant,18,M,L,Machine Learning & Deep Learning; PowerBI & Analytics; Résolution de problèmes,Statisticien Décisionnel,ISAIA,46.59
+STD_2026_0058,Étudiant,16,M,C,Ingénierie touristique; Guide & Médiation; Résolution de problèmes,Chef de projet Développement Durable,TEE,56.27
+STD_2026_0059,Étudiant,18,F,D,Yield Management; Communication interculturelle; Résolution de problèmes,Responsable d'Agence de Voyage,TEH,73.72
+STD_2026_0060,Étudiant,17,M,S,Marketing Digital; Analyse Marché; Résolution de problèmes,Directeur des Ventes,CAA,76.12
+STD_2026_0061,Étudiant,16,M,G,Rédaction juridique; Conseil d'entreprise; Résolution de problèmes,Consultant Fiscaliste,DTJA,76.13
+STD_2026_0062,Étudiant,19,F,Technique,Étude d'impact économique; Gestion des risques; Résolution de problèmes,Scrum Master,EMP,52.5
+STD_2026_0063,Étudiant,16,M,A,Comptabilité générale & analytique; Contrôle de gestion; Résolution de problèmes,Contrôleur de Gestion,FIC,47.2
+STD_2026_0064,Étudiant,18,M,A1,Gestion d'exploitation; Analyse des sols; Résolution de problèmes,Conseiller agricole,AEE,74.8
+STD_2026_0065,Étudiant,20,M,A2,Process agroalimentaires; Microbiologie; Résolution de problèmes,Responsable Qualité HACCP,IAA,48.3
+STD_2026_0066,Étudiant,21,M,L,Analyse en laboratoire; Pharmacologie; Résolution de problèmes,Délégué médical,PIP,42.09
+STD_2026_0067,Étudiant,18,M,C,CAO Mécanique; Automatisme PLC; Résolution de problèmes,Concepteur Mécatronique,EMII,79.86
+STD_2026_0068,Étudiant,19,F,D,Métré et devis; Calcul de structures; Résolution de problèmes,Architecte collaborateur,GCA,71.13
+STD_2026_0069,Étudiant,16,F,S,Normes QHSE; Génie des procédés; Résolution de problèmes,Ingénieur QHSE,ICMP,91.52
+STD_2026_0070,Étudiant,17,F,G,Signal & Traitement; C/C++ embarqué; Résolution de problèmes,Concepteur Électronique,ESIIA,51.14
+STD_2026_0071,Étudiant,17,M,Technique,Machine Learning; Algorithmique & Python; Résolution de problèmes,Développeur Fullstack,IGGLIA,72.37
+STD_2026_0072,Étudiant,18,M,A,UI/UX Design; Développement Web/Mobile; Résolution de problèmes,Designer UI/UX,IMTICIA,79.69
+STD_2026_0073,Étudiant,19,M,A1,Python / R Data; PowerBI & Analytics; Résolution de problèmes,Data Scientist,ISAIA,48.97
+STD_2026_0074,Étudiant,17,M,A2,Écotourisme & Biodiversité; Gestion de projets durables; Résolution de problèmes,Responsable Parc Naturel,TEE,68.34
+STD_2026_0075,Étudiant,20,M,L,Management hôtelier; Gestion événementielle; Résolution de problèmes,Manager d'Hôtel,TEH,79.57
+STD_2026_0076,Étudiant,16,M,C,Marketing Digital; Techniques de Vente; Résolution de problèmes,Business Developer,CAA,73.67
+STD_2026_0077,Étudiant,18,F,D,Rédaction juridique; Analyse fiscale; Résolution de problèmes,Assistant Juridique,DTJA,71.38
+STD_2026_0078,Étudiant,19,M,S,Gestion des risques; Étude d'impact économique; Résolution de problèmes,Analyste Économique,EMP,76.09
+STD_2026_0079,Étudiant,20,M,G,Contrôle de gestion; Comptabilité générale & analytique; Résolution de problèmes,Comptable Senior,FIC,75.61
+STD_2026_0080,Étudiant,17,M,Technique,Zootechnie; Agronomie; Résolution de problèmes,Responsable d'élevage,AEE,58.56
+STD_2026_0081,Étudiant,18,M,A,Process agroalimentaires; Contrôle qualité HACCP; Résolution de problèmes,Responsable Qualité HACCP,IAA,55.92
+STD_2026_0082,Étudiant,19,F,A1,Pharmacologie; Chimie organique; Résolution de problèmes,Technicien supérieur en pharmacologie,PIP,51.6
+STD_2026_0083,Étudiant,21,F,A2,Automatisme PLC; Maintenance industrielle; Résolution de problèmes,Concepteur Mécatronique,EMII,51.33
+STD_2026_0084,Étudiant,18,M,L,Métré et devis; Conduite de chantier BTP; Résolution de problèmes,Chef de chantier BTP,GCA,39.61
+STD_2026_0085,Étudiant,21,F,C,Raffinage et extraction; Géologie minière; Résolution de problèmes,Responsable d'extraction,ICMP,80.41
+STD_2026_0086,Étudiant,16,F,D,Électronique numérique; C/C++ embarqué; Résolution de problèmes,Ingénieur Systèmes Embarqués,ESIIA,57.44
+STD_2026_0087,Étudiant,16,F,S,SQL & Bases de données; Machine Learning; Résolution de problèmes,Data Scientist / IA,IGGLIA,81.83
+STD_2026_0088,Étudiant,16,F,G,Infographie & 3D; Réseaux informatiques; Résolution de problèmes,Développeur Web/Mobile,IMTICIA,84.0
+STD_2026_0089,Étudiant,18,F,Technique,PowerBI & Analytics; Python / R Data; Résolution de problèmes,Data Scientist,ISAIA,54.09
+STD_2026_0090,Étudiant,17,F,A,Écotourisme & Biodiversité; Ingénierie touristique; Résolution de problèmes,Chef de projet Développement Durable,TEE,77.42
+STD_2026_0091,Étudiant,18,M,A1,Yield Management; Management hôtelier; Résolution de problèmes,Chef de projet Événementiel,TEH,88.75
+STD_2026_0092,Étudiant,18,F,A2,Techniques de Vente; Marketing Digital; Résolution de problèmes,Business Developer,CAA,71.13
+STD_2026_0093,Étudiant,21,M,L,Analyse fiscale; Droit des contrats; Résolution de problèmes,Assistant Juridique,DTJA,81.98
+STD_2026_0094,Étudiant,19,M,C,Gestion des risques; Gestion de projet Agile/PMP; Résolution de problèmes,Consultant en Organisation,EMP,77.93
+STD_2026_0095,Étudiant,20,F,D,Audit financier; Comptabilité générale & analytique; Résolution de problèmes,Directeur Financier (CFO),FIC,85.38
+STD_2026_0096,Étudiant,19,M,S,Agronomie; Analyse des sols; Résolution de problèmes,Agronome,AEE,77.17
+STD_2026_0097,Étudiant,19,M,G,Biochimie alimentaire; Microbiologie; Résolution de problèmes,Responsable Qualité HACCP,IAA,59.02
+STD_2026_0098,Étudiant,19,F,Technique,Normes GMP/BPF; Analyse en laboratoire; Résolution de problèmes,Délégué médical,PIP,61.53
+STD_2026_0099,Étudiant,20,M,A,Automatisme PLC; CAO Mécanique; Résolution de problèmes,Automaticien,EMII,48.45
+STD_2026_0100,Étudiant,21,M,A1,Métré et devis; Calcul de structures; Résolution de problèmes,Architecte collaborateur,GCA,44.27
+STD_2026_0101,Étudiant,21,F,A2,Raffinage et extraction; Géologie minière; Résolution de problèmes,Géologue minier,ICMP,41.03
+STD_2026_0102,Étudiant,17,F,L,Microcontrôleurs IoT; C/C++ embarqué; Résolution de problèmes,Ingénieur Robotique,ESIIA,40.03
+STD_2026_0103,Étudiant,16,M,C,Génie Logiciel & Java/Web; SQL & Bases de données; Résolution de problèmes,Data Scientist / IA,IGGLIA,88.78
+STD_2026_0104,Étudiant,20,M,D,Développement Web/Mobile; UI/UX Design; Résolution de problèmes,Administrateur Réseaux & TIC,IMTICIA,68.81
+STD_2026_0105,Étudiant,20,F,S,Machine Learning & Deep Learning; Python / R Data; Résolution de problèmes,Data Scientist,ISAIA,84.57
+STD_2026_0106,Étudiant,20,M,G,Écotourisme & Biodiversité; Gestion de projets durables; Résolution de problèmes,Responsable Parc Naturel,TEE,73.39
+STD_2026_0107,Étudiant,20,M,Technique,Yield Management; Gestion événementielle; Résolution de problèmes,Directeur de l'Hébergement,TEH,48.25
+STD_2026_0108,Étudiant,16,F,A,Techniques de Vente; Marketing Digital; Résolution de problèmes,Chef de Produit Marketing,CAA,72.28
+STD_2026_0109,Étudiant,18,M,A1,Conseil d'entreprise; Droit des contrats; Résolution de problèmes,Gestionnaire de Contrats,DTJA,82.12
+STD_2026_0110,Étudiant,17,M,A2,Gestion de projet Agile/PMP; Analyse financière; Résolution de problèmes,Analyste Économique,EMP,72.63
+STD_2026_0111,Étudiant,18,F,L,Comptabilité générale & analytique; Contrôle de gestion; Résolution de problèmes,Contrôleur de Gestion,FIC,49.3
+STD_2026_0112,Étudiant,18,M,C,Agronomie; Gestion d'exploitation; Résolution de problèmes,Chef d'exploitation,AEE,82.13
+STD_2026_0113,Étudiant,20,F,D,Biochimie alimentaire; Microbiologie; Résolution de problèmes,Biologiste industriel,IAA,76.4
+STD_2026_0114,Étudiant,19,F,S,Analyse en laboratoire; Chimie organique; Résolution de problèmes,Technicien supérieur en pharmacologie,PIP,75.83
+STD_2026_0115,Étudiant,20,F,G,CAO Mécanique; Maintenance industrielle; Résolution de problèmes,Automaticien,EMII,39.46
+STD_2026_0116,Étudiant,19,F,Technique,AutoCAD/Revit; Calcul de structures; Résolution de problèmes,Architecte collaborateur,GCA,90.01
+STD_2026_0117,Étudiant,18,M,A,Normes QHSE; Raffinage et extraction; Résolution de problèmes,Responsable d'extraction,ICMP,52.78
+STD_2026_0118,Étudiant,17,F,A1,Microcontrôleurs IoT; C/C++ embarqué; Résolution de problèmes,Concepteur Électronique,ESIIA,53.03
+STD_2026_0119,Étudiant,20,F,A2,Machine Learning; SQL & Bases de données; Résolution de problèmes,Ingénieur Génie Logiciel,IGGLIA,80.72
+STD_2026_0120,Étudiant,19,F,L,Développement Web/Mobile; Réseaux informatiques; Résolution de problèmes,Concepteur Multimédia,IMTICIA,80.73
+STD_2026_0121,Étudiant,16,F,C,Statistiques inférentielles; Python / R Data; Résolution de problèmes,Consultant Big Data,ISAIA,76.76
+STD_2026_0122,Étudiant,19,F,D,Ingénierie touristique; Guide & Médiation; Résolution de problèmes,Responsable Parc Naturel,TEE,77.84
+STD_2026_0123,Étudiant,18,F,S,Gestion événementielle; Management hôtelier; Résolution de problèmes,Directeur de l'Hébergement,TEH,47.93
+STD_2026_0124,Étudiant,19,F,G,Negociation internationale; Analyse Marché; Résolution de problèmes,Directeur des Ventes,CAA,79.84
+STD_2026_0125,Étudiant,19,M,Technique,Analyse fiscale; Droit des contrats; Résolution de problèmes,Juriste d'Entreprise,DTJA,43.87
+STD_2026_0126,Étudiant,18,M,A,Gestion des risques; Analyse financière; Résolution de problèmes,Chef de Projet,EMP,74.46
+STD_2026_0127,Étudiant,17,M,A1,Comptabilité générale & analytique; Audit financier; Résolution de problèmes,Directeur Financier (CFO),FIC,48.28
+STD_2026_0128,Étudiant,16,F,A2,Analyse des sols; Agronomie; Résolution de problèmes,Agronome,AEE,66.39
+STD_2026_0129,Étudiant,16,F,L,Biochimie alimentaire; Microbiologie; Résolution de problèmes,Responsable Qualité HACCP,IAA,42.46
+STD_2026_0130,Étudiant,20,F,C,Normes GMP/BPF; Analyse en laboratoire; Résolution de problèmes,Assistant de recherche galénique,PIP,78.53
+STD_2026_0131,Étudiant,17,M,D,CAO Mécanique; Automatisme PLC; Résolution de problèmes,Concepteur Mécatronique,EMII,77.82
+STD_2026_0132,Étudiant,21,F,S,Calcul de structures; Conduite de chantier BTP; Résolution de problèmes,Conducteur de travaux,GCA,94.74
+STD_2026_0133,Étudiant,17,M,G,Normes QHSE; Génie des procédés; Résolution de problèmes,Ingénieur QHSE,ICMP,57.78
+STD_2026_0134,Étudiant,19,M,Technique,C/C++ embarqué; Microcontrôleurs IoT; Résolution de problèmes,Concepteur Électronique,ESIIA,77.02
+STD_2026_0135,Étudiant,20,M,A,SQL & Bases de données; Machine Learning; Résolution de problèmes,Architecte SI,IGGLIA,78.46
+STD_2026_0136,Étudiant,17,F,A1,Réseaux informatiques; UI/UX Design; Résolution de problèmes,Designer UI/UX,IMTICIA,68.06
+STD_2026_0137,Étudiant,20,F,A2,PowerBI & Analytics; Python / R Data; Résolution de problèmes,Statisticien Décisionnel,ISAIA,47.35
+STD_2026_0138,Étudiant,16,F,L,Guide & Médiation; Gestion de projets durables; Résolution de problèmes,Consultant Écotourisme,TEE,82.32
+STD_2026_0139,Étudiant,21,M,C,Management hôtelier; Yield Management; Résolution de problèmes,Directeur de l'Hébergement,TEH,50.94
+STD_2026_0140,Étudiant,19,F,D,Techniques de Vente; Negociation internationale; Résolution de problèmes,Business Developer,CAA,71.69
+STD_2026_0141,Étudiant,19,M,S,Analyse fiscale; Droit des contrats; Résolution de problèmes,Juriste d'Entreprise,DTJA,47.97
+STD_2026_0142,Étudiant,19,F,G,Étude d'impact économique; Gestion de projet Agile/PMP; Résolution de problèmes,Chef de Projet,EMP,69.04
+STD_2026_0143,Étudiant,21,M,Technique,Contrôle de gestion; Audit financier; Résolution de problèmes,Directeur Financier (CFO),FIC,50.74
+STD_2026_0144,Étudiant,17,M,A,Analyse des sols; Agronomie; Résolution de problèmes,Agronome,AEE,73.75
+STD_2026_0145,Étudiant,19,F,A1,Process agroalimentaires; Microbiologie; Résolution de problèmes,Responsable Qualité HACCP,IAA,50.11
+STD_2026_0146,Étudiant,18,F,A2,Analyse en laboratoire; Pharmacologie; Résolution de problèmes,Responsable contrôle qualité labo,PIP,47.48
+STD_2026_0147,Étudiant,18,F,L,Automatisme PLC; Électrotechnique; Résolution de problèmes,Concepteur Mécatronique,EMII,40.44
+STD_2026_0148,Étudiant,16,F,C,AutoCAD/Revit; Calcul de structures; Résolution de problèmes,Ingénieur Génie Civil,GCA,75.2
+STD_2026_0149,Étudiant,17,F,D,Normes QHSE; Raffinage et extraction; Résolution de problèmes,Responsable d'extraction,ICMP,91.73
+STD_2026_0150,Étudiant,16,M,S,Microcontrôleurs IoT; Signal & Traitement; Résolution de problèmes,Ingénieur Systèmes Embarqués,ESIIA,81.48
+STD_2026_0151,Étudiant,20,M,G,Algorithmique & Python; Génie Logiciel & Java/Web; Résolution de problèmes,Data Scientist / IA,IGGLIA,76.35
+STD_2026_0152,Étudiant,19,M,Technique,Développement Web/Mobile; Infographie & 3D; Résolution de problèmes,Concepteur Multimédia,IMTICIA,83.6
+STD_2026_0153,Étudiant,18,M,A,Machine Learning & Deep Learning; Statistiques inférentielles; Résolution de problèmes,Statisticien Décisionnel,ISAIA,45.33
+STD_2026_0154,Étudiant,21,M,A1,Gestion de projets durables; Écotourisme & Biodiversité; Résolution de problèmes,Chef de projet Développement Durable,TEE,76.69
+STD_2026_0155,Étudiant,19,M,A2,Communication interculturelle; Management hôtelier; Résolution de problèmes,Responsable d'Agence de Voyage,TEH,80.84
+STD_2026_0156,Étudiant,19,M,L,Techniques de Vente; Marketing Digital; Résolution de problèmes,Business Developer,CAA,74.45
+STD_2026_0157,Étudiant,21,M,C,Conseil d'entreprise; Droit des contrats; Résolution de problèmes,Juriste d'Entreprise,DTJA,51.63
+STD_2026_0158,Étudiant,16,M,D,Analyse financière; Étude d'impact économique; Résolution de problèmes,Chef de Projet,EMP,74.41
+STD_2026_0159,Étudiant,16,M,S,Comptabilité générale & analytique; Audit financier; Résolution de problèmes,Comptable Senior,FIC,84.01
+STD_2026_0160,Étudiant,18,F,G,Gestion d'exploitation; Analyse des sols; Résolution de problèmes,Conseiller agricole,AEE,48.9
+STD_2026_0161,Étudiant,16,F,Technique,Process agroalimentaires; Biochimie alimentaire; Résolution de problèmes,Ingénieur Agroalimentaire,IAA,71.55
+STD_2026_0162,Étudiant,18,M,A,Pharmacologie; Chimie organique; Résolution de problèmes,Délégué médical,PIP,53.74
+STD_2026_0163,Étudiant,20,M,A1,Maintenance industrielle; Électrotechnique; Résolution de problèmes,Automaticien,EMII,52.89
+STD_2026_0164,Étudiant,20,M,A2,Calcul de structures; Conduite de chantier BTP; Résolution de problèmes,Conducteur de travaux,GCA,45.75
+STD_2026_0165,Étudiant,18,F,L,Raffinage et extraction; Génie des procédés; Résolution de problèmes,Ingénieur Procédés,ICMP,28.15
+STD_2026_0166,Étudiant,17,F,C,Électronique numérique; C/C++ embarqué; Résolution de problèmes,Développeur IoT,ESIIA,77.87
+STD_2026_0167,Étudiant,17,M,D,Génie Logiciel & Java/Web; Algorithmique & Python; Résolution de problèmes,Architecte SI,IGGLIA,77.24
+STD_2026_0168,Étudiant,18,M,S,Réseaux informatiques; UI/UX Design; Résolution de problèmes,Concepteur Multimédia,IMTICIA,81.33
+STD_2026_0169,Étudiant,21,F,G,PowerBI & Analytics; Statistiques inférentielles; Résolution de problèmes,Data Analyst,ISAIA,73.45
+STD_2026_0170,Étudiant,21,F,Technique,Gestion de projets durables; Guide & Médiation; Résolution de problèmes,Responsable Parc Naturel,TEE,58.2
+STD_2026_0171,Étudiant,16,M,A,Communication interculturelle; Management hôtelier; Résolution de problèmes,Manager d'Hôtel,TEH,79.2
+STD_2026_0172,Étudiant,16,M,A1,Techniques de Vente; Marketing Digital; Résolution de problèmes,Chef de Produit Marketing,CAA,76.31
+STD_2026_0173,Étudiant,16,M,A2,Droit des contrats; Analyse fiscale; Résolution de problèmes,Juriste d'Entreprise,DTJA,77.44
+STD_2026_0174,Étudiant,19,F,L,Étude d'impact économique; Analyse financière; Résolution de problèmes,Analyste Économique,EMP,64.01
+STD_2026_0175,Étudiant,21,M,C,Contrôle de gestion; Gestion de trésorerie; Résolution de problèmes,Directeur Financier (CFO),FIC,75.5
+STD_2026_0176,Étudiant,20,M,D,Agronomie; Gestion d'exploitation; Résolution de problèmes,Responsable d'élevage,AEE,70.18
+STD_2026_0177,Étudiant,19,F,S,Contrôle qualité HACCP; Microbiologie; Résolution de problèmes,Conducteur de ligne de production,IAA,79.07
+STD_2026_0178,Étudiant,19,F,G,Analyse en laboratoire; Pharmacologie; Résolution de problèmes,Assistant de recherche galénique,PIP,48.59
+STD_2026_0179,Étudiant,20,F,Technique,Maintenance industrielle; CAO Mécanique; Résolution de problèmes,Concepteur Mécatronique,EMII,76.61
+STD_2026_0180,Étudiant,19,M,A,Métré et devis; Conduite de chantier BTP; Résolution de problèmes,Architecte collaborateur,GCA,42.12
+STD_2026_0181,Étudiant,16,M,A1,Génie des procédés; Normes QHSE; Résolution de problèmes,Ingénieur Procédés,ICMP,48.18
+STD_2026_0182,Étudiant,16,F,A2,C/C++ embarqué; Électronique numérique; Résolution de problèmes,Ingénieur Systèmes Embarqués,ESIIA,45.51
+STD_2026_0183,Étudiant,17,M,L,Génie Logiciel & Java/Web; SQL & Bases de données; Résolution de problèmes,Architecte SI,IGGLIA,43.94
+STD_2026_0184,Étudiant,21,M,C,Réseaux informatiques; Développement Web/Mobile; Résolution de problèmes,Designer UI/UX,IMTICIA,82.37
+STD_2026_0185,Étudiant,21,F,D,PowerBI & Analytics; Statistiques inférentielles; Résolution de problèmes,Data Scientist,ISAIA,75.99
+STD_2026_0186,Étudiant,21,F,S,Gestion de projets durables; Guide & Médiation; Résolution de problèmes,Responsable Parc Naturel,TEE,81.93
+STD_2026_0187,Étudiant,19,F,G,Yield Management; Management hôtelier; Résolution de problèmes,Chef de projet Événementiel,TEH,82.14
+STD_2026_0188,Étudiant,17,F,Technique,Marketing Digital; Techniques de Vente; Résolution de problèmes,Responsable Commercial,CAA,69.98
+STD_2026_0189,Étudiant,21,M,A,Rédaction juridique; Conseil d'entreprise; Résolution de problèmes,Consultant Fiscaliste,DTJA,80.21
+STD_2026_0190,Étudiant,18,M,A1,Étude d'impact économique; Analyse financière; Résolution de problèmes,Scrum Master,EMP,73.88
+STD_2026_0191,Étudiant,20,M,A2,Contrôle de gestion; Comptabilité générale & analytique; Résolution de problèmes,Auditeur Financier,FIC,55.41
+STD_2026_0192,Étudiant,18,M,L,Analyse des sols; Zootechnie; Résolution de problèmes,Conseiller agricole,AEE,51.42
+STD_2026_0193,Étudiant,20,F,C,Biochimie alimentaire; Contrôle qualité HACCP; Résolution de problèmes,Biologiste industriel,IAA,83.8
+STD_2026_0194,Étudiant,21,F,D,Pharmacologie; Chimie organique; Résolution de problèmes,Responsable contrôle qualité labo,PIP,81.88
+STD_2026_0195,Étudiant,18,F,S,Automatisme PLC; Maintenance industrielle; Résolution de problèmes,Ingénieur Électromécanicien,EMII,90.39
+STD_2026_0196,Étudiant,16,M,G,Conduite de chantier BTP; Calcul de structures; Résolution de problèmes,Architecte collaborateur,GCA,53.84
+STD_2026_0197,Étudiant,17,M,Technique,Normes QHSE; Génie des procédés; Résolution de problèmes,Ingénieur QHSE,ICMP,96.94
+STD_2026_0198,Étudiant,20,F,A,C/C++ embarqué; Électronique numérique; Résolution de problèmes,Ingénieur Systèmes Embarqués,ESIIA,55.47
+STD_2026_0199,Étudiant,21,M,A1,Algorithmique & Python; Génie Logiciel & Java/Web; Résolution de problèmes,Ingénieur Génie Logiciel,IGGLIA,61.81
+STD_2026_0200,Étudiant,21,M,A2,Développement Web/Mobile; UI/UX Design; Résolution de problèmes,Administrateur Réseaux & TIC,IMTICIA,72.58
+STD_2026_0201,Étudiant,18,F,L,Python / R Data; PowerBI & Analytics; Résolution de problèmes,Consultant Big Data,ISAIA,50.49
+STD_2026_0202,Étudiant,16,M,C,Gestion de projets durables; Écotourisme & Biodiversité; Résolution de problèmes,Chef de projet Développement Durable,TEE,52.27
+STD_2026_0203,Étudiant,19,F,D,Communication interculturelle; Gestion événementielle; Résolution de problèmes,Directeur de l'Hébergement,TEH,71.45
+STD_2026_0204,Étudiant,17,F,S,Analyse Marché; Techniques de Vente; Résolution de problèmes,Chef de Produit Marketing,CAA,87.96
+STD_2026_0205,Étudiant,21,F,G,Rédaction juridique; Conseil d'entreprise; Résolution de problèmes,Consultant Fiscaliste,DTJA,77.04
+STD_2026_0206,Étudiant,18,M,Technique,Analyse financière; Gestion des risques; Résolution de problèmes,Analyste Économique,EMP,57.38
+STD_2026_0207,Étudiant,17,F,A,Gestion de trésorerie; Audit financier; Résolution de problèmes,Contrôleur de Gestion,FIC,51.06
+STD_2026_0208,Étudiant,17,M,A1,Zootechnie; Gestion d'exploitation; Résolution de problèmes,Agronome,AEE,69.7
+STD_2026_0209,Étudiant,16,M,A2,Microbiologie; Process agroalimentaires; Résolution de problèmes,Ingénieur Agroalimentaire,IAA,52.22
+STD_2026_0210,Étudiant,18,F,L,Pharmacologie; Analyse en laboratoire; Résolution de problèmes,Technicien supérieur en pharmacologie,PIP,44.91
+STD_2026_0211,Étudiant,16,M,C,Automatisme PLC; CAO Mécanique; Résolution de problèmes,Responsable Maintenance,EMII,72.37
+STD_2026_0212,Étudiant,21,M,D,Calcul de structures; Conduite de chantier BTP; Résolution de problèmes,Architecte collaborateur,GCA,89.27
+STD_2026_0213,Étudiant,19,M,S,Normes QHSE; Raffinage et extraction; Résolution de problèmes,Responsable d'extraction,ICMP,72.71
+STD_2026_0214,Étudiant,19,F,G,C/C++ embarqué; Signal & Traitement; Résolution de problèmes,Développeur IoT,ESIIA,53.88
+STD_2026_0215,Étudiant,20,M,Technique,Algorithmique & Python; Génie Logiciel & Java/Web; Résolution de problèmes,Ingénieur Génie Logiciel,IGGLIA,74.57
+STD_2026_0216,Étudiant,17,F,A,UI/UX Design; Réseaux informatiques; Résolution de problèmes,Designer UI/UX,IMTICIA,68.82
+STD_2026_0217,Étudiant,17,M,A1,Python / R Data; Statistiques inférentielles; Résolution de problèmes,Data Scientist,ISAIA,61.27
+STD_2026_0218,Étudiant,19,M,A2,Écotourisme & Biodiversité; Guide & Médiation; Résolution de problèmes,Chef de projet Développement Durable,TEE,76.18
+STD_2026_0219,Étudiant,20,M,L,Yield Management; Management hôtelier; Résolution de problèmes,Directeur de l'Hébergement,TEH,83.59
+STD_2026_0220,Étudiant,16,M,C,Negociation internationale; Techniques de Vente; Résolution de problèmes,Responsable Commercial,CAA,80.29
+STD_2026_0221,Étudiant,16,F,D,Conseil d'entreprise; Rédaction juridique; Résolution de problèmes,Gestionnaire de Contrats,DTJA,69.39
+STD_2026_0222,Étudiant,21,M,S,Gestion de projet Agile/PMP; Gestion des risques; Résolution de problèmes,Chef de Projet,EMP,79.52
+STD_2026_0223,Étudiant,16,F,G,Gestion de trésorerie; Contrôle de gestion; Résolution de problèmes,Contrôleur de Gestion,FIC,81.44
+STD_2026_0224,Étudiant,17,F,Technique,Gestion d'exploitation; Zootechnie; Résolution de problèmes,Responsable d'élevage,AEE,52.08
+STD_2026_0225,Étudiant,16,M,A,Biochimie alimentaire; Microbiologie; Résolution de problèmes,Biologiste industriel,IAA,51.81
+STD_2026_0226,Étudiant,21,M,A1,Chimie organique; Analyse en laboratoire; Résolution de problèmes,Responsable contrôle qualité labo,PIP,43.37
+STD_2026_0227,Étudiant,21,F,A2,Électrotechnique; CAO Mécanique; Résolution de problèmes,Automaticien,EMII,45.44
+STD_2026_0228,Étudiant,19,F,L,Conduite de chantier BTP; AutoCAD/Revit; Résolution de problèmes,Conducteur de travaux,GCA,39.79
+STD_2026_0229,Étudiant,17,F,C,Raffinage et extraction; Génie des procédés; Résolution de problèmes,Responsable d'extraction,ICMP,79.96
+STD_2026_0230,Étudiant,18,F,D,Électronique numérique; Microcontrôleurs IoT; Résolution de problèmes,Ingénieur Robotique,ESIIA,62.5
+STD_2026_0231,Étudiant,19,M,S,SQL & Bases de données; Algorithmique & Python; Résolution de problèmes,Ingénieur Génie Logiciel,IGGLIA,71.81
+STD_2026_0232,Étudiant,21,M,G,Réseaux informatiques; UI/UX Design; Résolution de problèmes,Administrateur Réseaux & TIC,IMTICIA,81.35
+STD_2026_0233,Étudiant,18,M,Technique,Python / R Data; Machine Learning & Deep Learning; Résolution de problèmes,Data Scientist,ISAIA,58.45
+STD_2026_0234,Étudiant,16,M,A,Ingénierie touristique; Écotourisme & Biodiversité; Résolution de problèmes,Responsable Parc Naturel,TEE,72.83
+STD_2026_0235,Étudiant,16,F,A1,Management hôtelier; Yield Management; Résolution de problèmes,Manager d'Hôtel,TEH,76.04
+STD_2026_0236,Étudiant,18,M,A2,Techniques de Vente; Negociation internationale; Résolution de problèmes,Responsable Commercial,CAA,69.63
+STD_2026_0237,Étudiant,19,M,L,Rédaction juridique; Analyse fiscale; Résolution de problèmes,Consultant Fiscaliste,DTJA,72.92
+STD_2026_0238,Étudiant,18,F,C,Gestion des risques; Analyse financière; Résolution de problèmes,Consultant en Organisation,EMP,83.1
+STD_2026_0239,Étudiant,21,M,D,Contrôle de gestion; Gestion de trésorerie; Résolution de problèmes,Directeur Financier (CFO),FIC,89.79
+STD_2026_0240,Étudiant,20,M,S,Gestion d'exploitation; Agronomie; Résolution de problèmes,Chef d'exploitation,AEE,69.33
+STD_2026_0241,Étudiant,19,F,G,Contrôle qualité HACCP; Microbiologie; Résolution de problèmes,Ingénieur Agroalimentaire,IAA,52.23
+STD_2026_0242,Étudiant,16,M,Technique,Normes GMP/BPF; Analyse en laboratoire; Résolution de problèmes,Responsable contrôle qualité labo,PIP,49.26
+STD_2026_0243,Étudiant,20,M,A,Électrotechnique; Automatisme PLC; Résolution de problèmes,Automaticien,EMII,45.12
+STD_2026_0244,Étudiant,18,F,A1,Conduite de chantier BTP; Calcul de structures; Résolution de problèmes,Chef de chantier BTP,GCA,55.32
+STD_2026_0245,Étudiant,16,M,A2,Géologie minière; Génie des procédés; Résolution de problèmes,Géologue minier,ICMP,54.12
+STD_2026_0246,Étudiant,21,M,L,C/C++ embarqué; Électronique numérique; Résolution de problèmes,Développeur IoT,ESIIA,39.77
+STD_2026_0247,Étudiant,16,M,C,SQL & Bases de données; Algorithmique & Python; Résolution de problèmes,Architecte SI,IGGLIA,75.85
+STD_2026_0248,Étudiant,18,M,D,Réseaux informatiques; Infographie & 3D; Résolution de problèmes,Designer UI/UX,IMTICIA,72.12
+STD_2026_0249,Étudiant,21,M,S,Machine Learning & Deep Learning; Python / R Data; Résolution de problèmes,Data Scientist,ISAIA,78.91
+STD_2026_0250,Étudiant,16,F,G,Écotourisme & Biodiversité; Ingénierie touristique; Résolution de problèmes,Responsable Parc Naturel,TEE,83.01
+STD_2026_0251,Étudiant,18,M,Technique,Gestion événementielle; Management hôtelier; Résolution de problèmes,Directeur de l'Hébergement,TEH,50.21
+STD_2026_0252,Étudiant,21,M,A,Analyse Marché; Marketing Digital; Résolution de problèmes,Business Developer,CAA,82.88
+STD_2026_0253,Étudiant,19,M,A1,Rédaction juridique; Analyse fiscale; Résolution de problèmes,Juriste d'Entreprise,DTJA,80.49
+STD_2026_0254,Étudiant,20,M,A2,Étude d'impact économique; Gestion des risques; Résolution de problèmes,Scrum Master,EMP,72.58
+STD_2026_0255,Étudiant,19,M,L,Comptabilité générale & analytique; Contrôle de gestion; Résolution de problèmes,Auditeur Financier,FIC,54.83
+STD_2026_0256,Étudiant,20,F,C,Zootechnie; Analyse des sols; Résolution de problèmes,Responsable d'élevage,AEE,80.52
+STD_2026_0257,Étudiant,19,M,D,Process agroalimentaires; Biochimie alimentaire; Résolution de problèmes,Biologiste industriel,IAA,75.19
+STD_2026_0258,Étudiant,19,M,S,Analyse en laboratoire; Pharmacologie; Résolution de problèmes,Technicien supérieur en pharmacologie,PIP,90.59
+STD_2026_0259,Étudiant,19,M,G,Maintenance industrielle; Automatisme PLC; Résolution de problèmes,Automaticien,EMII,56.21
+STD_2026_0260,Étudiant,21,F,Technique,AutoCAD/Revit; Métré et devis; Résolution de problèmes,Conducteur de travaux,GCA,89.2
+STD_2026_0261,Étudiant,19,F,A,Raffinage et extraction; Géologie minière; Résolution de problèmes,Ingénieur QHSE,ICMP,48.33
+STD_2026_0262,Étudiant,19,M,A1,Électronique numérique; C/C++ embarqué; Résolution de problèmes,Ingénieur Robotique,ESIIA,55.87
+STD_2026_0263,Étudiant,19,M,A2,Algorithmique & Python; SQL & Bases de données; Résolution de problèmes,Data Scientist / IA,IGGLIA,76.44
+STD_2026_0264,Étudiant,17,M,L,Réseaux informatiques; Infographie & 3D; Résolution de problèmes,Développeur Web/Mobile,IMTICIA,78.04
+STD_2026_0265,Étudiant,16,M,C,Python / R Data; Machine Learning & Deep Learning; Résolution de problèmes,Data Analyst,ISAIA,79.62
+STD_2026_0266,Étudiant,19,M,D,Guide & Médiation; Écotourisme & Biodiversité; Résolution de problèmes,Guide Patrimoine,TEE,78.44
+STD_2026_0267,Étudiant,18,F,S,Gestion événementielle; Communication interculturelle; Résolution de problèmes,Manager d'Hôtel,TEH,61.15
+STD_2026_0268,Étudiant,16,M,G,Negociation internationale; Marketing Digital; Résolution de problèmes,Business Developer,CAA,74.13
+STD_2026_0269,Étudiant,16,F,Technique,Rédaction juridique; Conseil d'entreprise; Résolution de problèmes,Assistant Juridique,DTJA,62.62
+STD_2026_0270,Étudiant,19,F,A,Analyse financière; Étude d'impact économique; Résolution de problèmes,Consultant en Organisation,EMP,73.54
+STD_2026_0271,Étudiant,18,F,A1,Comptabilité générale & analytique; Contrôle de gestion; Résolution de problèmes,Comptable Senior,FIC,48.56
+STD_2026_0272,Étudiant,18,M,A2,Zootechnie; Agronomie; Résolution de problèmes,Agronome,AEE,66.56
+STD_2026_0273,Étudiant,21,M,L,Microbiologie; Process agroalimentaires; Résolution de problèmes,Ingénieur Agroalimentaire,IAA,54.51
+STD_2026_0274,Étudiant,19,M,C,Normes GMP/BPF; Chimie organique; Résolution de problèmes,Responsable contrôle qualité labo,PIP,77.52
+STD_2026_0275,Étudiant,18,F,D,Automatisme PLC; CAO Mécanique; Résolution de problèmes,Concepteur Mécatronique,EMII,73.43
+STD_2026_0276,Étudiant,17,F,S,AutoCAD/Revit; Calcul de structures; Résolution de problèmes,Conducteur de travaux,GCA,81.83
+STD_2026_0277,Étudiant,21,F,G,Normes QHSE; Géologie minière; Résolution de problèmes,Responsable d'extraction,ICMP,68.91
+STD_2026_0278,Étudiant,20,F,Technique,C/C++ embarqué; Électronique numérique; Résolution de problèmes,Ingénieur Systèmes Embarqués,ESIIA,80.82
+STD_2026_0279,Étudiant,17,M,A,Algorithmique & Python; Génie Logiciel & Java/Web; Résolution de problèmes,Ingénieur Génie Logiciel,IGGLIA,79.06
+STD_2026_0280,Étudiant,20,F,A1,Développement Web/Mobile; Réseaux informatiques; Résolution de problèmes,Designer UI/UX,IMTICIA,80.92
+STD_2026_0281,Étudiant,20,F,A2,PowerBI & Analytics; Python / R Data; Résolution de problèmes,Data Scientist,ISAIA,56.56
+STD_2026_0282,Étudiant,21,M,L,Ingénierie touristique; Écotourisme & Biodiversité; Résolution de problèmes,Responsable Parc Naturel,TEE,78.58
+STD_2026_0283,Étudiant,17,F,C,Management hôtelier; Communication interculturelle; Résolution de problèmes,Chef de projet Événementiel,TEH,55.3
+STD_2026_0284,Étudiant,21,M,D,Analyse Marché; Marketing Digital; Résolution de problèmes,Directeur des Ventes,CAA,93.32
+STD_2026_0285,Étudiant,19,M,S,Rédaction juridique; Conseil d'entreprise; Résolution de problèmes,Gestionnaire de Contrats,DTJA,48.34
+STD_2026_0286,Étudiant,18,M,G,Étude d'impact économique; Analyse financière; Résolution de problèmes,Chef de Projet,EMP,78.4
+STD_2026_0287,Étudiant,16,F,Technique,Comptabilité générale & analytique; Gestion de trésorerie; Résolution de problèmes,Auditeur Financier,FIC,54.63
+STD_2026_0288,Étudiant,21,M,A,Gestion d'exploitation; Zootechnie; Résolution de problèmes,Conseiller agricole,AEE,62.42
+STD_2026_0289,Étudiant,16,F,A1,Contrôle qualité HACCP; Microbiologie; Résolution de problèmes,Conducteur de ligne de production,IAA,44.28
+STD_2026_0290,Étudiant,18,M,A2,Pharmacologie; Chimie organique; Résolution de problèmes,Assistant de recherche galénique,PIP,44.96
+STD_2026_0291,Étudiant,17,F,L,Automatisme PLC; Maintenance industrielle; Résolution de problèmes,Ingénieur Électromécanicien,EMII,46.93
+STD_2026_0292,Étudiant,16,F,C,Métré et devis; AutoCAD/Revit; Résolution de problèmes,Chef de chantier BTP,GCA,77.86
+STD_2026_0293,Étudiant,17,M,D,Génie des procédés; Raffinage et extraction; Résolution de problèmes,Ingénieur QHSE,ICMP,94.8
+STD_2026_0294,Étudiant,16,M,S,Microcontrôleurs IoT; Signal & Traitement; Résolution de problèmes,Ingénieur Robotique,ESIIA,76.57
+STD_2026_0295,Étudiant,16,M,G,Algorithmique & Python; SQL & Bases de données; Résolution de problèmes,Développeur Fullstack,IGGLIA,74.15
+STD_2026_0296,Étudiant,16,F,Technique,Développement Web/Mobile; Infographie & 3D; Résolution de problèmes,Concepteur Multimédia,IMTICIA,75.5
+STD_2026_0297,Étudiant,19,M,A,PowerBI & Analytics; Python / R Data; Résolution de problèmes,Data Analyst,ISAIA,44.63
+STD_2026_0298,Étudiant,19,M,A1,Guide & Médiation; Écotourisme & Biodiversité; Résolution de problèmes,Chef de projet Développement Durable,TEE,74.82
+STD_2026_0299,Étudiant,17,F,A2,Yield Management; Gestion événementielle; Résolution de problèmes,Manager d'Hôtel,TEH,74.69
+STD_2026_0300,Étudiant,20,M,L,Analyse Marché; Techniques de Vente; Résolution de problèmes,Business Developer,CAA,81.5
+STD_2026_0301,Étudiant,21,F,C,Droit des contrats; Rédaction juridique; Résolution de problèmes,Gestionnaire de Contrats,DTJA,62.02
+STD_2026_0302,Étudiant,16,F,D,Gestion des risques; Gestion de projet Agile/PMP; Résolution de problèmes,Scrum Master,EMP,71.14
+STD_2026_0303,Étudiant,18,M,S,Gestion de trésorerie; Audit financier; Résolution de problèmes,Comptable Senior,FIC,77.11
+STD_2026_0304,Étudiant,20,M,G,Gestion d'exploitation; Agronomie; Résolution de problèmes,Conseiller agricole,AEE,51.31
+STD_2026_0305,Étudiant,21,F,Technique,Microbiologie; Process agroalimentaires; Résolution de problèmes,Biologiste industriel,IAA,78.8
+STD_2026_0306,Étudiant,18,M,A,Analyse en laboratoire; Normes GMP/BPF; Résolution de problèmes,Technicien supérieur en pharmacologie,PIP,52.03
+STD_2026_0307,Étudiant,21,M,A1,Automatisme PLC; Maintenance industrielle; Résolution de problèmes,Concepteur Mécatronique,EMII,36.75
+STD_2026_0308,Étudiant,21,M,A2,Conduite de chantier BTP; Calcul de structures; Résolution de problèmes,Architecte collaborateur,GCA,34.39
+STD_2026_0309,Étudiant,19,M,L,Géologie minière; Raffinage et extraction; Résolution de problèmes,Géologue minier,ICMP,53.12
+STD_2026_0310,Étudiant,18,F,C,Signal & Traitement; Électronique numérique; Résolution de problèmes,Développeur IoT,ESIIA,78.27
+STD_2026_0311,Étudiant,16,F,D,Algorithmique & Python; SQL & Bases de données; Résolution de problèmes,Ingénieur Génie Logiciel,IGGLIA,73.53
+STD_2026_0312,Étudiant,21,F,S,Réseaux informatiques; UI/UX Design; Résolution de problèmes,Designer UI/UX,IMTICIA,72.52
+STD_2026_0313,Étudiant,21,M,G,Statistiques inférentielles; Python / R Data; Résolution de problèmes,Statisticien Décisionnel,ISAIA,72.33
+STD_2026_0314,Étudiant,20,F,Technique,Gestion de projets durables; Ingénierie touristique; Résolution de problèmes,Guide Patrimoine,TEE,49.52
+STD_2026_0315,Étudiant,21,F,A,Yield Management; Management hôtelier; Résolution de problèmes,Chef de projet Événementiel,TEH,73.4
+STD_2026_0316,Étudiant,19,M,A1,Marketing Digital; Negociation internationale; Résolution de problèmes,Directeur des Ventes,CAA,71.31
+STD_2026_0317,Étudiant,16,M,A2,Analyse fiscale; Conseil d'entreprise; Résolution de problèmes,Gestionnaire de Contrats,DTJA,77.79
+STD_2026_0318,Étudiant,18,M,L,Étude d'impact économique; Analyse financière; Résolution de problèmes,Consultant en Organisation,EMP,45.98
+STD_2026_0319,Étudiant,19,M,C,Gestion de trésorerie; Audit financier; Résolution de problèmes,Auditeur Financier,FIC,83.25
+STD_2026_0320,Étudiant,16,M,D,Agronomie; Zootechnie; Résolution de problèmes,Responsable d'élevage,AEE,81.05
+STD_2026_0321,Étudiant,17,M,S,Microbiologie; Process agroalimentaires; Résolution de problèmes,Conducteur de ligne de production,IAA,82.51
+STD_2026_0322,Étudiant,19,F,G,Normes GMP/BPF; Analyse en laboratoire; Résolution de problèmes,Responsable contrôle qualité labo,PIP,49.33
+STD_2026_0323,Étudiant,21,M,Technique,Maintenance industrielle; CAO Mécanique; Résolution de problèmes,Ingénieur Électromécanicien,EMII,81.46
+STD_2026_0324,Étudiant,16,F,A,Conduite de chantier BTP; Calcul de structures; Résolution de problèmes,Ingénieur Génie Civil,GCA,55.94
+STD_2026_0325,Étudiant,16,F,A1,Normes QHSE; Raffinage et extraction; Résolution de problèmes,Responsable d'extraction,ICMP,44.14
+STD_2026_0326,Étudiant,18,F,A2,Signal & Traitement; Électronique numérique; Résolution de problèmes,Développeur IoT,ESIIA,45.36
+STD_2026_0327,Étudiant,19,F,L,SQL & Bases de données; Algorithmique & Python; Résolution de problèmes,Développeur Fullstack,IGGLIA,57.13
+STD_2026_0328,Étudiant,17,M,C,Infographie & 3D; Réseaux informatiques; Résolution de problèmes,Développeur Web/Mobile,IMTICIA,83.62
+STD_2026_0329,Étudiant,16,M,D,Statistiques inférentielles; Machine Learning & Deep Learning; Résolution de problèmes,Data Analyst,ISAIA,75.01
+STD_2026_0330,Étudiant,19,M,S,Écotourisme & Biodiversité; Gestion de projets durables; Résolution de problèmes,Guide Patrimoine,TEE,74.53
+STD_2026_0331,Étudiant,17,F,G,Management hôtelier; Gestion événementielle; Résolution de problèmes,Directeur de l'Hébergement,TEH,78.48
+STD_2026_0332,Étudiant,18,M,Technique,Negociation internationale; Marketing Digital; Résolution de problèmes,Responsable Commercial,CAA,59.81
+STD_2026_0333,Étudiant,19,M,A,Conseil d'entreprise; Analyse fiscale; Résolution de problèmes,Assistant Juridique,DTJA,78.72
+STD_2026_0334,Étudiant,19,F,A1,Gestion de projet Agile/PMP; Analyse financière; Résolution de problèmes,Scrum Master,EMP,69.69
+STD_2026_0335,Étudiant,20,F,A2,Comptabilité générale & analytique; Gestion de trésorerie; Résolution de problèmes,Comptable Senior,FIC,57.84
+STD_2026_0336,Étudiant,17,F,L,Gestion d'exploitation; Agronomie; Résolution de problèmes,Agronome,AEE,57.4
+STD_2026_0337,Étudiant,17,M,C,Microbiologie; Biochimie alimentaire; Résolution de problèmes,Conducteur de ligne de production,IAA,79.49
+STD_2026_0338,Étudiant,17,F,D,Pharmacologie; Normes GMP/BPF; Résolution de problèmes,Responsable contrôle qualité labo,PIP,82.09
+STD_2026_0339,Étudiant,18,M,S,Électrotechnique; Maintenance industrielle; Résolution de problèmes,Concepteur Mécatronique,EMII,83.28
+STD_2026_0340,Étudiant,21,F,G,Calcul de structures; Métré et devis; Résolution de problèmes,Ingénieur Génie Civil,GCA,54.76
+STD_2026_0341,Étudiant,17,M,Technique,Géologie minière; Raffinage et extraction; Résolution de problèmes,Responsable d'extraction,ICMP,98.14
+STD_2026_0342,Étudiant,18,M,A,Microcontrôleurs IoT; C/C++ embarqué; Résolution de problèmes,Ingénieur Robotique,ESIIA,45.15
+STD_2026_0343,Étudiant,19,M,A1,Algorithmique & Python; Génie Logiciel & Java/Web; Résolution de problèmes,Ingénieur Génie Logiciel,IGGLIA,63.79
+STD_2026_0344,Étudiant,19,F,A2,Développement Web/Mobile; Infographie & 3D; Résolution de problèmes,Designer UI/UX,IMTICIA,72.44
+STD_2026_0345,Étudiant,20,F,L,Python / R Data; PowerBI & Analytics; Résolution de problèmes,Data Scientist,ISAIA,48.73
+STD_2026_0346,Étudiant,21,M,C,Guide & Médiation; Écotourisme & Biodiversité; Résolution de problèmes,Responsable Parc Naturel,TEE,52.95
+STD_2026_0347,Étudiant,21,F,D,Yield Management; Management hôtelier; Résolution de problèmes,Chef de projet Événementiel,TEH,76.99
+STD_2026_0348,Étudiant,17,M,S,Marketing Digital; Techniques de Vente; Résolution de problèmes,Chef de Produit Marketing,CAA,74.23
+STD_2026_0349,Étudiant,20,M,G,Analyse fiscale; Conseil d'entreprise; Résolution de problèmes,Gestionnaire de Contrats,DTJA,75.36
+STD_2026_0350,Étudiant,16,F,Technique,Gestion de projet Agile/PMP; Étude d'impact économique; Résolution de problèmes,Consultant en Organisation,EMP,59.0
+STD_2026_0351,Étudiant,20,F,A,Gestion de trésorerie; Audit financier; Résolution de problèmes,Auditeur Financier,FIC,57.57
+STD_2026_0352,Étudiant,21,F,A1,Agronomie; Zootechnie; Résolution de problèmes,Responsable d'élevage,AEE,78.12
+STD_2026_0353,Étudiant,18,F,A2,Microbiologie; Biochimie alimentaire; Résolution de problèmes,Responsable Qualité HACCP,IAA,50.0
+STD_2026_0354,Étudiant,20,M,L,Analyse en laboratoire; Pharmacologie; Résolution de problèmes,Délégué médical,PIP,46.24
+STD_2026_0355,Étudiant,21,F,C,Électrotechnique; Automatisme PLC; Résolution de problèmes,Automaticien,EMII,83.57
+STD_2026_0356,Étudiant,19,F,D,Conduite de chantier BTP; AutoCAD/Revit; Résolution de problèmes,Conducteur de travaux,GCA,83.57
+STD_2026_0357,Étudiant,18,M,S,Raffinage et extraction; Génie des procédés; Résolution de problèmes,Responsable d'extraction,ICMP,73.82
+STD_2026_0358,Étudiant,17,F,G,Signal & Traitement; C/C++ embarqué; Résolution de problèmes,Ingénieur Systèmes Embarqués,ESIIA,55.25
+STD_2026_0359,Étudiant,16,M,Technique,Algorithmique & Python; Machine Learning; Résolution de problèmes,Développeur Fullstack,IGGLIA,73.01
+STD_2026_0360,Étudiant,16,F,A,Développement Web/Mobile; Infographie & 3D; Résolution de problèmes,Designer UI/UX,IMTICIA,75.69
+STD_2026_0361,Étudiant,21,M,A1,PowerBI & Analytics; Python / R Data; Résolution de problèmes,Data Analyst,ISAIA,58.68
+STD_2026_0362,Étudiant,18,M,A2,Guide & Médiation; Ingénierie touristique; Résolution de problèmes,Responsable Parc Naturel,TEE,73.79
+STD_2026_0363,Étudiant,17,M,L,Communication interculturelle; Gestion événementielle; Résolution de problèmes,Chef de projet Événementiel,TEH,72.72
+STD_2026_0364,Étudiant,17,F,C,Marketing Digital; Techniques de Vente; Résolution de problèmes,Chef de Produit Marketing,CAA,85.96
+STD_2026_0365,Étudiant,21,F,D,Droit des contrats; Conseil d'entreprise; Résolution de problèmes,Gestionnaire de Contrats,DTJA,74.12
+STD_2026_0366,Étudiant,17,M,S,Étude d'impact économique; Gestion des risques; Résolution de problèmes,Chef de Projet,EMP,72.25
+STD_2026_0367,Étudiant,19,F,G,Contrôle de gestion; Gestion de trésorerie; Résolution de problèmes,Directeur Financier (CFO),FIC,93.17
+STD_2026_0368,Étudiant,16,M,Technique,Gestion d'exploitation; Analyse des sols; Résolution de problèmes,Responsable d'élevage,AEE,44.66
+STD_2026_0369,Étudiant,18,F,A,Microbiologie; Biochimie alimentaire; Résolution de problèmes,Conducteur de ligne de production,IAA,41.78
+STD_2026_0370,Étudiant,18,F,A1,Pharmacologie; Analyse en laboratoire; Résolution de problèmes,Assistant de recherche galénique,PIP,46.88
+STD_2026_0371,Étudiant,18,M,A2,Automatisme PLC; Électrotechnique; Résolution de problèmes,Automaticien,EMII,48.93
+STD_2026_0372,Étudiant,17,M,L,Calcul de structures; AutoCAD/Revit; Résolution de problèmes,Conducteur de travaux,GCA,45.26
+STD_2026_0373,Étudiant,19,F,C,Géologie minière; Raffinage et extraction; Résolution de problèmes,Ingénieur QHSE,ICMP,79.24
+STD_2026_0374,Étudiant,17,M,D,C/C++ embarqué; Microcontrôleurs IoT; Résolution de problèmes,Ingénieur Systèmes Embarqués,ESIIA,50.02
+STD_2026_0375,Étudiant,19,M,S,Génie Logiciel & Java/Web; Machine Learning; Résolution de problèmes,Architecte SI,IGGLIA,89.18
+STD_2026_0376,Étudiant,20,F,G,UI/UX Design; Développement Web/Mobile; Résolution de problèmes,Administrateur Réseaux & TIC,IMTICIA,76.98
+STD_2026_0377,Étudiant,19,M,Technique,Machine Learning & Deep Learning; PowerBI & Analytics; Résolution de problèmes,Statisticien Décisionnel,ISAIA,50.28
+STD_2026_0378,Étudiant,17,F,A,Ingénierie touristique; Écotourisme & Biodiversité; Résolution de problèmes,Responsable Parc Naturel,TEE,78.86
+STD_2026_0379,Étudiant,16,M,A1,Management hôtelier; Yield Management; Résolution de problèmes,Chef de projet Événementiel,TEH,75.95
+STD_2026_0380,Étudiant,20,M,A2,Negociation internationale; Techniques de Vente; Résolution de problèmes,Responsable Commercial,CAA,87.0
+STD_2026_0381,Étudiant,16,F,L,Analyse fiscale; Droit des contrats; Résolution de problèmes,Gestionnaire de Contrats,DTJA,75.12
+STD_2026_0382,Étudiant,17,M,C,Analyse financière; Étude d'impact économique; Résolution de problèmes,Analyste Économique,EMP,81.01
+STD_2026_0383,Étudiant,20,F,D,Contrôle de gestion; Gestion de trésorerie; Résolution de problèmes,Directeur Financier (CFO),FIC,87.71
+STD_2026_0384,Étudiant,21,M,S,Agronomie; Analyse des sols; Résolution de problèmes,Chef d'exploitation,AEE,78.91
+STD_2026_0385,Étudiant,21,F,G,Microbiologie; Biochimie alimentaire; Résolution de problèmes,Conducteur de ligne de production,IAA,58.03
+STD_2026_0386,Étudiant,17,F,Technique,Analyse en laboratoire; Pharmacologie; Résolution de problèmes,Technicien supérieur en pharmacologie,PIP,54.85
+STD_2026_0387,Étudiant,17,M,A,Électrotechnique; Maintenance industrielle; Résolution de problèmes,Ingénieur Électromécanicien,EMII,47.8
+STD_2026_0388,Étudiant,20,M,A1,Calcul de structures; AutoCAD/Revit; Résolution de problèmes,Architecte collaborateur,GCA,51.35
+STD_2026_0389,Étudiant,19,F,A2,Raffinage et extraction; Génie des procédés; Résolution de problèmes,Ingénieur Procédés,ICMP,49.54
+STD_2026_0390,Étudiant,17,M,L,Électronique numérique; C/C++ embarqué; Résolution de problèmes,Ingénieur Robotique,ESIIA,51.2
+STD_2026_0391,Étudiant,21,F,C,Algorithmique & Python; SQL & Bases de données; Résolution de problèmes,Développeur Fullstack,IGGLIA,80.86
+STD_2026_0392,Étudiant,20,F,D,UI/UX Design; Infographie & 3D; Résolution de problèmes,Concepteur Multimédia,IMTICIA,79.85
+STD_2026_0393,Étudiant,19,F,S,Python / R Data; Statistiques inférentielles; Résolution de problèmes,Statisticien Décisionnel,ISAIA,76.86
+STD_2026_0394,Étudiant,18,M,G,Gestion de projets durables; Ingénierie touristique; Résolution de problèmes,Guide Patrimoine,TEE,82.48
+STD_2026_0395,Étudiant,21,F,Technique,Gestion événementielle; Yield Management; Résolution de problèmes,Directeur de l'Hébergement,TEH,63.85
+STD_2026_0396,Étudiant,19,F,A,Techniques de Vente; Marketing Digital; Résolution de problèmes,Responsable Commercial,CAA,68.89
+STD_2026_0397,Étudiant,21,M,A1,Droit des contrats; Conseil d'entreprise; Résolution de problèmes,Gestionnaire de Contrats,DTJA,83.28
+STD_2026_0398,Étudiant,18,F,A2,Analyse financière; Gestion des risques; Résolution de problèmes,Chef de Projet,EMP,71.93
+STD_2026_0399,Étudiant,18,M,L,Gestion de trésorerie; Comptabilité générale & analytique; Résolution de problèmes,Contrôleur de Gestion,FIC,54.16
+STD_2026_0400,Étudiant,21,F,C,Agronomie; Gestion d'exploitation; Résolution de problèmes,Agronome,AEE,79.8
+STD_2026_0401,Étudiant,21,M,D,Process agroalimentaires; Contrôle qualité HACCP; Résolution de problèmes,Biologiste industriel,IAA,84.35
+STD_2026_0402,Étudiant,17,M,S,Chimie organique; Analyse en laboratoire; Résolution de problèmes,Responsable contrôle qualité labo,PIP,79.48
+STD_2026_0403,Étudiant,19,M,G,Automatisme PLC; Électrotechnique; Résolution de problèmes,Ingénieur Électromécanicien,EMII,49.21
+STD_2026_0404,Étudiant,19,M,Technique,Conduite de chantier BTP; Calcul de structures; Résolution de problèmes,Conducteur de travaux,GCA,84.44
+STD_2026_0405,Étudiant,20,M,A,Normes QHSE; Géologie minière; Résolution de problèmes,Géologue minier,ICMP,50.67
+STD_2026_0406,Étudiant,21,M,A1,Signal & Traitement; C/C++ embarqué; Résolution de problèmes,Ingénieur Robotique,ESIIA,38.82
+STD_2026_0407,Étudiant,18,M,A2,Algorithmique & Python; Génie Logiciel & Java/Web; Résolution de problèmes,Développeur Fullstack,IGGLIA,78.3
+STD_2026_0408,Étudiant,21,F,L,Développement Web/Mobile; Infographie & 3D; Résolution de problèmes,Concepteur Multimédia,IMTICIA,76.58
+STD_2026_0409,Étudiant,16,F,C,Statistiques inférentielles; Machine Learning & Deep Learning; Résolution de problèmes,Data Scientist,ISAIA,80.35
+STD_2026_0410,Étudiant,17,M,D,Ingénierie touristique; Écotourisme & Biodiversité; Résolution de problèmes,Chef de projet Développement Durable,TEE,76.51
+STD_2026_0411,Étudiant,16,M,S,Gestion événementielle; Communication interculturelle; Résolution de problèmes,Manager d'Hôtel,TEH,53.41
+STD_2026_0412,Étudiant,20,F,G,Negociation internationale; Techniques de Vente; Résolution de problèmes,Chef de Produit Marketing,CAA,83.05
+STD_2026_0413,Étudiant,16,M,Technique,Analyse fiscale; Conseil d'entreprise; Résolution de problèmes,Juriste d'Entreprise,DTJA,49.33
+STD_2026_0414,Étudiant,18,M,A,Gestion de projet Agile/PMP; Étude d'impact économique; Résolution de problèmes,Consultant en Organisation,EMP,76.31
+STD_2026_0415,Étudiant,20,F,A1,Comptabilité générale & analytique; Gestion de trésorerie; Résolution de problèmes,Comptable Senior,FIC,55.49
+STD_2026_0416,Étudiant,19,M,A2,Zootechnie; Agronomie; Résolution de problèmes,Agronome,AEE,79.07
+STD_2026_0417,Étudiant,21,M,L,Microbiologie; Process agroalimentaires; Résolution de problèmes,Responsable Qualité HACCP,IAA,47.57
+STD_2026_0418,Étudiant,18,F,C,Chimie organique; Normes GMP/BPF; Résolution de problèmes,Technicien supérieur en pharmacologie,PIP,75.67
+STD_2026_0419,Étudiant,18,M,D,Automatisme PLC; Maintenance industrielle; Résolution de problèmes,Ingénieur Électromécanicien,EMII,83.3
+STD_2026_0420,Étudiant,19,F,S,AutoCAD/Revit; Métré et devis; Résolution de problèmes,Ingénieur Génie Civil,GCA,81.69
+STD_2026_0421,Étudiant,16,F,G,Géologie minière; Génie des procédés; Résolution de problèmes,Géologue minier,ICMP,69.05
+STD_2026_0422,Étudiant,21,M,Technique,Microcontrôleurs IoT; Signal & Traitement; Résolution de problèmes,Développeur IoT,ESIIA,82.01
+STD_2026_0423,Étudiant,20,M,A,SQL & Bases de données; Algorithmique & Python; Résolution de problèmes,Data Scientist / IA,IGGLIA,61.81
+STD_2026_0424,Étudiant,16,F,A1,Réseaux informatiques; UI/UX Design; Résolution de problèmes,Administrateur Réseaux & TIC,IMTICIA,69.59
+STD_2026_0425,Étudiant,17,F,A2,Python / R Data; Machine Learning & Deep Learning; Résolution de problèmes,Data Scientist,ISAIA,51.41
+STD_2026_0426,Étudiant,17,F,L,Écotourisme & Biodiversité; Ingénierie touristique; Résolution de problèmes,Responsable Parc Naturel,TEE,77.62
+STD_2026_0427,Étudiant,17,F,C,Gestion événementielle; Management hôtelier; Résolution de problèmes,Manager d'Hôtel,TEH,48.99
+STD_2026_0428,Étudiant,21,M,D,Analyse Marché; Negociation internationale; Résolution de problèmes,Chef de Produit Marketing,CAA,80.63
+STD_2026_0429,Étudiant,17,M,S,Conseil d'entreprise; Rédaction juridique; Résolution de problèmes,Consultant Fiscaliste,DTJA,57.95
+STD_2026_0430,Étudiant,20,M,G,Étude d'impact économique; Gestion de projet Agile/PMP; Résolution de problèmes,Consultant en Organisation,EMP,78.11
+STD_2026_0431,Étudiant,18,F,Technique,Audit financier; Comptabilité générale & analytique; Résolution de problèmes,Auditeur Financier,FIC,57.54
+STD_2026_0432,Étudiant,20,M,A,Analyse des sols; Agronomie; Résolution de problèmes,Chef d'exploitation,AEE,80.27
+STD_2026_0433,Étudiant,20,F,A1,Process agroalimentaires; Microbiologie; Résolution de problèmes,Conducteur de ligne de production,IAA,43.83
+STD_2026_0434,Étudiant,19,F,A2,Normes GMP/BPF; Pharmacologie; Résolution de problèmes,Responsable contrôle qualité labo,PIP,48.41
+STD_2026_0435,Étudiant,18,M,L,Maintenance industrielle; Électrotechnique; Résolution de problèmes,Automaticien,EMII,48.68
+STD_2026_0436,Étudiant,20,M,C,AutoCAD/Revit; Métré et devis; Résolution de problèmes,Architecte collaborateur,GCA,71.6
+STD_2026_0437,Étudiant,19,F,D,Géologie minière; Génie des procédés; Résolution de problèmes,Géologue minier,ICMP,87.1
+STD_2026_0438,Étudiant,20,M,S,Électronique numérique; C/C++ embarqué; Résolution de problèmes,Développeur IoT,ESIIA,84.23
+STD_2026_0439,Étudiant,19,F,G,Machine Learning; SQL & Bases de données; Résolution de problèmes,Architecte SI,IGGLIA,76.67
+STD_2026_0440,Étudiant,16,M,Technique,Infographie & 3D; UI/UX Design; Résolution de problèmes,Designer UI/UX,IMTICIA,84.02
+STD_2026_0441,Étudiant,19,F,A,Python / R Data; Statistiques inférentielles; Résolution de problèmes,Data Scientist,ISAIA,47.71
+STD_2026_0442,Étudiant,19,F,A1,Gestion de projets durables; Écotourisme & Biodiversité; Résolution de problèmes,Chef de projet Développement Durable,TEE,76.84
+STD_2026_0443,Étudiant,17,M,A2,Yield Management; Management hôtelier; Résolution de problèmes,Manager d'Hôtel,TEH,82.36
+STD_2026_0444,Étudiant,21,F,L,Marketing Digital; Analyse Marché; Résolution de problèmes,Chef de Produit Marketing,CAA,82.24
+STD_2026_0445,Étudiant,16,M,C,Conseil d'entreprise; Droit des contrats; Résolution de problèmes,Consultant Fiscaliste,DTJA,44.32
+STD_2026_0446,Étudiant,16,F,D,Gestion de projet Agile/PMP; Gestion des risques; Résolution de problèmes,Analyste Économique,EMP,82.0
+STD_2026_0447,Étudiant,21,F,S,Comptabilité générale & analytique; Audit financier; Résolution de problèmes,Auditeur Financier,FIC,93.22
+STD_2026_0448,Étudiant,16,M,G,Analyse des sols; Zootechnie; Résolution de problèmes,Conseiller agricole,AEE,53.59
+STD_2026_0449,Étudiant,19,M,Technique,Biochimie alimentaire; Process agroalimentaires; Résolution de problèmes,Responsable Qualité HACCP,IAA,74.29
+STD_2026_0450,Étudiant,16,F,A,Normes GMP/BPF; Pharmacologie; Résolution de problèmes,Délégué médical,PIP,48.84
+STD_2026_0451,Étudiant,20,M,A1,Automatisme PLC; Maintenance industrielle; Résolution de problèmes,Ingénieur Électromécanicien,EMII,40.97
+STD_2026_0452,Étudiant,20,F,A2,Conduite de chantier BTP; Métré et devis; Résolution de problèmes,Chef de chantier BTP,GCA,41.15
+STD_2026_0453,Étudiant,17,F,L,Normes QHSE; Génie des procédés; Résolution de problèmes,Ingénieur Procédés,ICMP,38.53
+STD_2026_0454,Étudiant,20,F,C,Signal & Traitement; Microcontrôleurs IoT; Résolution de problèmes,Ingénieur Robotique,ESIIA,78.14
+STD_2026_0455,Étudiant,19,M,D,Algorithmique & Python; Machine Learning; Résolution de problèmes,Data Scientist / IA,IGGLIA,82.21
+STD_2026_0456,Étudiant,16,F,S,Développement Web/Mobile; Infographie & 3D; Résolution de problèmes,Concepteur Multimédia,IMTICIA,89.81
+STD_2026_0457,Étudiant,19,F,G,Machine Learning & Deep Learning; Statistiques inférentielles; Résolution de problèmes,Consultant Big Data,ISAIA,73.68
+STD_2026_0458,Étudiant,21,F,Technique,Guide & Médiation; Ingénierie touristique; Résolution de problèmes,Guide Patrimoine,TEE,42.04
+STD_2026_0459,Étudiant,19,M,A,Management hôtelier; Gestion événementielle; Résolution de problèmes,Manager d'Hôtel,TEH,71.18
+STD_2026_0460,Étudiant,16,F,A1,Techniques de Vente; Negociation internationale; Résolution de problèmes,Directeur des Ventes,CAA,81.28
+STD_2026_0461,Étudiant,20,M,A2,Conseil d'entreprise; Analyse fiscale; Résolution de problèmes,Consultant Fiscaliste,DTJA,83.56
+STD_2026_0462,Étudiant,19,F,L,Gestion des risques; Analyse financière; Résolution de problèmes,Consultant en Organisation,EMP,59.03
+STD_2026_0463,Étudiant,18,F,C,Comptabilité générale & analytique; Contrôle de gestion; Résolution de problèmes,Directeur Financier (CFO),FIC,84.37
+STD_2026_0464,Étudiant,20,F,D,Gestion d'exploitation; Zootechnie; Résolution de problèmes,Responsable d'élevage,AEE,86.31
+STD_2026_0465,Étudiant,19,F,S,Contrôle qualité HACCP; Process agroalimentaires; Résolution de problèmes,Biologiste industriel,IAA,85.45
+STD_2026_0466,Étudiant,17,F,G,Analyse en laboratoire; Chimie organique; Résolution de problèmes,Technicien supérieur en pharmacologie,PIP,58.84
+STD_2026_0467,Étudiant,21,M,Technique,Électrotechnique; Maintenance industrielle; Résolution de problèmes,Concepteur Mécatronique,EMII,75.05
+STD_2026_0468,Étudiant,17,F,A,Conduite de chantier BTP; Métré et devis; Résolution de problèmes,Chef de chantier BTP,GCA,41.12
+STD_2026_0469,Étudiant,21,F,A1,Géologie minière; Normes QHSE; Résolution de problèmes,Ingénieur Procédés,ICMP,40.04
+STD_2026_0470,Étudiant,17,F,A2,Microcontrôleurs IoT; Électronique numérique; Résolution de problèmes,Ingénieur Systèmes Embarqués,ESIIA,58.62
+STD_2026_0471,Étudiant,21,F,L,Algorithmique & Python; Génie Logiciel & Java/Web; Résolution de problèmes,Architecte SI,IGGLIA,45.2
+STD_2026_0472,Étudiant,21,F,C,Infographie & 3D; UI/UX Design; Résolution de problèmes,Développeur Web/Mobile,IMTICIA,84.12
+STD_2026_0473,Étudiant,20,F,D,Machine Learning & Deep Learning; Statistiques inférentielles; Résolution de problèmes,Consultant Big Data,ISAIA,79.24
+STD_2026_0474,Étudiant,19,M,S,Ingénierie touristique; Écotourisme & Biodiversité; Résolution de problèmes,Responsable Parc Naturel,TEE,84.18
+STD_2026_0475,Étudiant,20,M,G,Communication interculturelle; Gestion événementielle; Résolution de problèmes,Directeur de l'Hébergement,TEH,79.69
+STD_2026_0476,Étudiant,19,M,Technique,Marketing Digital; Analyse Marché; Résolution de problèmes,Business Developer,CAA,52.2
+STD_2026_0477,Étudiant,16,M,A,Droit des contrats; Conseil d'entreprise; Résolution de problèmes,Juriste d'Entreprise,DTJA,71.68
+STD_2026_0478,Étudiant,17,F,A1,Analyse financière; Gestion des risques; Résolution de problèmes,Consultant en Organisation,EMP,78.05
+STD_2026_0479,Étudiant,20,M,A2,Contrôle de gestion; Gestion de trésorerie; Résolution de problèmes,Auditeur Financier,FIC,53.99
+STD_2026_0480,Étudiant,19,M,L,Zootechnie; Agronomie; Résolution de problèmes,Agronome,AEE,52.33
+STD_2026_0481,Étudiant,16,M,C,Biochimie alimentaire; Contrôle qualité HACCP; Résolution de problèmes,Ingénieur Agroalimentaire,IAA,83.53
+STD_2026_0482,Étudiant,16,M,D,Chimie organique; Pharmacologie; Résolution de problèmes,Assistant de recherche galénique,PIP,79.26
+STD_2026_0483,Étudiant,18,F,S,Automatisme PLC; Maintenance industrielle; Résolution de problèmes,Concepteur Mécatronique,EMII,75.86
+STD_2026_0484,Étudiant,19,F,G,Métré et devis; Calcul de structures; Résolution de problèmes,Conducteur de travaux,GCA,56.07
+STD_2026_0485,Étudiant,16,F,Technique,Raffinage et extraction; Géologie minière; Résolution de problèmes,Responsable d'extraction,ICMP,87.44
+STD_2026_0486,Étudiant,17,F,A,Signal & Traitement; Microcontrôleurs IoT; Résolution de problèmes,Ingénieur Systèmes Embarqués,ESIIA,55.9
+STD_2026_0487,Étudiant,20,F,A1,Machine Learning; SQL & Bases de données; Résolution de problèmes,Data Scientist / IA,IGGLIA,71.87
+STD_2026_0488,Étudiant,20,F,A2,Développement Web/Mobile; Infographie & 3D; Résolution de problèmes,Designer UI/UX,IMTICIA,80.38
+STD_2026_0489,Étudiant,21,M,L,Machine Learning & Deep Learning; PowerBI & Analytics; Résolution de problèmes,Data Scientist,ISAIA,58.68
+STD_2026_0490,Étudiant,16,M,C,Écotourisme & Biodiversité; Ingénierie touristique; Résolution de problèmes,Consultant Écotourisme,TEE,47.65
+STD_2026_0491,Étudiant,16,F,D,Yield Management; Gestion événementielle; Résolution de problèmes,Directeur de l'Hébergement,TEH,78.13
+STD_2026_0492,Étudiant,21,F,S,Analyse Marché; Marketing Digital; Résolution de problèmes,Chef de Produit Marketing,CAA,72.83
+STD_2026_0493,Étudiant,17,M,G,Conseil d'entreprise; Analyse fiscale; Résolution de problèmes,Gestionnaire de Contrats,DTJA,77.41
+STD_2026_0494,Étudiant,21,F,Technique,Étude d'impact économique; Gestion des risques; Résolution de problèmes,Chef de Projet,EMP,62.07
+STD_2026_0495,Étudiant,16,F,A,Comptabilité générale & analytique; Audit financier; Résolution de problèmes,Directeur Financier (CFO),FIC,58.66
+STD_2026_0496,Étudiant,17,M,A1,Agronomie; Zootechnie; Résolution de problèmes,Conseiller agricole,AEE,68.84
+STD_2026_0497,Étudiant,21,F,A2,Contrôle qualité HACCP; Process agroalimentaires; Résolution de problèmes,Responsable Qualité HACCP,IAA,44.19
+STD_2026_0498,Étudiant,17,F,L,Pharmacologie; Chimie organique; Résolution de problèmes,Responsable contrôle qualité labo,PIP,51.47
+STD_2026_0499,Étudiant,16,M,C,Automatisme PLC; Électrotechnique; Résolution de problèmes,Ingénieur Électromécanicien,EMII,79.93
+STD_2026_0500,Étudiant,18,M,D,Métré et devis; Calcul de structures; Résolution de problèmes,Chef de chantier BTP,GCA,91.05
+STD_2026_0501,Étudiant,21,M,S,Normes QHSE; Génie des procédés; Résolution de problèmes,Ingénieur Procédés,ICMP,86.83
+STD_2026_0502,Étudiant,21,M,G,Signal & Traitement; Électronique numérique; Résolution de problèmes,Concepteur Électronique,ESIIA,56.9
+STD_2026_0503,Étudiant,20,M,Technique,Génie Logiciel & Java/Web; Algorithmique & Python; Résolution de problèmes,Ingénieur Génie Logiciel,IGGLIA,76.31
+STD_2026_0504,Étudiant,21,F,A,Développement Web/Mobile; UI/UX Design; Résolution de problèmes,Designer UI/UX,IMTICIA,72.73
+STD_2026_0505,Étudiant,19,F,A1,Statistiques inférentielles; Python / R Data; Résolution de problèmes,Data Scientist,ISAIA,50.96
+STD_2026_0506,Étudiant,21,M,A2,Gestion de projets durables; Guide & Médiation; Résolution de problèmes,Responsable Parc Naturel,TEE,79.49
+STD_2026_0507,Étudiant,21,F,L,Yield Management; Management hôtelier; Résolution de problèmes,Directeur de l'Hébergement,TEH,84.96
+STD_2026_0508,Étudiant,18,F,C,Techniques de Vente; Negociation internationale; Résolution de problèmes,Responsable Commercial,CAA,77.69
+STD_2026_0509,Étudiant,20,M,D,Droit des contrats; Conseil d'entreprise; Résolution de problèmes,Consultant Fiscaliste,DTJA,76.4
+STD_2026_0510,Étudiant,16,M,S,Gestion des risques; Analyse financière; Résolution de problèmes,Chef de Projet,EMP,78.23
+STD_2026_0511,Étudiant,17,M,G,Audit financier; Comptabilité générale & analytique; Résolution de problèmes,Auditeur Financier,FIC,87.97
+STD_2026_0512,Étudiant,18,F,Technique,Zootechnie; Gestion d'exploitation; Résolution de problèmes,Conseiller agricole,AEE,54.77
+STD_2026_0513,Étudiant,18,F,A,Biochimie alimentaire; Contrôle qualité HACCP; Résolution de problèmes,Conducteur de ligne de production,IAA,38.46
+STD_2026_0514,Étudiant,21,M,A1,Chimie organique; Normes GMP/BPF; Résolution de problèmes,Assistant de recherche galénique,PIP,50.54
+STD_2026_0515,Étudiant,18,M,A2,Électrotechnique; Automatisme PLC; Résolution de problèmes,Concepteur Mécatronique,EMII,47.75
+STD_2026_0516,Étudiant,20,F,L,Métré et devis; Conduite de chantier BTP; Résolution de problèmes,Architecte collaborateur,GCA,43.07
+STD_2026_0517,Étudiant,18,M,C,Géologie minière; Raffinage et extraction; Résolution de problèmes,Géologue minier,ICMP,84.53
+STD_2026_0518,Étudiant,16,M,D,Électronique numérique; Signal & Traitement; Résolution de problèmes,Ingénieur Systèmes Embarqués,ESIIA,67.51
+STD_2026_0519,Étudiant,17,F,S,Machine Learning; SQL & Bases de données; Résolution de problèmes,Ingénieur Génie Logiciel,IGGLIA,79.52
+STD_2026_0520,Étudiant,21,M,G,Développement Web/Mobile; Infographie & 3D; Résolution de problèmes,Designer UI/UX,IMTICIA,74.05
+STD_2026_0521,Étudiant,17,F,Technique,Statistiques inférentielles; PowerBI & Analytics; Résolution de problèmes,Statisticien Décisionnel,ISAIA,64.08
+STD_2026_0522,Étudiant,21,M,A,Ingénierie touristique; Guide & Médiation; Résolution de problèmes,Chef de projet Développement Durable,TEE,70.01
+STD_2026_0523,Étudiant,19,F,A1,Management hôtelier; Communication interculturelle; Résolution de problèmes,Chef de projet Événementiel,TEH,81.81
+STD_2026_0524,Étudiant,18,F,A2,Negociation internationale; Marketing Digital; Résolution de problèmes,Directeur des Ventes,CAA,72.54
+STD_2026_0525,Étudiant,19,F,L,Droit des contrats; Conseil d'entreprise; Résolution de problèmes,Gestionnaire de Contrats,DTJA,69.53
+STD_2026_0526,Étudiant,16,M,C,Gestion de projet Agile/PMP; Gestion des risques; Résolution de problèmes,Chef de Projet,EMP,79.54
+STD_2026_0527,Étudiant,19,F,D,Contrôle de gestion; Audit financier; Résolution de problèmes,Contrôleur de Gestion,FIC,80.96
+STD_2026_0528,Étudiant,21,M,S,Analyse des sols; Zootechnie; Résolution de problèmes,Responsable d'élevage,AEE,80.12
+STD_2026_0529,Étudiant,21,F,G,Microbiologie; Contrôle qualité HACCP; Résolution de problèmes,Responsable Qualité HACCP,IAA,53.2
+STD_2026_0530,Étudiant,21,F,Technique,Analyse en laboratoire; Normes GMP/BPF; Résolution de problèmes,Assistant de recherche galénique,PIP,61.68
+STD_2026_0531,Étudiant,20,M,A,CAO Mécanique; Automatisme PLC; Résolution de problèmes,Responsable Maintenance,EMII,41.98
+STD_2026_0532,Étudiant,17,F,A1,Conduite de chantier BTP; Calcul de structures; Résolution de problèmes,Chef de chantier BTP,GCA,44.52
+STD_2026_0533,Étudiant,19,M,A2,Raffinage et extraction; Normes QHSE; Résolution de problèmes,Responsable d'extraction,ICMP,50.93
+STD_2026_0534,Étudiant,20,F,L,Électronique numérique; Microcontrôleurs IoT; Résolution de problèmes,Ingénieur Robotique,ESIIA,51.24
+STD_2026_0535,Étudiant,20,F,C,Machine Learning; Algorithmique & Python; Résolution de problèmes,Data Scientist / IA,IGGLIA,77.47
+STD_2026_0536,Étudiant,20,M,D,UI/UX Design; Infographie & 3D; Résolution de problèmes,Concepteur Multimédia,IMTICIA,75.93
+STD_2026_0537,Étudiant,16,M,S,PowerBI & Analytics; Statistiques inférentielles; Résolution de problèmes,Consultant Big Data,ISAIA,81.32
+STD_2026_0538,Étudiant,19,M,G,Gestion de projets durables; Écotourisme & Biodiversité; Résolution de problèmes,Consultant Écotourisme,TEE,72.44
+STD_2026_0539,Étudiant,16,F,Technique,Communication interculturelle; Yield Management; Résolution de problèmes,Responsable d'Agence de Voyage,TEH,49.1
+STD_2026_0540,Étudiant,20,M,A,Techniques de Vente; Marketing Digital; Résolution de problèmes,Directeur des Ventes,CAA,63.26
+STD_2026_0541,Étudiant,16,M,A1,Conseil d'entreprise; Rédaction juridique; Résolution de problèmes,Gestionnaire de Contrats,DTJA,72.63
+STD_2026_0542,Étudiant,20,M,A2,Gestion des risques; Analyse financière; Résolution de problèmes,Consultant en Organisation,EMP,81.36
+STD_2026_0543,Étudiant,17,M,L,Contrôle de gestion; Comptabilité générale & analytique; Résolution de problèmes,Auditeur Financier,FIC,36.39
+STD_2026_0544,Étudiant,16,M,C,Gestion d'exploitation; Zootechnie; Résolution de problèmes,Chef d'exploitation,AEE,80.49
+STD_2026_0545,Étudiant,19,M,D,Contrôle qualité HACCP; Process agroalimentaires; Résolution de problèmes,Ingénieur Agroalimentaire,IAA,78.66
+STD_2026_0546,Étudiant,16,M,S,Pharmacologie; Normes GMP/BPF; Résolution de problèmes,Assistant de recherche galénique,PIP,81.83
+STD_2026_0547,Étudiant,18,M,G,CAO Mécanique; Maintenance industrielle; Résolution de problèmes,Concepteur Mécatronique,EMII,59.75
+STD_2026_0548,Étudiant,16,M,Technique,Métré et devis; Calcul de structures; Résolution de problèmes,Chef de chantier BTP,GCA,80.14
+STD_2026_0549,Étudiant,16,F,A,Géologie minière; Normes QHSE; Résolution de problèmes,Ingénieur Procédés,ICMP,45.17
+STD_2026_0550,Étudiant,21,F,A1,Signal & Traitement; Microcontrôleurs IoT; Résolution de problèmes,Développeur IoT,ESIIA,53.48
+STD_2026_0551,Étudiant,18,F,A2,SQL & Bases de données; Génie Logiciel & Java/Web; Résolution de problèmes,Data Scientist / IA,IGGLIA,76.49
+STD_2026_0552,Étudiant,20,M,L,Développement Web/Mobile; Réseaux informatiques; Résolution de problèmes,Designer UI/UX,IMTICIA,76.8
+STD_2026_0553,Étudiant,21,F,C,Statistiques inférentielles; PowerBI & Analytics; Résolution de problèmes,Data Scientist,ISAIA,82.94
+STD_2026_0554,Étudiant,19,F,D,Guide & Médiation; Ingénierie touristique; Résolution de problèmes,Guide Patrimoine,TEE,77.54
+STD_2026_0555,Étudiant,18,M,S,Gestion événementielle; Management hôtelier; Résolution de problèmes,Responsable d'Agence de Voyage,TEH,43.38
+STD_2026_0556,Étudiant,18,M,G,Marketing Digital; Analyse Marché; Résolution de problèmes,Responsable Commercial,CAA,79.75
+STD_2026_0557,Étudiant,20,M,Technique,Rédaction juridique; Analyse fiscale; Résolution de problèmes,Assistant Juridique,DTJA,49.77
+STD_2026_0558,Étudiant,16,F,A,Analyse financière; Gestion de projet Agile/PMP; Résolution de problèmes,Chef de Projet,EMP,76.62
+STD_2026_0559,Étudiant,21,F,A1,Contrôle de gestion; Comptabilité générale & analytique; Résolution de problèmes,Contrôleur de Gestion,FIC,48.42
+STD_2026_0560,Étudiant,19,M,A2,Analyse des sols; Zootechnie; Résolution de problèmes,Responsable d'élevage,AEE,77.54
+STD_2026_0561,Étudiant,21,F,L,Process agroalimentaires; Contrôle qualité HACCP; Résolution de problèmes,Conducteur de ligne de production,IAA,57.62
+STD_2026_0562,Étudiant,17,F,C,Chimie organique; Analyse en laboratoire; Résolution de problèmes,Responsable contrôle qualité labo,PIP,82.17
+STD_2026_0563,Étudiant,20,F,D,Maintenance industrielle; Électrotechnique; Résolution de problèmes,Concepteur Mécatronique,EMII,75.94
+STD_2026_0564,Étudiant,20,F,S,Calcul de structures; Conduite de chantier BTP; Résolution de problèmes,Chef de chantier BTP,GCA,86.34
+STD_2026_0565,Étudiant,21,M,G,Normes QHSE; Raffinage et extraction; Résolution de problèmes,Responsable d'extraction,ICMP,49.89
+STD_2026_0566,Étudiant,17,M,Technique,Électronique numérique; Signal & Traitement; Résolution de problèmes,Concepteur Électronique,ESIIA,78.45
+STD_2026_0567,Étudiant,20,M,A,Machine Learning; Algorithmique & Python; Résolution de problèmes,Data Scientist / IA,IGGLIA,71.61
+STD_2026_0568,Étudiant,17,M,A1,Développement Web/Mobile; Infographie & 3D; Résolution de problèmes,Administrateur Réseaux & TIC,IMTICIA,70.56
+STD_2026_0569,Étudiant,18,M,A2,Python / R Data; PowerBI & Analytics; Résolution de problèmes,Data Analyst,ISAIA,32.7
+STD_2026_0570,Étudiant,20,M,L,Écotourisme & Biodiversité; Guide & Médiation; Résolution de problèmes,Chef de projet Développement Durable,TEE,75.18
+STD_2026_0571,Étudiant,17,F,C,Management hôtelier; Yield Management; Résolution de problèmes,Manager d'Hôtel,TEH,56.2
+STD_2026_0572,Étudiant,17,M,D,Negociation internationale; Techniques de Vente; Résolution de problèmes,Responsable Commercial,CAA,78.34
+STD_2026_0573,Étudiant,21,M,S,Rédaction juridique; Conseil d'entreprise; Résolution de problèmes,Consultant Fiscaliste,DTJA,53.37
+STD_2026_0574,Étudiant,16,M,G,Étude d'impact économique; Analyse financière; Résolution de problèmes,Chef de Projet,EMP,80.61
+STD_2026_0575,Étudiant,16,F,Technique,Gestion de trésorerie; Contrôle de gestion; Résolution de problèmes,Auditeur Financier,FIC,56.09
+STD_2026_0576,Étudiant,19,F,A,Agronomie; Gestion d'exploitation; Résolution de problèmes,Chef d'exploitation,AEE,75.04
+STD_2026_0577,Étudiant,20,F,A1,Contrôle qualité HACCP; Process agroalimentaires; Résolution de problèmes,Responsable Qualité HACCP,IAA,45.25
+STD_2026_0578,Étudiant,17,F,A2,Chimie organique; Pharmacologie; Résolution de problèmes,Assistant de recherche galénique,PIP,52.32
+STD_2026_0579,Étudiant,16,M,L,CAO Mécanique; Électrotechnique; Résolution de problèmes,Automaticien,EMII,49.18
+STD_2026_0580,Étudiant,20,F,C,AutoCAD/Revit; Conduite de chantier BTP; Résolution de problèmes,Conducteur de travaux,GCA,81.02
+STD_2026_0581,Étudiant,16,M,D,Raffinage et extraction; Génie des procédés; Résolution de problèmes,Géologue minier,ICMP,84.85
+STD_2026_0582,Étudiant,20,F,S,C/C++ embarqué; Microcontrôleurs IoT; Résolution de problèmes,Ingénieur Robotique,ESIIA,80.69
+STD_2026_0583,Étudiant,16,F,G,Machine Learning; Algorithmique & Python; Résolution de problèmes,Data Scientist / IA,IGGLIA,80.49
+STD_2026_0584,Étudiant,20,F,Technique,Réseaux informatiques; Infographie & 3D; Résolution de problèmes,Designer UI/UX,IMTICIA,86.07
+STD_2026_0585,Étudiant,19,F,A,PowerBI & Analytics; Python / R Data; Résolution de problèmes,Data Analyst,ISAIA,59.11
+STD_2026_0586,Étudiant,16,M,A1,Écotourisme & Biodiversité; Guide & Médiation; Résolution de problèmes,Consultant Écotourisme,TEE,80.98
+STD_2026_0587,Étudiant,16,M,A2,Management hôtelier; Communication interculturelle; Résolution de problèmes,Responsable d'Agence de Voyage,TEH,80.46
+STD_2026_0588,Étudiant,20,M,L,Analyse Marché; Negociation internationale; Résolution de problèmes,Directeur des Ventes,CAA,71.1
+STD_2026_0589,Étudiant,16,F,C,Conseil d'entreprise; Rédaction juridique; Résolution de problèmes,Assistant Juridique,DTJA,51.72
+STD_2026_0590,Étudiant,19,M,D,Étude d'impact économique; Gestion des risques; Résolution de problèmes,Scrum Master,EMP,76.33
+STD_2026_0591,Étudiant,20,F,S,Comptabilité générale & analytique; Audit financier; Résolution de problèmes,Contrôleur de Gestion,FIC,85.65
+STD_2026_0592,Étudiant,19,M,G,Gestion d'exploitation; Zootechnie; Résolution de problèmes,Agronome,AEE,50.2
+STD_2026_0593,Étudiant,20,F,Technique,Contrôle qualité HACCP; Biochimie alimentaire; Résolution de problèmes,Conducteur de ligne de production,IAA,89.57
+STD_2026_0594,Étudiant,20,M,A,Pharmacologie; Analyse en laboratoire; Résolution de problèmes,Technicien supérieur en pharmacologie,PIP,47.65
+STD_2026_0595,Étudiant,17,M,A1,Automatisme PLC; Maintenance industrielle; Résolution de problèmes,Responsable Maintenance,EMII,51.47
+STD_2026_0596,Étudiant,20,F,A2,Métré et devis; Calcul de structures; Résolution de problèmes,Architecte collaborateur,GCA,53.04
+STD_2026_0597,Étudiant,18,M,L,Raffinage et extraction; Génie des procédés; Résolution de problèmes,Responsable d'extraction,ICMP,28.44
+STD_2026_0598,Étudiant,17,M,C,C/C++ embarqué; Électronique numérique; Résolution de problèmes,Ingénieur Systèmes Embarqués,ESIIA,89.23
+STD_2026_0599,Étudiant,16,F,D,Algorithmique & Python; Machine Learning; Résolution de problèmes,Architecte SI,IGGLIA,76.82
+STD_2026_0600,Étudiant,21,M,S,UI/UX Design; Infographie & 3D; Résolution de problèmes,Concepteur Multimédia,IMTICIA,82.68
+STD_2026_0601,Étudiant,20,M,G,Statistiques inférentielles; Python / R Data; Résolution de problèmes,Data Scientist,ISAIA,81.66
+STD_2026_0602,Étudiant,20,F,Technique,Guide & Médiation; Ingénierie touristique; Résolution de problèmes,Guide Patrimoine,TEE,60.3
+STD_2026_0603,Étudiant,16,M,A,Gestion événementielle; Management hôtelier; Résolution de problèmes,Chef de projet Événementiel,TEH,73.64
+STD_2026_0604,Étudiant,16,M,A1,Negociation internationale; Analyse Marché; Résolution de problèmes,Directeur des Ventes,CAA,70.76
+STD_2026_0605,Étudiant,18,M,A2,Rédaction juridique; Droit des contrats; Résolution de problèmes,Juriste d'Entreprise,DTJA,83.4
+STD_2026_0606,Étudiant,18,F,L,Étude d'impact économique; Gestion des risques; Résolution de problèmes,Scrum Master,EMP,53.44
+STD_2026_0607,Étudiant,21,F,C,Comptabilité générale & analytique; Contrôle de gestion; Résolution de problèmes,Contrôleur de Gestion,FIC,93.04
+STD_2026_0608,Étudiant,20,M,D,Zootechnie; Agronomie; Résolution de problèmes,Chef d'exploitation,AEE,82.64
+STD_2026_0609,Étudiant,20,M,S,Biochimie alimentaire; Microbiologie; Résolution de problèmes,Responsable Qualité HACCP,IAA,85.46
+STD_2026_0610,Étudiant,19,F,G,Analyse en laboratoire; Chimie organique; Résolution de problèmes,Assistant de recherche galénique,PIP,55.5
+STD_2026_0611,Étudiant,19,M,Technique,CAO Mécanique; Maintenance industrielle; Résolution de problèmes,Ingénieur Électromécanicien,EMII,71.71
+STD_2026_0612,Étudiant,19,M,A,AutoCAD/Revit; Calcul de structures; Résolution de problèmes,Architecte collaborateur,GCA,45.89
+STD_2026_0613,Étudiant,19,F,A1,Raffinage et extraction; Normes QHSE; Résolution de problèmes,Responsable d'extraction,ICMP,33.01
+STD_2026_0614,Étudiant,21,F,A2,Signal & Traitement; Électronique numérique; Résolution de problèmes,Ingénieur Robotique,ESIIA,45.34
+STD_2026_0615,Étudiant,21,F,L,Machine Learning; Génie Logiciel & Java/Web; Résolution de problèmes,Développeur Fullstack,IGGLIA,58.22
+STD_2026_0616,Étudiant,19,F,C,UI/UX Design; Développement Web/Mobile; Résolution de problèmes,Développeur Web/Mobile,IMTICIA,77.31
+STD_2026_0617,Étudiant,18,M,D,Python / R Data; Machine Learning & Deep Learning; Résolution de problèmes,Consultant Big Data,ISAIA,84.09
+STD_2026_0618,Étudiant,16,F,S,Ingénierie touristique; Écotourisme & Biodiversité; Résolution de problèmes,Chef de projet Développement Durable,TEE,78.17
+STD_2026_0619,Étudiant,21,M,G,Management hôtelier; Communication interculturelle; Résolution de problèmes,Directeur de l'Hébergement,TEH,77.33
+STD_2026_0620,Étudiant,17,M,Technique,Negociation internationale; Techniques de Vente; Résolution de problèmes,Directeur des Ventes,CAA,48.87
+STD_2026_0621,Étudiant,19,F,A,Conseil d'entreprise; Droit des contrats; Résolution de problèmes,Gestionnaire de Contrats,DTJA,71.69
+STD_2026_0622,Étudiant,21,F,A1,Analyse financière; Gestion de projet Agile/PMP; Résolution de problèmes,Scrum Master,EMP,70.44
+STD_2026_0623,Étudiant,19,M,A2,Gestion de trésorerie; Contrôle de gestion; Résolution de problèmes,Auditeur Financier,FIC,47.64
+STD_2026_0624,Étudiant,19,M,L,Agronomie; Analyse des sols; Résolution de problèmes,Responsable d'élevage,AEE,45.77
+STD_2026_0625,Étudiant,18,M,C,Microbiologie; Process agroalimentaires; Résolution de problèmes,Ingénieur Agroalimentaire,IAA,83.01
+STD_2026_0626,Étudiant,18,F,D,Pharmacologie; Chimie organique; Résolution de problèmes,Délégué médical,PIP,83.13
+STD_2026_0627,Étudiant,20,F,S,Maintenance industrielle; CAO Mécanique; Résolution de problèmes,Ingénieur Électromécanicien,EMII,77.86
+STD_2026_0628,Étudiant,21,F,G,Conduite de chantier BTP; AutoCAD/Revit; Résolution de problèmes,Architecte collaborateur,GCA,38.76
+STD_2026_0629,Étudiant,16,M,Technique,Géologie minière; Raffinage et extraction; Résolution de problèmes,Ingénieur Procédés,ICMP,91.74
+STD_2026_0630,Étudiant,16,F,A,Microcontrôleurs IoT; C/C++ embarqué; Résolution de problèmes,Ingénieur Robotique,ESIIA,54.13
+STD_2026_0631,Étudiant,18,F,A1,Génie Logiciel & Java/Web; SQL & Bases de données; Résolution de problèmes,Développeur Fullstack,IGGLIA,81.48
+STD_2026_0632,Étudiant,16,M,A2,UI/UX Design; Réseaux informatiques; Résolution de problèmes,Développeur Web/Mobile,IMTICIA,78.21
+STD_2026_0633,Étudiant,21,F,L,Machine Learning & Deep Learning; Statistiques inférentielles; Résolution de problèmes,Data Scientist,ISAIA,52.95
+STD_2026_0634,Étudiant,19,M,C,Écotourisme & Biodiversité; Ingénierie touristique; Résolution de problèmes,Chef de projet Développement Durable,TEE,56.01
+STD_2026_0635,Étudiant,17,M,D,Gestion événementielle; Management hôtelier; Résolution de problèmes,Responsable d'Agence de Voyage,TEH,66.55
+STD_2026_0636,Étudiant,17,F,S,Negociation internationale; Techniques de Vente; Résolution de problèmes,Responsable Commercial,CAA,69.34
+STD_2026_0637,Étudiant,19,F,G,Analyse fiscale; Conseil d'entreprise; Résolution de problèmes,Consultant Fiscaliste,DTJA,69.6
+STD_2026_0638,Étudiant,20,F,Technique,Gestion de projet Agile/PMP; Analyse financière; Résolution de problèmes,Chef de Projet,EMP,53.41
+STD_2026_0639,Étudiant,19,F,A,Gestion de trésorerie; Audit financier; Résolution de problèmes,Auditeur Financier,FIC,51.42
+STD_2026_0640,Étudiant,20,F,A1,Gestion d'exploitation; Analyse des sols; Résolution de problèmes,Conseiller agricole,AEE,72.37
+STD_2026_0641,Étudiant,19,F,A2,Microbiologie; Contrôle qualité HACCP; Résolution de problèmes,Responsable Qualité HACCP,IAA,46.9
+STD_2026_0642,Étudiant,16,F,L,Analyse en laboratoire; Chimie organique; Résolution de problèmes,Technicien supérieur en pharmacologie,PIP,42.5
+STD_2026_0643,Étudiant,17,M,C,Automatisme PLC; CAO Mécanique; Résolution de problèmes,Automaticien,EMII,87.85
+STD_2026_0644,Étudiant,19,F,D,Calcul de structures; AutoCAD/Revit; Résolution de problèmes,Architecte collaborateur,GCA,73.77
+STD_2026_0645,Étudiant,21,F,S,Génie des procédés; Géologie minière; Résolution de problèmes,Ingénieur Procédés,ICMP,73.36
+STD_2026_0646,Étudiant,19,M,G,Signal & Traitement; C/C++ embarqué; Résolution de problèmes,Ingénieur Robotique,ESIIA,60.16
+STD_2026_0647,Étudiant,18,M,Technique,Génie Logiciel & Java/Web; Machine Learning; Résolution de problèmes,Architecte SI,IGGLIA,83.48
+STD_2026_0648,Étudiant,17,M,A,Réseaux informatiques; Infographie & 3D; Résolution de problèmes,Designer UI/UX,IMTICIA,69.04
+STD_2026_0649,Étudiant,19,F,A1,Statistiques inférentielles; Machine Learning & Deep Learning; Résolution de problèmes,Data Scientist,ISAIA,50.05
+STD_2026_0650,Étudiant,20,F,A2,Écotourisme & Biodiversité; Gestion de projets durables; Résolution de problèmes,Responsable Parc Naturel,TEE,77.16
+STD_2026_0651,Étudiant,17,M,L,Communication interculturelle; Yield Management; Résolution de problèmes,Chef de projet Événementiel,TEH,79.3
+STD_2026_0652,Étudiant,16,F,C,Negociation internationale; Techniques de Vente; Résolution de problèmes,Chef de Produit Marketing,CAA,81.75
+STD_2026_0653,Étudiant,17,M,D,Conseil d'entreprise; Rédaction juridique; Résolution de problèmes,Consultant Fiscaliste,DTJA,66.25
+STD_2026_0654,Étudiant,19,M,S,Gestion de projet Agile/PMP; Étude d'impact économique; Résolution de problèmes,Analyste Économique,EMP,78.29
+STD_2026_0655,Étudiant,18,F,G,Comptabilité générale & analytique; Contrôle de gestion; Résolution de problèmes,Directeur Financier (CFO),FIC,87.15
+STD_2026_0656,Étudiant,17,M,Technique,Analyse des sols; Agronomie; Résolution de problèmes,Conseiller agricole,AEE,54.05
+STD_2026_0657,Étudiant,17,F,A,Microbiologie; Contrôle qualité HACCP; Résolution de problèmes,Responsable Qualité HACCP,IAA,44.59
+STD_2026_0658,Étudiant,21,F,A1,Pharmacologie; Normes GMP/BPF; Résolution de problèmes,Assistant de recherche galénique,PIP,54.44
+STD_2026_0659,Étudiant,20,F,A2,Électrotechnique; Maintenance industrielle; Résolution de problèmes,Responsable Maintenance,EMII,46.56
+STD_2026_0660,Étudiant,21,M,L,AutoCAD/Revit; Calcul de structures; Résolution de problèmes,Chef de chantier BTP,GCA,50.33
+STD_2026_0661,Étudiant,20,F,C,Normes QHSE; Génie des procédés; Résolution de problèmes,Responsable d'extraction,ICMP,85.79
+STD_2026_0662,Étudiant,21,F,D,Microcontrôleurs IoT; Signal & Traitement; Résolution de problèmes,Ingénieur Robotique,ESIIA,46.16
+STD_2026_0663,Étudiant,21,M,S,Algorithmique & Python; Génie Logiciel & Java/Web; Résolution de problèmes,Ingénieur Génie Logiciel,IGGLIA,80.8
+STD_2026_0664,Étudiant,21,M,G,Réseaux informatiques; Infographie & 3D; Résolution de problèmes,Concepteur Multimédia,IMTICIA,78.95
+STD_2026_0665,Étudiant,20,M,Technique,Python / R Data; PowerBI & Analytics; Résolution de problèmes,Data Scientist,ISAIA,53.43
+STD_2026_0666,Étudiant,17,F,A,Gestion de projets durables; Écotourisme & Biodiversité; Résolution de problèmes,Responsable Parc Naturel,TEE,77.92
+STD_2026_0667,Étudiant,21,M,A1,Management hôtelier; Yield Management; Résolution de problèmes,Manager d'Hôtel,TEH,80.03
+STD_2026_0668,Étudiant,21,F,A2,Techniques de Vente; Analyse Marché; Résolution de problèmes,Directeur des Ventes,CAA,69.57
+STD_2026_0669,Étudiant,16,F,L,Rédaction juridique; Droit des contrats; Résolution de problèmes,Consultant Fiscaliste,DTJA,75.31
+STD_2026_0670,Étudiant,17,M,C,Analyse financière; Gestion de projet Agile/PMP; Résolution de problèmes,Consultant en Organisation,EMP,88.39
+STD_2026_0671,Étudiant,20,F,D,Gestion de trésorerie; Contrôle de gestion; Résolution de problèmes,Auditeur Financier,FIC,73.26
+STD_2026_0672,Étudiant,16,M,S,Agronomie; Analyse des sols; Résolution de problèmes,Conseiller agricole,AEE,85.12
+STD_2026_0673,Étudiant,21,F,G,Contrôle qualité HACCP; Process agroalimentaires; Résolution de problèmes,Responsable Qualité HACCP,IAA,48.62
+STD_2026_0674,Étudiant,19,F,Technique,Pharmacologie; Normes GMP/BPF; Résolution de problèmes,Assistant de recherche galénique,PIP,45.33
+STD_2026_0675,Étudiant,21,M,A,CAO Mécanique; Électrotechnique; Résolution de problèmes,Ingénieur Électromécanicien,EMII,43.15
+STD_2026_0676,Étudiant,18,F,A1,AutoCAD/Revit; Conduite de chantier BTP; Résolution de problèmes,Chef de chantier BTP,GCA,43.35
+STD_2026_0677,Étudiant,16,F,A2,Génie des procédés; Géologie minière; Résolution de problèmes,Géologue minier,ICMP,43.45
+STD_2026_0678,Étudiant,21,M,L,Électronique numérique; Microcontrôleurs IoT; Résolution de problèmes,Ingénieur Robotique,ESIIA,42.49
+STD_2026_0679,Étudiant,20,F,C,SQL & Bases de données; Machine Learning; Résolution de problèmes,Data Scientist / IA,IGGLIA,77.78
+STD_2026_0680,Étudiant,18,F,D,UI/UX Design; Infographie & 3D; Résolution de problèmes,Concepteur Multimédia,IMTICIA,77.88
+STD_2026_0681,Étudiant,18,M,S,PowerBI & Analytics; Machine Learning & Deep Learning; Résolution de problèmes,Consultant Big Data,ISAIA,83.14
+STD_2026_0682,Étudiant,19,M,G,Écotourisme & Biodiversité; Guide & Médiation; Résolution de problèmes,Consultant Écotourisme,TEE,69.99
+STD_2026_0683,Étudiant,19,F,Technique,Communication interculturelle; Yield Management; Résolution de problèmes,Manager d'Hôtel,TEH,47.49
+STD_2026_0684,Étudiant,18,M,A,Marketing Digital; Techniques de Vente; Résolution de problèmes,Directeur des Ventes,CAA,69.68
+STD_2026_0685,Étudiant,16,F,A1,Rédaction juridique; Conseil d'entreprise; Résolution de problèmes,Consultant Fiscaliste,DTJA,88.72
+STD_2026_0686,Étudiant,17,M,A2,Gestion des risques; Analyse financière; Résolution de problèmes,Scrum Master,EMP,66.09
+STD_2026_0687,Étudiant,21,F,L,Audit financier; Contrôle de gestion; Résolution de problèmes,Comptable Senior,FIC,43.52
+STD_2026_0688,Étudiant,18,M,C,Zootechnie; Analyse des sols; Résolution de problèmes,Agronome,AEE,85.69
+STD_2026_0689,Étudiant,19,F,D,Process agroalimentaires; Microbiologie; Résolution de problèmes,Conducteur de ligne de production,IAA,83.15
+STD_2026_0690,Étudiant,18,F,S,Normes GMP/BPF; Chimie organique; Résolution de problèmes,Assistant de recherche galénique,PIP,79.47
+STD_2026_0691,Étudiant,18,F,G,CAO Mécanique; Électrotechnique; Résolution de problèmes,Ingénieur Électromécanicien,EMII,47.26
+STD_2026_0692,Étudiant,16,M,Technique,AutoCAD/Revit; Métré et devis; Résolution de problèmes,Ingénieur Génie Civil,GCA,71.17
+STD_2026_0693,Étudiant,19,M,A,Normes QHSE; Raffinage et extraction; Résolution de problèmes,Responsable d'extraction,ICMP,40.49
+STD_2026_0694,Étudiant,20,M,A1,Microcontrôleurs IoT; C/C++ embarqué; Résolution de problèmes,Concepteur Électronique,ESIIA,58.44
+STD_2026_0695,Étudiant,16,F,A2,Machine Learning; Algorithmique & Python; Résolution de problèmes,Ingénieur Génie Logiciel,IGGLIA,72.54
+STD_2026_0696,Étudiant,17,M,L,UI/UX Design; Infographie & 3D; Résolution de problèmes,Administrateur Réseaux & TIC,IMTICIA,83.84
+STD_2026_0697,Étudiant,16,M,C,PowerBI & Analytics; Statistiques inférentielles; Résolution de problèmes,Consultant Big Data,ISAIA,74.23
+STD_2026_0698,Étudiant,16,F,D,Écotourisme & Biodiversité; Ingénierie touristique; Résolution de problèmes,Responsable Parc Naturel,TEE,78.19
+STD_2026_0699,Étudiant,18,M,S,Communication interculturelle; Management hôtelier; Résolution de problèmes,Responsable d'Agence de Voyage,TEH,48.98
+STD_2026_0700,Étudiant,16,M,G,Analyse Marché; Techniques de Vente; Résolution de problèmes,Business Developer,CAA,80.61
+STD_2026_0701,Étudiant,21,M,Technique,Droit des contrats; Rédaction juridique; Résolution de problèmes,Assistant Juridique,DTJA,53.62
+STD_2026_0702,Étudiant,18,M,A,Analyse financière; Étude d'impact économique; Résolution de problèmes,Scrum Master,EMP,68.74
+STD_2026_0703,Étudiant,18,F,A1,Comptabilité générale & analytique; Audit financier; Résolution de problèmes,Comptable Senior,FIC,42.28
+STD_2026_0704,Étudiant,21,F,A2,Analyse des sols; Agronomie; Résolution de problèmes,Chef d'exploitation,AEE,63.0
+STD_2026_0705,Étudiant,19,M,L,Biochimie alimentaire; Process agroalimentaires; Résolution de problèmes,Biologiste industriel,IAA,52.34
+STD_2026_0706,Étudiant,16,M,C,Normes GMP/BPF; Pharmacologie; Résolution de problèmes,Délégué médical,PIP,78.38
+STD_2026_0707,Étudiant,21,M,D,CAO Mécanique; Électrotechnique; Résolution de problèmes,Responsable Maintenance,EMII,73.46
+STD_2026_0708,Étudiant,19,F,S,Conduite de chantier BTP; AutoCAD/Revit; Résolution de problèmes,Ingénieur Génie Civil,GCA,83.69
+STD_2026_0709,Étudiant,17,M,G,Géologie minière; Normes QHSE; Résolution de problèmes,Géologue minier,ICMP,61.31
+STD_2026_0710,Étudiant,18,M,Technique,Électronique numérique; Microcontrôleurs IoT; Résolution de problèmes,Développeur IoT,ESIIA,82.26
+STD_2026_0711,Étudiant,18,M,A,SQL & Bases de données; Génie Logiciel & Java/Web; Résolution de problèmes,Data Scientist / IA,IGGLIA,77.1
+STD_2026_0712,Étudiant,17,F,A1,Réseaux informatiques; Infographie & 3D; Résolution de problèmes,Designer UI/UX,IMTICIA,75.6
+STD_2026_0713,Étudiant,20,M,A2,Machine Learning & Deep Learning; PowerBI & Analytics; Résolution de problèmes,Data Analyst,ISAIA,62.72
+STD_2026_0714,Étudiant,16,M,L,Écotourisme & Biodiversité; Ingénierie touristique; Résolution de problèmes,Consultant Écotourisme,TEE,84.93
+STD_2026_0715,Étudiant,16,F,C,Yield Management; Communication interculturelle; Résolution de problèmes,Directeur de l'Hébergement,TEH,41.82
+STD_2026_0716,Étudiant,16,F,D,Marketing Digital; Techniques de Vente; Résolution de problèmes,Chef de Produit Marketing,CAA,77.08
+STD_2026_0717,Étudiant,16,M,S,Droit des contrats; Rédaction juridique; Résolution de problèmes,Juriste d'Entreprise,DTJA,46.95
+STD_2026_0718,Étudiant,21,M,G,Gestion de projet Agile/PMP; Analyse financière; Résolution de problèmes,Analyste Économique,EMP,80.92
+STD_2026_0719,Étudiant,18,F,Technique,Comptabilité générale & analytique; Gestion de trésorerie; Résolution de problèmes,Directeur Financier (CFO),FIC,51.36
+STD_2026_0720,Étudiant,16,M,A,Analyse des sols; Agronomie; Résolution de problèmes,Agronome,AEE,67.39
+STD_2026_0721,Étudiant,20,F,A1,Contrôle qualité HACCP; Process agroalimentaires; Résolution de problèmes,Responsable Qualité HACCP,IAA,54.64
+STD_2026_0722,Étudiant,20,M,A2,Analyse en laboratoire; Normes GMP/BPF; Résolution de problèmes,Responsable contrôle qualité labo,PIP,57.17
+STD_2026_0723,Étudiant,19,F,L,Automatisme PLC; Maintenance industrielle; Résolution de problèmes,Automaticien,EMII,36.36
+STD_2026_0724,Étudiant,17,F,C,Calcul de structures; Conduite de chantier BTP; Résolution de problèmes,Architecte collaborateur,GCA,80.67
+STD_2026_0725,Étudiant,16,F,D,Génie des procédés; Normes QHSE; Résolution de problèmes,Géologue minier,ICMP,79.01
+STD_2026_0726,Étudiant,19,F,S,Signal & Traitement; C/C++ embarqué; Résolution de problèmes,Développeur IoT,ESIIA,78.57
+STD_2026_0727,Étudiant,16,F,G,Machine Learning; Génie Logiciel & Java/Web; Résolution de problèmes,Data Scientist / IA,IGGLIA,74.61
+STD_2026_0728,Étudiant,21,M,Technique,Développement Web/Mobile; Réseaux informatiques; Résolution de problèmes,Concepteur Multimédia,IMTICIA,70.05
+STD_2026_0729,Étudiant,18,F,A,Python / R Data; Statistiques inférentielles; Résolution de problèmes,Data Scientist,ISAIA,46.89
+STD_2026_0730,Étudiant,21,M,A1,Ingénierie touristique; Écotourisme & Biodiversité; Résolution de problèmes,Responsable Parc Naturel,TEE,72.76
+STD_2026_0731,Étudiant,20,M,A2,Communication interculturelle; Gestion événementielle; Résolution de problèmes,Manager d'Hôtel,TEH,82.42
+STD_2026_0732,Étudiant,16,F,L,Negociation internationale; Marketing Digital; Résolution de problèmes,Business Developer,CAA,78.43
+STD_2026_0733,Étudiant,16,F,C,Conseil d'entreprise; Rédaction juridique; Résolution de problèmes,Gestionnaire de Contrats,DTJA,38.81
+STD_2026_0734,Étudiant,16,F,D,Gestion des risques; Analyse financière; Résolution de problèmes,Consultant en Organisation,EMP,71.75
+STD_2026_0735,Étudiant,21,M,S,Audit financier; Comptabilité générale & analytique; Résolution de problèmes,Comptable Senior,FIC,94.96
+STD_2026_0736,Étudiant,19,F,G,Gestion d'exploitation; Agronomie; Résolution de problèmes,Agronome,AEE,56.33
+STD_2026_0737,Étudiant,16,M,Technique,Microbiologie; Process agroalimentaires; Résolution de problèmes,Ingénieur Agroalimentaire,IAA,71.77
+STD_2026_0738,Étudiant,17,M,A,Normes GMP/BPF; Pharmacologie; Résolution de problèmes,Assistant de recherche galénique,PIP,53.86
+STD_2026_0739,Étudiant,20,M,A1,Maintenance industrielle; Électrotechnique; Résolution de problèmes,Concepteur Mécatronique,EMII,54.81
+STD_2026_0740,Étudiant,16,F,A2,Conduite de chantier BTP; AutoCAD/Revit; Résolution de problèmes,Conducteur de travaux,GCA,46.41
+STD_2026_0741,Étudiant,20,F,L,Raffinage et extraction; Normes QHSE; Résolution de problèmes,Géologue minier,ICMP,51.87
+STD_2026_0742,Étudiant,20,F,C,Électronique numérique; Signal & Traitement; Résolution de problèmes,Ingénieur Robotique,ESIIA,79.88
+STD_2026_0743,Étudiant,19,F,D,Machine Learning; Algorithmique & Python; Résolution de problèmes,Data Scientist / IA,IGGLIA,71.84
+STD_2026_0744,Étudiant,21,M,S,Développement Web/Mobile; Infographie & 3D; Résolution de problèmes,Développeur Web/Mobile,IMTICIA,81.41
+STD_2026_0745,Étudiant,20,F,G,Machine Learning & Deep Learning; Python / R Data; Résolution de problèmes,Data Scientist,ISAIA,77.22
+STD_2026_0746,Étudiant,17,M,Technique,Écotourisme & Biodiversité; Gestion de projets durables; Résolution de problèmes,Chef de projet Développement Durable,TEE,51.61
+STD_2026_0747,Étudiant,16,F,A,Gestion événementielle; Management hôtelier; Résolution de problèmes,Chef de projet Événementiel,TEH,84.57
+STD_2026_0748,Étudiant,17,F,A1,Techniques de Vente; Marketing Digital; Résolution de problèmes,Directeur des Ventes,CAA,73.03
+STD_2026_0749,Étudiant,19,M,A2,Rédaction juridique; Conseil d'entreprise; Résolution de problèmes,Consultant Fiscaliste,DTJA,76.34
+STD_2026_0750,Étudiant,16,M,L,Étude d'impact économique; Gestion des risques; Résolution de problèmes,Scrum Master,EMP,48.19
+PRO_2026_0001,Professionnel,28,F,IAA,Process agroalimentaires; Biochimie alimentaire; Gestion de projet; Leadership,Responsable Qualité HACCP,IAA,88.26
+PRO_2026_0002,Professionnel,42,F,PIP,Pharmacologie; Analyse en laboratoire; Gestion de projet; Leadership,Délégué médical,PIP,98.26
+PRO_2026_0003,Professionnel,38,M,EMII,Maintenance industrielle; Automatisme PLC; Gestion de projet; Leadership,Concepteur Mécatronique,EMII,95.94
+PRO_2026_0004,Professionnel,42,M,GCA,Calcul de structures; Métré et devis; Gestion de projet; Leadership,Chef de chantier BTP,GCA,78.61
+PRO_2026_0005,Professionnel,41,F,ICMP,Génie des procédés; Normes QHSE; Gestion de projet; Leadership,Ingénieur Procédés,ICMP,78.33
+PRO_2026_0006,Professionnel,36,F,ESIIA,Signal & Traitement; Microcontrôleurs IoT; Gestion de projet; Leadership,Concepteur Électronique,ESIIA,73.7
+PRO_2026_0007,Professionnel,35,M,IGGLIA,SQL & Bases de données; Machine Learning; Gestion de projet; Leadership,Architecte SI,IGGLIA,74.46
+PRO_2026_0008,Professionnel,36,M,IMTICIA,Infographie & 3D; Réseaux informatiques; Gestion de projet; Leadership,Développeur Web/Mobile,IMTICIA,98.26
+PRO_2026_0009,Professionnel,27,F,ISAIA,Statistiques inférentielles; Python / R Data; Gestion de projet; Leadership,Data Analyst,ISAIA,75.35
+PRO_2026_0010,Professionnel,32,M,TEE,Gestion de projets durables; Écotourisme & Biodiversité; Gestion de projet; Leadership,Responsable Parc Naturel,TEE,86.58
+PRO_2026_0011,Professionnel,43,M,TEH,Gestion événementielle; Communication interculturelle; Gestion de projet; Leadership,Responsable d'Agence de Voyage,TEH,93.12
+PRO_2026_0012,Professionnel,42,F,CAA,Techniques de Vente; Marketing Digital; Gestion de projet; Leadership,Directeur des Ventes,CAA,86.68
+PRO_2026_0013,Professionnel,42,F,DTJA,Conseil d'entreprise; Rédaction juridique; Gestion de projet; Leadership,Gestionnaire de Contrats,DTJA,98.51
+PRO_2026_0014,Professionnel,23,M,EMP,Analyse financière; Étude d'impact économique; Gestion de projet; Leadership,Scrum Master,EMP,78.73
+PRO_2026_0015,Professionnel,33,M,FIC,Audit financier; Contrôle de gestion; Gestion de projet; Leadership,Auditeur Financier,FIC,86.32
+PRO_2026_0016,Professionnel,45,M,AEE,Gestion d'exploitation; Zootechnie; Gestion de projet; Leadership,Chef d'exploitation,AEE,71.96
+PRO_2026_0017,Professionnel,27,F,IAA,Contrôle qualité HACCP; Process agroalimentaires; Gestion de projet; Leadership,Biologiste industriel,IAA,90.46
+PRO_2026_0018,Professionnel,44,M,PIP,Pharmacologie; Chimie organique; Gestion de projet; Leadership,Responsable contrôle qualité labo,PIP,81.62
+PRO_2026_0019,Professionnel,27,M,EMII,Maintenance industrielle; Électrotechnique; Gestion de projet; Leadership,Concepteur Mécatronique,EMII,97.44
+PRO_2026_0020,Professionnel,29,F,GCA,Calcul de structures; AutoCAD/Revit; Gestion de projet; Leadership,Conducteur de travaux,GCA,79.26
+PRO_2026_0021,Professionnel,50,M,ICMP,Raffinage et extraction; Normes QHSE; Gestion de projet; Leadership,Géologue minier,ICMP,90.12
+PRO_2026_0022,Professionnel,29,M,ESIIA,Microcontrôleurs IoT; C/C++ embarqué; Gestion de projet; Leadership,Ingénieur Systèmes Embarqués,ESIIA,70.57
+PRO_2026_0023,Professionnel,31,F,IGGLIA,Algorithmique & Python; Machine Learning; Gestion de projet; Leadership,Ingénieur Génie Logiciel,IGGLIA,98.59
+PRO_2026_0024,Professionnel,26,M,IMTICIA,Réseaux informatiques; Développement Web/Mobile; Gestion de projet; Leadership,Administrateur Réseaux & TIC,IMTICIA,70.63
+PRO_2026_0025,Professionnel,34,M,ISAIA,Statistiques inférentielles; PowerBI & Analytics; Gestion de projet; Leadership,Data Scientist,ISAIA,76.67
+PRO_2026_0026,Professionnel,25,F,TEE,Écotourisme & Biodiversité; Ingénierie touristique; Gestion de projet; Leadership,Chef de projet Développement Durable,TEE,79.47
+PRO_2026_0027,Professionnel,45,M,TEH,Communication interculturelle; Yield Management; Gestion de projet; Leadership,Responsable d'Agence de Voyage,TEH,94.92
+PRO_2026_0028,Professionnel,31,M,CAA,Techniques de Vente; Negociation internationale; Gestion de projet; Leadership,Chef de Produit Marketing,CAA,93.72
+PRO_2026_0029,Professionnel,35,F,DTJA,Droit des contrats; Conseil d'entreprise; Gestion de projet; Leadership,Juriste d'Entreprise,DTJA,93.58
+PRO_2026_0030,Professionnel,33,M,EMP,Gestion des risques; Étude d'impact économique; Gestion de projet; Leadership,Chef de Projet,EMP,72.19
+PRO_2026_0031,Professionnel,49,F,FIC,Audit financier; Contrôle de gestion; Gestion de projet; Leadership,Contrôleur de Gestion,FIC,89.97
+PRO_2026_0032,Professionnel,47,M,AEE,Agronomie; Zootechnie; Gestion de projet; Leadership,Responsable d'élevage,AEE,90.07
+PRO_2026_0033,Professionnel,38,M,IAA,Contrôle qualité HACCP; Biochimie alimentaire; Gestion de projet; Leadership,Biologiste industriel,IAA,97.8
+PRO_2026_0034,Professionnel,36,M,PIP,Chimie organique; Analyse en laboratoire; Gestion de projet; Leadership,Délégué médical,PIP,81.91
+PRO_2026_0035,Professionnel,44,F,EMII,Maintenance industrielle; Automatisme PLC; Gestion de projet; Leadership,Automaticien,EMII,70.27
+PRO_2026_0036,Professionnel,36,M,GCA,Métré et devis; Calcul de structures; Gestion de projet; Leadership,Ingénieur Génie Civil,GCA,71.59
+PRO_2026_0037,Professionnel,44,F,ICMP,Raffinage et extraction; Normes QHSE; Gestion de projet; Leadership,Ingénieur QHSE,ICMP,82.92
+PRO_2026_0038,Professionnel,29,M,ESIIA,C/C++ embarqué; Électronique numérique; Gestion de projet; Leadership,Ingénieur Systèmes Embarqués,ESIIA,92.2
+PRO_2026_0039,Professionnel,24,M,IGGLIA,Algorithmique & Python; Machine Learning; Gestion de projet; Leadership,Data Scientist / IA,IGGLIA,91.25
+PRO_2026_0040,Professionnel,38,M,IMTICIA,UI/UX Design; Développement Web/Mobile; Gestion de projet; Leadership,Designer UI/UX,IMTICIA,93.18
+PRO_2026_0041,Professionnel,35,M,ISAIA,PowerBI & Analytics; Machine Learning & Deep Learning; Gestion de projet; Leadership,Data Analyst,ISAIA,83.72
+PRO_2026_0042,Professionnel,25,F,TEE,Gestion de projets durables; Guide & Médiation; Gestion de projet; Leadership,Consultant Écotourisme,TEE,71.02
+PRO_2026_0043,Professionnel,33,F,TEH,Yield Management; Gestion événementielle; Gestion de projet; Leadership,Chef de projet Événementiel,TEH,75.11
+PRO_2026_0044,Professionnel,38,M,CAA,Marketing Digital; Negociation internationale; Gestion de projet; Leadership,Chef de Produit Marketing,CAA,88.51
+PRO_2026_0045,Professionnel,44,F,DTJA,Droit des contrats; Conseil d'entreprise; Gestion de projet; Leadership,Consultant Fiscaliste,DTJA,76.11
+PRO_2026_0046,Professionnel,23,F,EMP,Gestion de projet Agile/PMP; Étude d'impact économique; Gestion de projet; Leadership,Consultant en Organisation,EMP,76.44
+PRO_2026_0047,Professionnel,37,F,FIC,Contrôle de gestion; Audit financier; Gestion de projet; Leadership,Contrôleur de Gestion,FIC,87.62
+PRO_2026_0048,Professionnel,37,M,AEE,Gestion d'exploitation; Zootechnie; Gestion de projet; Leadership,Responsable d'élevage,AEE,86.36
+PRO_2026_0049,Professionnel,39,F,IAA,Biochimie alimentaire; Process agroalimentaires; Gestion de projet; Leadership,Conducteur de ligne de production,IAA,79.79
+PRO_2026_0050,Professionnel,25,F,PIP,Normes GMP/BPF; Chimie organique; Gestion de projet; Leadership,Assistant de recherche galénique,PIP,80.18
+PRO_2026_0051,Professionnel,49,F,EMII,Électrotechnique; Automatisme PLC; Gestion de projet; Leadership,Responsable Maintenance,EMII,84.61
+PRO_2026_0052,Professionnel,41,M,GCA,AutoCAD/Revit; Conduite de chantier BTP; Gestion de projet; Leadership,Ingénieur Génie Civil,GCA,85.35
+PRO_2026_0053,Professionnel,33,M,ICMP,Raffinage et extraction; Géologie minière; Gestion de projet; Leadership,Responsable d'extraction,ICMP,93.04
+PRO_2026_0054,Professionnel,26,F,ESIIA,C/C++ embarqué; Électronique numérique; Gestion de projet; Leadership,Développeur IoT,ESIIA,92.7
+PRO_2026_0055,Professionnel,34,F,IGGLIA,Génie Logiciel & Java/Web; Algorithmique & Python; Gestion de projet; Leadership,Data Scientist / IA,IGGLIA,94.71
+PRO_2026_0056,Professionnel,44,M,IMTICIA,Infographie & 3D; Développement Web/Mobile; Gestion de projet; Leadership,Administrateur Réseaux & TIC,IMTICIA,79.32
+PRO_2026_0057,Professionnel,32,M,ISAIA,Python / R Data; Machine Learning & Deep Learning; Gestion de projet; Leadership,Data Analyst,ISAIA,94.55
+PRO_2026_0058,Professionnel,30,F,TEE,Guide & Médiation; Ingénierie touristique; Gestion de projet; Leadership,Guide Patrimoine,TEE,81.36
+PRO_2026_0059,Professionnel,48,F,TEH,Management hôtelier; Yield Management; Gestion de projet; Leadership,Chef de projet Événementiel,TEH,70.87
+PRO_2026_0060,Professionnel,30,F,CAA,Techniques de Vente; Marketing Digital; Gestion de projet; Leadership,Directeur des Ventes,CAA,84.26
+PRO_2026_0061,Professionnel,37,F,DTJA,Conseil d'entreprise; Droit des contrats; Gestion de projet; Leadership,Assistant Juridique,DTJA,74.43
+PRO_2026_0062,Professionnel,45,M,EMP,Gestion des risques; Gestion de projet Agile/PMP; Gestion de projet; Leadership,Chef de Projet,EMP,74.21
+PRO_2026_0063,Professionnel,47,F,FIC,Comptabilité générale & analytique; Gestion de trésorerie; Gestion de projet; Leadership,Comptable Senior,FIC,73.69
+PRO_2026_0064,Professionnel,30,F,AEE,Gestion d'exploitation; Analyse des sols; Gestion de projet; Leadership,Chef d'exploitation,AEE,83.57
+PRO_2026_0065,Professionnel,34,M,IAA,Process agroalimentaires; Biochimie alimentaire; Gestion de projet; Leadership,Ingénieur Agroalimentaire,IAA,96.77
+PRO_2026_0066,Professionnel,23,F,PIP,Normes GMP/BPF; Pharmacologie; Gestion de projet; Leadership,Délégué médical,PIP,71.26
+PRO_2026_0067,Professionnel,50,M,EMII,CAO Mécanique; Maintenance industrielle; Gestion de projet; Leadership,Automaticien,EMII,86.05
+PRO_2026_0068,Professionnel,43,M,GCA,AutoCAD/Revit; Conduite de chantier BTP; Gestion de projet; Leadership,Conducteur de travaux,GCA,72.4
+PRO_2026_0069,Professionnel,35,F,ICMP,Normes QHSE; Géologie minière; Gestion de projet; Leadership,Ingénieur QHSE,ICMP,74.5
+PRO_2026_0070,Professionnel,48,F,ESIIA,Électronique numérique; Signal & Traitement; Gestion de projet; Leadership,Concepteur Électronique,ESIIA,85.78
+PRO_2026_0071,Professionnel,46,M,IGGLIA,Génie Logiciel & Java/Web; Machine Learning; Gestion de projet; Leadership,Data Scientist / IA,IGGLIA,72.23
+PRO_2026_0072,Professionnel,30,M,IMTICIA,Développement Web/Mobile; Réseaux informatiques; Gestion de projet; Leadership,Développeur Web/Mobile,IMTICIA,89.69
+PRO_2026_0073,Professionnel,31,M,ISAIA,PowerBI & Analytics; Statistiques inférentielles; Gestion de projet; Leadership,Data Scientist,ISAIA,81.11
+PRO_2026_0074,Professionnel,37,M,TEE,Ingénierie touristique; Gestion de projets durables; Gestion de projet; Leadership,Consultant Écotourisme,TEE,93.32
+PRO_2026_0075,Professionnel,46,F,TEH,Communication interculturelle; Yield Management; Gestion de projet; Leadership,Chef de projet Événementiel,TEH,84.1
+PRO_2026_0076,Professionnel,44,M,CAA,Marketing Digital; Analyse Marché; Gestion de projet; Leadership,Responsable Commercial,CAA,77.59
+PRO_2026_0077,Professionnel,29,M,DTJA,Rédaction juridique; Analyse fiscale; Gestion de projet; Leadership,Juriste d'Entreprise,DTJA,88.37
+PRO_2026_0078,Professionnel,33,M,EMP,Étude d'impact économique; Gestion des risques; Gestion de projet; Leadership,Consultant en Organisation,EMP,73.36
+PRO_2026_0079,Professionnel,32,F,FIC,Contrôle de gestion; Audit financier; Gestion de projet; Leadership,Comptable Senior,FIC,70.04
+PRO_2026_0080,Professionnel,48,F,AEE,Analyse des sols; Gestion d'exploitation; Gestion de projet; Leadership,Agronome,AEE,93.71
+PRO_2026_0081,Professionnel,29,M,IAA,Biochimie alimentaire; Contrôle qualité HACCP; Gestion de projet; Leadership,Responsable Qualité HACCP,IAA,93.47
+PRO_2026_0082,Professionnel,31,F,PIP,Pharmacologie; Normes GMP/BPF; Gestion de projet; Leadership,Responsable contrôle qualité labo,PIP,79.52
+PRO_2026_0083,Professionnel,31,M,EMII,Automatisme PLC; CAO Mécanique; Gestion de projet; Leadership,Responsable Maintenance,EMII,76.23
+PRO_2026_0084,Professionnel,31,F,GCA,AutoCAD/Revit; Métré et devis; Gestion de projet; Leadership,Architecte collaborateur,GCA,73.09
+PRO_2026_0085,Professionnel,46,F,ICMP,Raffinage et extraction; Géologie minière; Gestion de projet; Leadership,Géologue minier,ICMP,72.05
+PRO_2026_0086,Professionnel,30,M,ESIIA,Électronique numérique; C/C++ embarqué; Gestion de projet; Leadership,Développeur IoT,ESIIA,97.27
+PRO_2026_0087,Professionnel,34,F,IGGLIA,Algorithmique & Python; SQL & Bases de données; Gestion de projet; Leadership,Ingénieur Génie Logiciel,IGGLIA,94.26
+PRO_2026_0088,Professionnel,40,F,IMTICIA,Réseaux informatiques; UI/UX Design; Gestion de projet; Leadership,Administrateur Réseaux & TIC,IMTICIA,74.81
+PRO_2026_0089,Professionnel,24,F,ISAIA,Statistiques inférentielles; Python / R Data; Gestion de projet; Leadership,Data Analyst,ISAIA,82.78
+PRO_2026_0090,Professionnel,37,F,TEE,Gestion de projets durables; Guide & Médiation; Gestion de projet; Leadership,Responsable Parc Naturel,TEE,77.32
+PRO_2026_0091,Professionnel,23,M,TEH,Management hôtelier; Yield Management; Gestion de projet; Leadership,Manager d'Hôtel,TEH,96.72
+PRO_2026_0092,Professionnel,23,M,CAA,Techniques de Vente; Negociation internationale; Gestion de projet; Leadership,Business Developer,CAA,83.93
+PRO_2026_0093,Professionnel,42,M,DTJA,Conseil d'entreprise; Analyse fiscale; Gestion de projet; Leadership,Juriste d'Entreprise,DTJA,72.99
+PRO_2026_0094,Professionnel,26,F,EMP,Étude d'impact économique; Gestion des risques; Gestion de projet; Leadership,Chef de Projet,EMP,70.69
+PRO_2026_0095,Professionnel,32,F,FIC,Contrôle de gestion; Gestion de trésorerie; Gestion de projet; Leadership,Contrôleur de Gestion,FIC,82.26
+PRO_2026_0096,Professionnel,30,M,AEE,Gestion d'exploitation; Analyse des sols; Gestion de projet; Leadership,Chef d'exploitation,AEE,96.84
+PRO_2026_0097,Professionnel,30,M,IAA,Contrôle qualité HACCP; Process agroalimentaires; Gestion de projet; Leadership,Ingénieur Agroalimentaire,IAA,76.79
+PRO_2026_0098,Professionnel,47,M,PIP,Normes GMP/BPF; Analyse en laboratoire; Gestion de projet; Leadership,Responsable contrôle qualité labo,PIP,81.72
+PRO_2026_0099,Professionnel,46,F,EMII,CAO Mécanique; Automatisme PLC; Gestion de projet; Leadership,Concepteur Mécatronique,EMII,73.01
+PRO_2026_0100,Professionnel,41,F,GCA,Métré et devis; Conduite de chantier BTP; Gestion de projet; Leadership,Architecte collaborateur,GCA,84.36
+PRO_2026_0101,Professionnel,48,F,ICMP,Normes QHSE; Raffinage et extraction; Gestion de projet; Leadership,Responsable d'extraction,ICMP,77.06
+PRO_2026_0102,Professionnel,50,F,ESIIA,C/C++ embarqué; Microcontrôleurs IoT; Gestion de projet; Leadership,Développeur IoT,ESIIA,90.34
+PRO_2026_0103,Professionnel,41,M,IGGLIA,Machine Learning; Génie Logiciel & Java/Web; Gestion de projet; Leadership,Data Scientist / IA,IGGLIA,97.18
+PRO_2026_0104,Professionnel,34,F,IMTICIA,Réseaux informatiques; UI/UX Design; Gestion de projet; Leadership,Développeur Web/Mobile,IMTICIA,93.92
+PRO_2026_0105,Professionnel,27,M,ISAIA,Python / R Data; PowerBI & Analytics; Gestion de projet; Leadership,Statisticien Décisionnel,ISAIA,70.71
+PRO_2026_0106,Professionnel,42,M,TEE,Guide & Médiation; Écotourisme & Biodiversité; Gestion de projet; Leadership,Guide Patrimoine,TEE,81.62
+PRO_2026_0107,Professionnel,45,F,TEH,Communication interculturelle; Yield Management; Gestion de projet; Leadership,Manager d'Hôtel,TEH,98.34
+PRO_2026_0108,Professionnel,38,M,CAA,Negociation internationale; Analyse Marché; Gestion de projet; Leadership,Chef de Produit Marketing,CAA,73.84
+PRO_2026_0109,Professionnel,35,F,DTJA,Analyse fiscale; Droit des contrats; Gestion de projet; Leadership,Consultant Fiscaliste,DTJA,73.66
+PRO_2026_0110,Professionnel,23,M,EMP,Gestion de projet Agile/PMP; Gestion des risques; Gestion de projet; Leadership,Chef de Projet,EMP,89.34
+PRO_2026_0111,Professionnel,25,F,FIC,Gestion de trésorerie; Comptabilité générale & analytique; Gestion de projet; Leadership,Comptable Senior,FIC,94.54
+PRO_2026_0112,Professionnel,40,F,AEE,Zootechnie; Agronomie; Gestion de projet; Leadership,Agronome,AEE,94.81
+PRO_2026_0113,Professionnel,44,M,IAA,Microbiologie; Process agroalimentaires; Gestion de projet; Leadership,Conducteur de ligne de production,IAA,88.11
+PRO_2026_0114,Professionnel,38,M,PIP,Chimie organique; Normes GMP/BPF; Gestion de projet; Leadership,Responsable contrôle qualité labo,PIP,77.65
+PRO_2026_0115,Professionnel,26,F,EMII,CAO Mécanique; Électrotechnique; Gestion de projet; Leadership,Automaticien,EMII,98.11
+PRO_2026_0116,Professionnel,42,M,GCA,AutoCAD/Revit; Calcul de structures; Gestion de projet; Leadership,Ingénieur Génie Civil,GCA,70.61
+PRO_2026_0117,Professionnel,39,F,ICMP,Raffinage et extraction; Géologie minière; Gestion de projet; Leadership,Ingénieur Procédés,ICMP,71.83
+PRO_2026_0118,Professionnel,27,M,ESIIA,C/C++ embarqué; Électronique numérique; Gestion de projet; Leadership,Ingénieur Robotique,ESIIA,88.21
+PRO_2026_0119,Professionnel,36,M,IGGLIA,Machine Learning; Génie Logiciel & Java/Web; Gestion de projet; Leadership,Développeur Fullstack,IGGLIA,82.6
+PRO_2026_0120,Professionnel,27,M,IMTICIA,Développement Web/Mobile; Infographie & 3D; Gestion de projet; Leadership,Développeur Web/Mobile,IMTICIA,75.21
+PRO_2026_0121,Professionnel,48,M,ISAIA,Statistiques inférentielles; PowerBI & Analytics; Gestion de projet; Leadership,Statisticien Décisionnel,ISAIA,81.04
+PRO_2026_0122,Professionnel,37,F,TEE,Écotourisme & Biodiversité; Ingénierie touristique; Gestion de projet; Leadership,Guide Patrimoine,TEE,79.08
+PRO_2026_0123,Professionnel,47,F,TEH,Communication interculturelle; Management hôtelier; Gestion de projet; Leadership,Responsable d'Agence de Voyage,TEH,93.24
+PRO_2026_0124,Professionnel,36,M,CAA,Negociation internationale; Marketing Digital; Gestion de projet; Leadership,Responsable Commercial,CAA,76.4
+PRO_2026_0125,Professionnel,23,M,DTJA,Conseil d'entreprise; Rédaction juridique; Gestion de projet; Leadership,Gestionnaire de Contrats,DTJA,94.39
+PRO_2026_0126,Professionnel,42,M,EMP,Gestion des risques; Étude d'impact économique; Gestion de projet; Leadership,Consultant en Organisation,EMP,83.89
+PRO_2026_0127,Professionnel,28,F,FIC,Audit financier; Comptabilité générale & analytique; Gestion de projet; Leadership,Comptable Senior,FIC,90.68
+PRO_2026_0128,Professionnel,30,F,AEE,Gestion d'exploitation; Agronomie; Gestion de projet; Leadership,Agronome,AEE,95.7
+PRO_2026_0129,Professionnel,46,M,IAA,Contrôle qualité HACCP; Microbiologie; Gestion de projet; Leadership,Responsable Qualité HACCP,IAA,84.75
+PRO_2026_0130,Professionnel,48,M,PIP,Analyse en laboratoire; Normes GMP/BPF; Gestion de projet; Leadership,Assistant de recherche galénique,PIP,87.96
+PRO_2026_0131,Professionnel,37,M,EMII,Maintenance industrielle; Électrotechnique; Gestion de projet; Leadership,Automaticien,EMII,94.73
+PRO_2026_0132,Professionnel,25,M,GCA,Métré et devis; Conduite de chantier BTP; Gestion de projet; Leadership,Conducteur de travaux,GCA,72.47
+PRO_2026_0133,Professionnel,44,M,ICMP,Génie des procédés; Raffinage et extraction; Gestion de projet; Leadership,Responsable d'extraction,ICMP,90.6
+PRO_2026_0134,Professionnel,34,F,ESIIA,C/C++ embarqué; Signal & Traitement; Gestion de projet; Leadership,Développeur IoT,ESIIA,74.65
+PRO_2026_0135,Professionnel,46,M,IGGLIA,Algorithmique & Python; Machine Learning; Gestion de projet; Leadership,Ingénieur Génie Logiciel,IGGLIA,85.75
+PRO_2026_0136,Professionnel,30,M,IMTICIA,Développement Web/Mobile; Infographie & 3D; Gestion de projet; Leadership,Designer UI/UX,IMTICIA,77.33
+PRO_2026_0137,Professionnel,39,F,ISAIA,Statistiques inférentielles; PowerBI & Analytics; Gestion de projet; Leadership,Data Scientist,ISAIA,95.75
+PRO_2026_0138,Professionnel,29,M,TEE,Écotourisme & Biodiversité; Gestion de projets durables; Gestion de projet; Leadership,Responsable Parc Naturel,TEE,82.38
+PRO_2026_0139,Professionnel,40,F,TEH,Management hôtelier; Gestion événementielle; Gestion de projet; Leadership,Chef de projet Événementiel,TEH,73.88
+PRO_2026_0140,Professionnel,37,M,CAA,Techniques de Vente; Negociation internationale; Gestion de projet; Leadership,Directeur des Ventes,CAA,83.63
+PRO_2026_0141,Professionnel,44,M,DTJA,Droit des contrats; Analyse fiscale; Gestion de projet; Leadership,Gestionnaire de Contrats,DTJA,81.47
+PRO_2026_0142,Professionnel,42,F,EMP,Gestion de projet Agile/PMP; Étude d'impact économique; Gestion de projet; Leadership,Analyste Économique,EMP,90.57
+PRO_2026_0143,Professionnel,25,M,FIC,Contrôle de gestion; Gestion de trésorerie; Gestion de projet; Leadership,Comptable Senior,FIC,85.6
+PRO_2026_0144,Professionnel,27,F,AEE,Agronomie; Gestion d'exploitation; Gestion de projet; Leadership,Conseiller agricole,AEE,76.08
+PRO_2026_0145,Professionnel,27,M,IAA,Biochimie alimentaire; Microbiologie; Gestion de projet; Leadership,Conducteur de ligne de production,IAA,91.63
+PRO_2026_0146,Professionnel,23,M,PIP,Analyse en laboratoire; Chimie organique; Gestion de projet; Leadership,Responsable contrôle qualité labo,PIP,98.88
+PRO_2026_0147,Professionnel,41,M,EMII,Automatisme PLC; Maintenance industrielle; Gestion de projet; Leadership,Automaticien,EMII,73.24
+PRO_2026_0148,Professionnel,30,M,GCA,Conduite de chantier BTP; Métré et devis; Gestion de projet; Leadership,Conducteur de travaux,GCA,83.67
+PRO_2026_0149,Professionnel,30,M,ICMP,Normes QHSE; Géologie minière; Gestion de projet; Leadership,Ingénieur QHSE,ICMP,96.39
+PRO_2026_0150,Professionnel,35,M,ESIIA,Électronique numérique; Signal & Traitement; Gestion de projet; Leadership,Développeur IoT,ESIIA,83.46
+PRO_2026_0151,Professionnel,32,F,IGGLIA,Algorithmique & Python; Génie Logiciel & Java/Web; Gestion de projet; Leadership,Développeur Fullstack,IGGLIA,91.14
+PRO_2026_0152,Professionnel,36,F,IMTICIA,Développement Web/Mobile; Infographie & 3D; Gestion de projet; Leadership,Concepteur Multimédia,IMTICIA,70.1
+PRO_2026_0153,Professionnel,26,M,ISAIA,Machine Learning & Deep Learning; Statistiques inférentielles; Gestion de projet; Leadership,Data Analyst,ISAIA,88.97
+PRO_2026_0154,Professionnel,41,F,TEE,Ingénierie touristique; Écotourisme & Biodiversité; Gestion de projet; Leadership,Chef de projet Développement Durable,TEE,94.26
+PRO_2026_0155,Professionnel,28,M,TEH,Management hôtelier; Gestion événementielle; Gestion de projet; Leadership,Chef de projet Événementiel,TEH,84.59
+PRO_2026_0156,Professionnel,37,F,CAA,Negociation internationale; Techniques de Vente; Gestion de projet; Leadership,Chef de Produit Marketing,CAA,91.46
+PRO_2026_0157,Professionnel,35,M,DTJA,Analyse fiscale; Rédaction juridique; Gestion de projet; Leadership,Consultant Fiscaliste,DTJA,92.38
+PRO_2026_0158,Professionnel,33,M,EMP,Gestion des risques; Gestion de projet Agile/PMP; Gestion de projet; Leadership,Analyste Économique,EMP,83.43
+PRO_2026_0159,Professionnel,40,M,FIC,Audit financier; Comptabilité générale & analytique; Gestion de projet; Leadership,Comptable Senior,FIC,98.51
+PRO_2026_0160,Professionnel,41,M,AEE,Analyse des sols; Zootechnie; Gestion de projet; Leadership,Agronome,AEE,93.27
+PRO_2026_0161,Professionnel,23,F,IAA,Biochimie alimentaire; Contrôle qualité HACCP; Gestion de projet; Leadership,Biologiste industriel,IAA,93.98
+PRO_2026_0162,Professionnel,42,M,PIP,Analyse en laboratoire; Normes GMP/BPF; Gestion de projet; Leadership,Assistant de recherche galénique,PIP,91.19
+PRO_2026_0163,Professionnel,24,F,EMII,CAO Mécanique; Électrotechnique; Gestion de projet; Leadership,Concepteur Mécatronique,EMII,82.9
+PRO_2026_0164,Professionnel,50,M,GCA,Conduite de chantier BTP; Métré et devis; Gestion de projet; Leadership,Architecte collaborateur,GCA,93.13
+PRO_2026_0165,Professionnel,45,F,ICMP,Raffinage et extraction; Génie des procédés; Gestion de projet; Leadership,Responsable d'extraction,ICMP,82.82
+PRO_2026_0166,Professionnel,47,M,ESIIA,C/C++ embarqué; Électronique numérique; Gestion de projet; Leadership,Développeur IoT,ESIIA,86.53
+PRO_2026_0167,Professionnel,41,F,IGGLIA,SQL & Bases de données; Machine Learning; Gestion de projet; Leadership,Développeur Fullstack,IGGLIA,96.92
+PRO_2026_0168,Professionnel,26,M,IMTICIA,Réseaux informatiques; UI/UX Design; Gestion de projet; Leadership,Concepteur Multimédia,IMTICIA,70.23
+PRO_2026_0169,Professionnel,31,F,ISAIA,Python / R Data; Machine Learning & Deep Learning; Gestion de projet; Leadership,Data Analyst,ISAIA,84.72
+PRO_2026_0170,Professionnel,41,M,TEE,Gestion de projets durables; Écotourisme & Biodiversité; Gestion de projet; Leadership,Responsable Parc Naturel,TEE,96.17
+PRO_2026_0171,Professionnel,46,F,TEH,Yield Management; Management hôtelier; Gestion de projet; Leadership,Chef de projet Événementiel,TEH,88.37
+PRO_2026_0172,Professionnel,24,M,CAA,Negociation internationale; Marketing Digital; Gestion de projet; Leadership,Business Developer,CAA,84.89
+PRO_2026_0173,Professionnel,39,F,DTJA,Analyse fiscale; Rédaction juridique; Gestion de projet; Leadership,Juriste d'Entreprise,DTJA,98.11
+PRO_2026_0174,Professionnel,45,M,EMP,Gestion de projet Agile/PMP; Analyse financière; Gestion de projet; Leadership,Chef de Projet,EMP,76.88
+PRO_2026_0175,Professionnel,42,F,FIC,Gestion de trésorerie; Contrôle de gestion; Gestion de projet; Leadership,Contrôleur de Gestion,FIC,96.12
+PRO_2026_0176,Professionnel,31,M,AEE,Gestion d'exploitation; Analyse des sols; Gestion de projet; Leadership,Responsable d'élevage,AEE,96.26
+PRO_2026_0177,Professionnel,27,F,IAA,Contrôle qualité HACCP; Microbiologie; Gestion de projet; Leadership,Conducteur de ligne de production,IAA,92.29
+PRO_2026_0178,Professionnel,26,F,PIP,Pharmacologie; Normes GMP/BPF; Gestion de projet; Leadership,Assistant de recherche galénique,PIP,86.81
+PRO_2026_0179,Professionnel,42,F,EMII,CAO Mécanique; Maintenance industrielle; Gestion de projet; Leadership,Ingénieur Électromécanicien,EMII,90.42
+PRO_2026_0180,Professionnel,34,F,GCA,Conduite de chantier BTP; AutoCAD/Revit; Gestion de projet; Leadership,Architecte collaborateur,GCA,82.08
+PRO_2026_0181,Professionnel,35,F,ICMP,Géologie minière; Raffinage et extraction; Gestion de projet; Leadership,Ingénieur QHSE,ICMP,89.64
+PRO_2026_0182,Professionnel,24,F,ESIIA,Signal & Traitement; Microcontrôleurs IoT; Gestion de projet; Leadership,Développeur IoT,ESIIA,72.72
+PRO_2026_0183,Professionnel,44,M,IGGLIA,Génie Logiciel & Java/Web; Machine Learning; Gestion de projet; Leadership,Data Scientist / IA,IGGLIA,86.93
+PRO_2026_0184,Professionnel,29,F,IMTICIA,Développement Web/Mobile; UI/UX Design; Gestion de projet; Leadership,Développeur Web/Mobile,IMTICIA,81.86
+PRO_2026_0185,Professionnel,33,M,ISAIA,Statistiques inférentielles; Machine Learning & Deep Learning; Gestion de projet; Leadership,Consultant Big Data,ISAIA,75.43
+PRO_2026_0186,Professionnel,49,F,TEE,Écotourisme & Biodiversité; Guide & Médiation; Gestion de projet; Leadership,Chef de projet Développement Durable,TEE,76.9
+PRO_2026_0187,Professionnel,32,F,TEH,Management hôtelier; Yield Management; Gestion de projet; Leadership,Responsable d'Agence de Voyage,TEH,74.05
+PRO_2026_0188,Professionnel,31,F,CAA,Negociation internationale; Techniques de Vente; Gestion de projet; Leadership,Responsable Commercial,CAA,92.97
+PRO_2026_0189,Professionnel,41,M,DTJA,Analyse fiscale; Droit des contrats; Gestion de projet; Leadership,Assistant Juridique,DTJA,90.15
+PRO_2026_0190,Professionnel,24,M,EMP,Gestion des risques; Analyse financière; Gestion de projet; Leadership,Chef de Projet,EMP,72.14
+PRO_2026_0191,Professionnel,31,F,FIC,Gestion de trésorerie; Audit financier; Gestion de projet; Leadership,Contrôleur de Gestion,FIC,73.22
+PRO_2026_0192,Professionnel,40,M,AEE,Zootechnie; Gestion d'exploitation; Gestion de projet; Leadership,Agronome,AEE,89.63
+PRO_2026_0193,Professionnel,33,M,IAA,Biochimie alimentaire; Microbiologie; Gestion de projet; Leadership,Biologiste industriel,IAA,74.9
+PRO_2026_0194,Professionnel,43,M,PIP,Normes GMP/BPF; Pharmacologie; Gestion de projet; Leadership,Assistant de recherche galénique,PIP,78.22
+PRO_2026_0195,Professionnel,30,M,EMII,Maintenance industrielle; Électrotechnique; Gestion de projet; Leadership,Responsable Maintenance,EMII,93.53
+PRO_2026_0196,Professionnel,33,M,GCA,AutoCAD/Revit; Métré et devis; Gestion de projet; Leadership,Conducteur de travaux,GCA,79.65
+PRO_2026_0197,Professionnel,38,F,ICMP,Géologie minière; Génie des procédés; Gestion de projet; Leadership,Ingénieur QHSE,ICMP,88.74
+PRO_2026_0198,Professionnel,50,M,ESIIA,Électronique numérique; Signal & Traitement; Gestion de projet; Leadership,Ingénieur Systèmes Embarqués,ESIIA,93.88
+PRO_2026_0199,Professionnel,39,M,IGGLIA,Machine Learning; SQL & Bases de données; Gestion de projet; Leadership,Data Scientist / IA,IGGLIA,89.16
+PRO_2026_0200,Professionnel,41,M,IMTICIA,Développement Web/Mobile; UI/UX Design; Gestion de projet; Leadership,Designer UI/UX,IMTICIA,86.36
+PRO_2026_0201,Professionnel,44,M,ISAIA,PowerBI & Analytics; Machine Learning & Deep Learning; Gestion de projet; Leadership,Data Analyst,ISAIA,71.08
+PRO_2026_0202,Professionnel,46,M,TEE,Écotourisme & Biodiversité; Ingénierie touristique; Gestion de projet; Leadership,Consultant Écotourisme,TEE,71.62
+PRO_2026_0203,Professionnel,31,F,TEH,Yield Management; Gestion événementielle; Gestion de projet; Leadership,Manager d'Hôtel,TEH,87.37
+PRO_2026_0204,Professionnel,35,M,CAA,Techniques de Vente; Negociation internationale; Gestion de projet; Leadership,Chef de Produit Marketing,CAA,93.72
+PRO_2026_0205,Professionnel,46,M,DTJA,Droit des contrats; Rédaction juridique; Gestion de projet; Leadership,Gestionnaire de Contrats,DTJA,70.07
+PRO_2026_0206,Professionnel,23,F,EMP,Analyse financière; Gestion des risques; Gestion de projet; Leadership,Consultant en Organisation,EMP,71.22
+PRO_2026_0207,Professionnel,27,M,FIC,Gestion de trésorerie; Audit financier; Gestion de projet; Leadership,Auditeur Financier,FIC,91.71
+PRO_2026_0208,Professionnel,47,M,AEE,Analyse des sols; Zootechnie; Gestion de projet; Leadership,Chef d'exploitation,AEE,91.32
+PRO_2026_0209,Professionnel,48,M,IAA,Biochimie alimentaire; Contrôle qualité HACCP; Gestion de projet; Leadership,Responsable Qualité HACCP,IAA,75.61
+PRO_2026_0210,Professionnel,49,M,PIP,Normes GMP/BPF; Analyse en laboratoire; Gestion de projet; Leadership,Responsable contrôle qualité labo,PIP,86.05
+PRO_2026_0211,Professionnel,36,F,EMII,Électrotechnique; Maintenance industrielle; Gestion de projet; Leadership,Responsable Maintenance,EMII,95.55
+PRO_2026_0212,Professionnel,23,F,GCA,Métré et devis; AutoCAD/Revit; Gestion de projet; Leadership,Conducteur de travaux,GCA,74.51
+PRO_2026_0213,Professionnel,28,F,ICMP,Raffinage et extraction; Normes QHSE; Gestion de projet; Leadership,Géologue minier,ICMP,83.51
+PRO_2026_0214,Professionnel,38,F,ESIIA,C/C++ embarqué; Électronique numérique; Gestion de projet; Leadership,Développeur IoT,ESIIA,90.27
+PRO_2026_0215,Professionnel,33,F,IGGLIA,Algorithmique & Python; Génie Logiciel & Java/Web; Gestion de projet; Leadership,Data Scientist / IA,IGGLIA,72.51
+PRO_2026_0216,Professionnel,39,F,IMTICIA,Développement Web/Mobile; Réseaux informatiques; Gestion de projet; Leadership,Administrateur Réseaux & TIC,IMTICIA,85.15
+PRO_2026_0217,Professionnel,39,M,ISAIA,PowerBI & Analytics; Python / R Data; Gestion de projet; Leadership,Data Analyst,ISAIA,73.47
+PRO_2026_0218,Professionnel,33,M,TEE,Guide & Médiation; Ingénierie touristique; Gestion de projet; Leadership,Consultant Écotourisme,TEE,79.71
+PRO_2026_0219,Professionnel,39,M,TEH,Yield Management; Gestion événementielle; Gestion de projet; Leadership,Manager d'Hôtel,TEH,78.86
+PRO_2026_0220,Professionnel,49,F,CAA,Analyse Marché; Negociation internationale; Gestion de projet; Leadership,Chef de Produit Marketing,CAA,85.19
+PRO_2026_0221,Professionnel,47,F,DTJA,Droit des contrats; Conseil d'entreprise; Gestion de projet; Leadership,Assistant Juridique,DTJA,89.5
+PRO_2026_0222,Professionnel,49,F,EMP,Gestion de projet Agile/PMP; Étude d'impact économique; Gestion de projet; Leadership,Chef de Projet,EMP,86.13
+PRO_2026_0223,Professionnel,23,F,FIC,Gestion de trésorerie; Comptabilité générale & analytique; Gestion de projet; Leadership,Comptable Senior,FIC,90.07
+PRO_2026_0224,Professionnel,50,M,AEE,Agronomie; Zootechnie; Gestion de projet; Leadership,Conseiller agricole,AEE,83.55
+PRO_2026_0225,Professionnel,38,F,IAA,Contrôle qualité HACCP; Biochimie alimentaire; Gestion de projet; Leadership,Conducteur de ligne de production,IAA,82.31
+PRO_2026_0226,Professionnel,34,F,PIP,Normes GMP/BPF; Analyse en laboratoire; Gestion de projet; Leadership,Délégué médical,PIP,74.4
+PRO_2026_0227,Professionnel,25,M,EMII,Automatisme PLC; CAO Mécanique; Gestion de projet; Leadership,Ingénieur Électromécanicien,EMII,96.86
+PRO_2026_0228,Professionnel,24,F,GCA,Conduite de chantier BTP; Métré et devis; Gestion de projet; Leadership,Ingénieur Génie Civil,GCA,91.37
+PRO_2026_0229,Professionnel,23,F,ICMP,Normes QHSE; Raffinage et extraction; Gestion de projet; Leadership,Géologue minier,ICMP,78.38
+PRO_2026_0230,Professionnel,44,M,ESIIA,C/C++ embarqué; Signal & Traitement; Gestion de projet; Leadership,Concepteur Électronique,ESIIA,70.35
+PRO_2026_0231,Professionnel,38,F,IGGLIA,SQL & Bases de données; Machine Learning; Gestion de projet; Leadership,Data Scientist / IA,IGGLIA,83.36
+PRO_2026_0232,Professionnel,50,F,IMTICIA,Infographie & 3D; Développement Web/Mobile; Gestion de projet; Leadership,Concepteur Multimédia,IMTICIA,94.11
+PRO_2026_0233,Professionnel,27,F,ISAIA,Python / R Data; Statistiques inférentielles; Gestion de projet; Leadership,Consultant Big Data,ISAIA,78.16
+PRO_2026_0234,Professionnel,26,F,TEE,Gestion de projets durables; Ingénierie touristique; Gestion de projet; Leadership,Responsable Parc Naturel,TEE,97.29
+PRO_2026_0235,Professionnel,29,M,TEH,Yield Management; Gestion événementielle; Gestion de projet; Leadership,Chef de projet Événementiel,TEH,93.09
+PRO_2026_0236,Professionnel,47,F,CAA,Analyse Marché; Marketing Digital; Gestion de projet; Leadership,Responsable Commercial,CAA,94.29
+PRO_2026_0237,Professionnel,38,M,DTJA,Rédaction juridique; Droit des contrats; Gestion de projet; Leadership,Assistant Juridique,DTJA,85.11
+PRO_2026_0238,Professionnel,39,M,EMP,Gestion de projet Agile/PMP; Étude d'impact économique; Gestion de projet; Leadership,Analyste Économique,EMP,71.69
+PRO_2026_0239,Professionnel,35,M,FIC,Contrôle de gestion; Audit financier; Gestion de projet; Leadership,Comptable Senior,FIC,77.41
+PRO_2026_0240,Professionnel,41,F,AEE,Analyse des sols; Zootechnie; Gestion de projet; Leadership,Conseiller agricole,AEE,92.18
+PRO_2026_0241,Professionnel,37,M,IAA,Biochimie alimentaire; Process agroalimentaires; Gestion de projet; Leadership,Ingénieur Agroalimentaire,IAA,97.92
+PRO_2026_0242,Professionnel,48,M,PIP,Normes GMP/BPF; Analyse en laboratoire; Gestion de projet; Leadership,Assistant de recherche galénique,PIP,82.3
+PRO_2026_0243,Professionnel,40,F,EMII,Électrotechnique; Automatisme PLC; Gestion de projet; Leadership,Automaticien,EMII,77.04
+PRO_2026_0244,Professionnel,26,M,GCA,AutoCAD/Revit; Métré et devis; Gestion de projet; Leadership,Conducteur de travaux,GCA,77.97
+PRO_2026_0245,Professionnel,47,M,ICMP,Raffinage et extraction; Géologie minière; Gestion de projet; Leadership,Géologue minier,ICMP,74.49
+PRO_2026_0246,Professionnel,44,M,ESIIA,Électronique numérique; Microcontrôleurs IoT; Gestion de projet; Leadership,Ingénieur Robotique,ESIIA,85.85
+PRO_2026_0247,Professionnel,39,F,IGGLIA,Génie Logiciel & Java/Web; Algorithmique & Python; Gestion de projet; Leadership,Développeur Fullstack,IGGLIA,94.76
+PRO_2026_0248,Professionnel,44,F,IMTICIA,Réseaux informatiques; Développement Web/Mobile; Gestion de projet; Leadership,Administrateur Réseaux & TIC,IMTICIA,81.21
+PRO_2026_0249,Professionnel,41,M,ISAIA,PowerBI & Analytics; Machine Learning & Deep Learning; Gestion de projet; Leadership,Data Analyst,ISAIA,85.88
+PRO_2026_0250,Professionnel,48,M,TEE,Guide & Médiation; Ingénierie touristique; Gestion de projet; Leadership,Guide Patrimoine,TEE,83.28
