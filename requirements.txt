@@ -1,5 +1,6 @@
 langchain
 langchain-core
+langchain_text_splitters
 langchain-chroma
 langchain-huggingface
 langgraph
