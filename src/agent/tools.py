@@ -9,32 +9,178 @@ les modules ML, RAG et IA Symbolique peuvent remplacer ces stubs par leur logiqu
 """
 
 from typing import Dict, List, Any, Optional
+from langchain_core.tools import tool
+
+import sys
+from pathlib import Path
+
+# Permet d'importer src.ml.predict quel que soit le point d'entrée du script
+ROOT_DIR = Path(__file__).resolve().parent.parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
+from src.ml.predict import predire_orientation_top3
+
+import json
+import pandas as pd
+
+
+def _charger_vocabulaire_ml() -> Dict[str, List[str]]:
+    """
+    Charge les valeurs CATÉGORIELLES réellement vues à l'entraînement du modèle
+    (data/synthetic/profils_etudiants_synthetiques.csv), pour guider la traduction
+    LLM (Option B) : le modèle ne comprend QUE des combinaisons exactes déjà vues.
+    """
+    csv_path = ROOT_DIR / "data" / "synthetic" / "profils_etudiants_synthetiques.csv"
+    df = pd.read_csv(csv_path)
+    colonnes = ["serie", "matieres_fortes", "matieres_faibles", "centres_interet", "competences"]
+    return {col: sorted(df[col].dropna().unique().tolist()) for col in colonnes if col in df.columns}
+
+@tool
+def traduire_profil_vers_vocabulaire_ml(profil_libre: Dict[str, Any], llm) -> Dict[str, Any]:
+    """
+    Traduit un profil exprimé en langage libre (venant du chatbot/utilisateur)
+    vers les valeurs EXACTES du vocabulaire appris par le modèle ML (Option B).
+
+    Le modèle ML utilise un OneHotEncoder qui ne reconnaît QUE des combinaisons
+    identiques à celles vues pendant l'entraînement (ex: "Robotique; Musique").
+    Une valeur inventée par l'utilisateur (ex: "je code et j'aime la robotique")
+    doit donc être ramenée à la valeur la plus proche de la liste autorisée
+    AVANT d'appeler analyser_profil_ml, sinon la confiance de prédiction
+    s'effondre (~14% observé vs ~87% avec une valeur exacte).
+
+    Args:
+        profil_libre: profil brut tel qu'exprimé par l'utilisateur/chatbot.
+        llm: instance LLM déjà initialisée (ex: self.llm de OrientIAAgent).
+
+    Returns:
+        Dict prêt à être passé à analyser_profil_ml, avec des valeurs
+        catégorielles garanties dans le vocabulaire connu du modèle.
+    """
+    vocab = _charger_vocabulaire_ml()
+
+    notes = profil_libre.get("notes", {}) or {}
+    moyenne_generale = profil_libre.get("moyenne_generale")
+    if moyenne_generale is None:
+        moyenne_generale = sum(notes.values()) / len(notes) if notes else 10.0
+
+    prompt = f"""Tu dois traduire le profil libre d'un étudiant vers des valeurs EXACTES
+issues des listes autorisées ci-dessous. Choisis dans chaque liste la valeur la plus
+proche du profil. Ne modifie JAMAIS l'orthographe : copie-colle exactement la chaîne choisie.
+
+SÉRIES AUTORISÉES : {vocab.get('serie', [])}
+
+COMBINAISONS "MATIÈRES FORTES" AUTORISÉES (choisis la plus proche) :
+{vocab.get('matieres_fortes', [])}
+
+COMBINAISONS "MATIÈRES FAIBLES" AUTORISÉES (choisis la plus proche) :
+{vocab.get('matieres_faibles', [])}
+
+COMBINAISONS "CENTRES D'INTÉRÊT" AUTORISÉES (choisis la plus proche) :
+{vocab.get('centres_interet', [])}
+
+COMBINAISONS "COMPÉTENCES" AUTORISÉES (choisis la plus proche) :
+{vocab.get('competences', [])}
+
+PROFIL LIBRE DE L'ÉTUDIANT :
+{json.dumps(profil_libre, ensure_ascii=False)}
+
+Réponds UNIQUEMENT avec un objet JSON strict, sans texte autour, sans balises markdown,
+au format exact suivant :
+{{"serie": "...", "moyenne_generale": <nombre>, "matieres_fortes": "...", "matieres_faibles": "...", "centres_interet": "...", "competences": "..."}}
+Chaque valeur catégorielle DOIT être copiée EXACTEMENT depuis les listes fournies ci-dessus."""
+
+    try:
+        response = llm.invoke(prompt)
+        content = response.content
+        if isinstance(content, list):
+            content = content[0].get("text", "")
+        content_clean = content.strip()
+        if content_clean.startswith("```"):
+            content_clean = content_clean.strip("`")
+            content_clean = content_clean.replace("json", "", 1).strip()
+        traduit = json.loads(content_clean)
+        traduit.setdefault("moyenne_generale", moyenne_generale)
+        return traduit
+    except Exception as e:
+        # Fallback : on retombe sur un mapping brut (non garanti dans le vocabulaire)
+        # plutôt que de faire planter tout le pipeline.
+        print(f"[ATTENTION] Échec de la traduction LLM du profil ({e}). Fallback brut utilisé.")
+        return {
+            "serie": profil_libre.get("serie") or profil_libre.get("bac", "D"),
+            "moyenne_generale": moyenne_generale,
+            "matieres_fortes": str(profil_libre.get("matieres_fortes", "")),
+            "matieres_faibles": str(profil_libre.get("matieres_faibles", "")),
+            "centres_interet": str(profil_libre.get("centres_interet", "")),
+            "competences": str(profil_libre.get("competences", "")),
+        }
+
 
 # ==============================================================================
 # 1. OUTIL MACHINE LEARNING : ANALYSER PROFIL ML
 # ==============================================================================
 @tool
+def _mapper_profil_vers_input_ml(profil: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Traduit le profil "libre" envoyé par le chatbot (bac, notes, listes libres)
+    vers le format strict attendu par le modèle entraîné (serie, moyenne_generale,
+    matieres_fortes, matieres_faibles, centres_interet, competences en strings
+    séparées par '; ').
+
+    ⚠️ LIMITE CONNUE : le modèle a appris des combinaisons EXACTES vues dans le
+    CSV d'entraînement (ex: "Robotique; Musique"). Une valeur libre qui ne
+    correspond à aucune combinaison connue sera traitée comme "inconnue" par
+    le OneHotEncoder, et la confiance de la prédiction chutera fortement
+    (voir tests : ~14% avec valeurs inventées vs ~87% avec valeurs exactes).
+    Ce mapping fait de son mieux mais ne résout pas ce problème de fond —
+    à traiter via une liste de choix contrainte côté frontend, ou via une
+    étape de traduction par le LLM vers le vocabulaire exact du modèle.
+    """
+    notes = profil.get("notes", {}) or {}
+    moyenne_generale = profil.get("moyenne_generale")
+    if moyenne_generale is None:
+        moyenne_generale = sum(notes.values()) / len(notes) if notes else 10.0
+
+    def _to_str(valeur, sep="; "):
+        if isinstance(valeur, list):
+            return sep.join(str(v) for v in valeur)
+        return str(valeur) if valeur is not None else ""
+
+    return {
+        "serie": profil.get("serie") or profil.get("bac", "D"),
+        "moyenne_generale": float(moyenne_generale),
+        "matieres_fortes": _to_str(profil.get("matieres_fortes", "")),
+        "matieres_faibles": _to_str(profil.get("matieres_faibles", "")),
+        "centres_interet": _to_str(profil.get("centres_interet", "")),
+        "competences": _to_str(profil.get("competences", "")),
+    }
+
+
+@tool
 def analyser_profil_ml(profil: Dict[str, Any]) -> Dict[str, Any]:
     """
     Consomme les caractéristiques déclarées de l'étudiant et retourne les prédictions
-    du modèle Machine Learning (probabilités d'adéquation et recommandations).
+    du modèle Machine Learning réel (RandomForest entraîné sur les profils ISPM),
+    au format contrat attendu par l'agent.
 
     Args:
         profil (Dict[str, Any]): Dictionnaire du profil candidat.
             Exemple:
             {
-                "bac": "C",
-                "notes": {"maths": 15.0, "physique": 14.0, "algo": 16.0},
-                "centres_interet": ["développement web", "intelligence artificielle"],
-                "competences": ["python", "sql"]
+                "serie": "D",
+                "moyenne_generale": 14.5,
+                "matieres_fortes": "Sciences Physiques et Chimiques; SVT / Biologie-Géologie",
+                "matieres_faibles": "Histoire-Géographie; Anglais",
+                "centres_interet": "Robotique; Musique",
+                "competences": "Analyse en laboratoire; Pharmacologie; Résolution de problèmes"
             }
 
     Returns:
         Dict[str, Any]: Contrat d'adéquation ML normalisé :
-            - filiere_recommandee (str): Nom/Code de la filière principale (ex: "GLSI").
-            - score_adequation (float): Score de confiance global entre 0.0 et 1.0.
-            - predict_proba (Dict[str, float]): Probabilités associées à chaque filière.
-            - facteurs_cles (List[str]): Facteurs prédictifs explicatifs (Explicabilité / XAI).
+            - filiere_recommandee (str): Code de la filière principale (ex: "PIP", "ESIIA"...).
+            - score_adequation (float): Score de confiance du top 1, entre 0.0 et 1.0.
+            - predict_proba (Dict[str, float]): Probabilités des 3 meilleures filières.
+            - facteurs_cles (List[str]): Facteurs explicatifs (simplifiés pour l'instant).
             - status (str): "SUCCESS", "INCOMPLETE_PROFILE", ou "ERROR".
     """
     if not profil or not isinstance(profil, dict):
@@ -46,37 +192,54 @@ def analyser_profil_ml(profil: Dict[str, Any]) -> Dict[str, Any]:
             "status": "INCOMPLETE_PROFILE"
         }
 
-    # --------------------------------------------------------------------------
-    # TODO: Remplacer par l'inférence réelle (ex: joblib.load("models/model.joblib"))
-    # --------------------------------------------------------------------------
-    notes = profil.get("notes", {})
-    math_note = notes.get("maths", 10.0)
-    algo_note = notes.get("algo", 10.0)
+    try:
+        input_ml = _mapper_profil_vers_input_ml(profil)
+        top3 = predire_orientation_top3(input_ml)
 
-    if math_note >= 14.0 or algo_note >= 14.0:
-        filiere_rec = "Génie Logiciel & Systèmes d'Information (GLSI)"
-        probas = {"GLSI": 0.58, "IA_DS": 0.36, "RSI": 0.06}
-        score = 0.58
-        facteurs = [
-            "Solides compétences logiques et mathématiques",
-            "Appétence déclarée pour la programmation"
-        ]
-    else:
-        filiere_rec = "Réseaux & Systèmes Informatiques (RSI)"
-        probas = {"RSI": 0.45, "GLSI": 0.35, "IA_DS": 0.20}
-        score = 0.45
-        facteurs = [
-            "Profil équilibré",
-            "Adéquation avec l'administration systèmes & réseaux"
-        ]
+        if not top3:
+            return {
+                "filiere_recommandee": "INCONNUE",
+                "score_adequation": 0.0,
+                "predict_proba": {},
+                "facteurs_cles": ["Le modèle n'a retourné aucune prédiction"],
+                "status": "ERROR"
+            }
 
-    return {
-        "filiere_recommandee": filiere_rec,
-        "score_adequation": float(score),
-        "predict_proba": probas,
-        "facteurs_cles": facteurs,
-        "status": "SUCCESS"
-    }
+        filiere_rec = top3[0]["filiere"]
+        score = top3[0]["confiance"] / 100.0
+        predict_proba = {item["filiere"]: round(item["confiance"] / 100.0, 4) for item in top3}
+
+        facteurs = [
+            f"Série renseignée : {input_ml['serie']}",
+            f"Moyenne générale : {input_ml['moyenne_generale']}",
+        ]
+        if input_ml["matieres_fortes"]:
+            facteurs.append(f"Matières fortes : {input_ml['matieres_fortes']}")
+
+        return {
+            "filiere_recommandee": filiere_rec,
+            "score_adequation": round(float(score), 4),
+            "predict_proba": predict_proba,
+            "facteurs_cles": facteurs,
+            "status": "SUCCESS"
+        }
+
+    except FileNotFoundError as e:
+        return {
+            "filiere_recommandee": "INCONNUE",
+            "score_adequation": 0.0,
+            "predict_proba": {},
+            "facteurs_cles": [f"Modèle introuvable : {e}"],
+            "status": "ERROR"
+        }
+    except Exception as e:
+        return {
+            "filiere_recommandee": "INCONNUE",
+            "score_adequation": 0.0,
+            "predict_proba": {},
+            "facteurs_cles": [f"Erreur d'inférence ML : {e}"],
+            "status": "ERROR"
+        }
 
 
 # ==============================================================================

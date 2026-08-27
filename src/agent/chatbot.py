@@ -29,7 +29,8 @@ from src.agent.tools import (
     analyser_profil_ml,
     rechercher_formation,
     verifier_prerequis,
-    comparer_parcours
+    comparer_parcours,
+    traduire_profil_vers_vocabulaire_ml
 )
 
 # Mention légale obligatoire exigée par la charte ISPM
@@ -126,26 +127,40 @@ class OrientIAAgent:
         tool_results = {}
 
         # Outil 1 : Analyse ML si des notes/compétences sont fournies dans le profil
+        # Étape intermédiaire (Option B) : on traduit d'abord le profil libre vers
+        # le vocabulaire EXACT connu du modèle, via le LLM, avant d'appeler l'outil ML.
         if profile.get("notes") or profile.get("competences"):
-            ml_out = analyser_profil_ml(profile)
+            if self.llm:
+                profil_traduit = traduire_profil_vers_vocabulaire_ml(profile, self.llm)
+                trace_log["tool_calls"].append({
+                    "tool": "traduire_profil_vers_vocabulaire_ml",
+                    "args": profile,
+                    "output": profil_traduit
+                })
+            else:
+                # Pas de LLM disponible (mode dégradé) : on retente quand même avec
+                # le profil brut, la confiance de prédiction risque d'être basse.
+                profil_traduit = profile
+
+            ml_out = analyser_profil_ml.invoke({"profil": profil_traduit})
             tool_results["ml"] = ml_out
-            trace_log["tool_calls"].append({"tool": "analyser_profil_ml", "args": profile, "output": ml_out})
+            trace_log["tool_calls"].append({"tool": "analyser_profil_ml", "args": profil_traduit, "output": ml_out})
 
         # Outil 2 : Recherche documentaire RAG
-        rag_out = rechercher_formation(user_input)
+        rag_out = rechercher_formation.invoke({"query": user_input})
         tool_results["rag"] = rag_out
         trace_log["tool_calls"].append({"tool": "rechercher_formation", "args": {"query": user_input}, "output": rag_out})
 
         # Outil 3 : Comparatif de parcours
         if "comparer" in input_lower or "différence" in input_lower:
-            comp_out = comparer_parcours("GLSI", "IA_DS")
+            comp_out = comparer_parcours.invoke({"a": "GLSI", "b": "IA_DS"})
             tool_results["comparaison"] = comp_out
             trace_log["tool_calls"].append({"tool": "comparer_parcours", "args": {"a": "GLSI", "b": "IA_DS"}, "output": comp_out})
 
         # Outil 4 : Vérification des prérequis via Ontologie
         if profile.get("bac") or "prérequis" in input_lower or "prerequis" in input_lower:
             target_path = "IA_DS" if "ia" in input_lower else "GLSI"
-            prereq_out = verifier_prerequis(target_path, profile)
+            prereq_out = verifier_prerequis.invoke({"parcours": target_path, "profil": profile})
             tool_results["prerequis"] = prereq_out
             trace_log["tool_calls"].append({"tool": "verifier_prerequis", "args": {"parcours": target_path, "profil": profile}, "output": prereq_out})
 
@@ -206,10 +221,10 @@ class OrientIAAgent:
     def _build_fallback_response(self, query: str, profile: Dict[str, Any], tools: Dict[str, Any]) -> str:
         """Générateur de secours déterministe en cas de coupure de l'API Gemini."""
         ml_data = tools.get("ml", {})
-        filiere_rec = ml_data.get("filiere_recommandee", "Génie Logiciel (GLSI)")
+        filiere_rec = ml_data.get("filiere_recommandee", "Filière à déterminer")
         synth_sec = f"En fonction de votre profil et de votre demande, le parcours recommandé est **{filiere_rec}**."
-        
-        probas = ml_data.get("predict_proba", {"GLSI": 0.58, "IA_DS": 0.36})
+
+        probas = ml_data.get("predict_proba", {})
         score_str = ", ".join([f"{k}: {v * 100:.0f}%" for k, v in probas.items()]) if probas else "Score en cours d'évaluation."
         prereq_data = tools.get("prerequis", {})
         prereq_status = "Prérequis validés." if prereq_data.get("eligible") else "Informations de prérequis sous réserve de validation académique."
@@ -235,7 +250,7 @@ class OrientIAAgent:
         """Calcule la latence finale et emballe l'objet de retour backend."""
         latency_ms = (time.time() - start_time) * 1000
         trace_log["metrics"]["latency_ms"] = round(latency_ms, 2)
-        
+
         return {
             "response": response_text,
             "latency_ms": trace_log["metrics"]["latency_ms"],
@@ -245,15 +260,16 @@ class OrientIAAgent:
 
 if __name__ == "__main__":
     agent = OrientIAAgent()
-    
+
     sample_profile = {
-        "bac": "C",
-        "notes": {"maths": 15.0, "algo": 14.5},
-        "centres_interet": ["développement web", "ia"]
+        "bac": "D",
+        "notes": {"maths": 14.5, "svt": 15.0},
+        "centres_interet": ["robotique", "musique"],
+        "competences": ["analyse en laboratoire", "résolution de problèmes"]
     }
-    
-    sample_query = "Quelle filière est la plus adaptée à mes notes entre GLSI et IA_DS ?"
-    
+
+    sample_query = "Quelle filière est la plus adaptée à mon profil scientifique ?"
+
     result = agent.process_query(sample_query, sample_profile)
     print("--- RÉPONSE GÉNÉRÉE (GEMINI) ---")
     print(result["response"])
