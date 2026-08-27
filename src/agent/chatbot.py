@@ -33,7 +33,6 @@ from src.utils.config import get_api_key_manager
 from src.agent.tools import (
     rechercher_documentation_ispm,
     analyser_profil_ml,
-    rechercher_formation,
     verifier_prerequis,
     comparer_parcours,
     traduire_profil_vers_vocabulaire_ml
@@ -205,26 +204,15 @@ class OrientIAAgent:
                             "status": "ERROR",
                         }
 
-                # 4. RECHERCHE RAG
-                rag_resultats = []
-                try:
-                    rag_resultats = rechercher_formation.invoke({"query": user_input})
-                    tool_calls_history.append({"tool_name": "rechercher_formation", "tool_arguments": {"query": user_input}})
-                except Exception as e:
-                    # /!\ IMPORTANT : Si c'est un problème de quota (ex: API embeddings), on propage
-                    if _est_erreur_quota(e): raise e
-                    print(f"[ERREUR RAG] Recherche documentaire échouée : {e}")
 
                 # 5. Préparation du prompt système
                 profil_json = json.dumps(profile, ensure_ascii=False)
                 ml_json = json.dumps(ml_resultat, ensure_ascii=False) if ml_resultat else "null"
-                rag_json = json.dumps(rag_resultats, ensure_ascii=False)
 
                 system_prompt = (
                     "Tu es l'assistant académique ORIENT'IA de l'ISPM. Tu es autonome.\n"
                     f"Voici le profil de l'étudiant avec qui tu parles : {profil_json}\n\n"
                     f"RÉSULTAT DE L'ANALYSE ML (déjà calculé, NE PAS recalculer) :\n{ml_json}\n\n"
-                    f"RÉSULTATS DE LA RECHERCHE DOCUMENTAIRE RAG (déjà calculés, à citer) :\n{rag_json}\n\n"
                     "RÈGLE IMPÉRATIVE : Base ta synthèse sur le résultat ML et les résultats RAG ci-dessus. Utilise tes autres outils "
                     "uniquement si des informations complémentaires sont nécessaires.\n"
                     "Formate ta réponse finale selon ces 3 sections :\n"
