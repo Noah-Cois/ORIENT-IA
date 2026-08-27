@@ -1,10 +1,18 @@
+"""
+src/ml/predict.py
+=================
+Fonction de prédiction pour l'agent IA, optimisée pour Streamlit.
+"""
+
 import os
 import sys
+import threading
 from pathlib import Path
 
 import pandas as pd
 import joblib
 import numpy as np
+import streamlit as st
 
 # Permet d'importer src.ml.train quel que soit le point d'entrée du script
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
@@ -13,59 +21,66 @@ if str(ROOT_DIR) not in sys.path:
 
 from src.ml.train import entrainer_modele
 
+# Verrou global pour éviter que deux utilisateurs ne lancent l'entraînement en même temps
+_TRAINING_LOCK = threading.Lock()
+
 
 def _assurer_modele_ml(model_path: str, project_root: str) -> None:
     """
-    Vérifie que le modèle .pkl existe sur disque. S'il est absent (ex: premier
-    démarrage sur Streamlit Cloud, où models/*.pkl n'est pas versionné sur Git
-    car généré par train.py), on lance l'entraînement automatiquement au lieu
-    de planter avec un FileNotFoundError.
+    Vérifie que le modèle .pkl existe. S'il est absent, l'entraîne automatiquement
+    de manière sécurisée (Thread-Safe) pour un déploiement web (Streamlit).
     """
+    # 1. Vérification rapide
     if os.path.exists(model_path):
         return
 
-    print(
-        f"[INFO] Modèle introuvable à {model_path} — entraînement automatique en cours "
-        "(premier démarrage ou déploiement sans .pkl versionné)..."
-    )
-    entrainer_modele(project_root=project_root, verbose=True)
+    # 2. On bloque l'accès aux autres processus si le modèle n'existe pas
+    with _TRAINING_LOCK:
+        # 3. Double vérification au cas où l'entraînement vient juste de se terminer
+        if os.path.exists(model_path):
+            return
 
-    if not os.path.exists(model_path):
-        # Sécurité : si entrainer_modele a réussi mais a écrit ailleurs (chemin
-        # différent), on préfère un message explicite à un échec silencieux.
-        raise FileNotFoundError(
-            f"L'entraînement automatique s'est terminé mais le modèle reste introuvable à {model_path}."
+        print(
+            f"[INFO] Modèle introuvable à {model_path} — entraînement automatique en cours "
+            "(premier démarrage ou déploiement sans .pkl versionné)..."
         )
+        
+        # 4. Feedback visuel pour l'utilisateur sur l'interface web
+        with st.spinner("⚙️ Premier démarrage : Entraînement du modèle d'orientation en cours (quelques secondes)..."):
+            entrainer_modele(project_root=project_root, verbose=True)
+
+        if not os.path.exists(model_path):
+            st.error("Erreur critique : Impossible de sauvegarder le modèle.")
+            raise FileNotFoundError(
+                f"L'entraînement automatique s'est terminé mais le modèle reste introuvable à {model_path}."
+            )
+
+@st.cache_resource(show_spinner=False)
+def _charger_modele(model_path: str):
+    """
+    Charge le modèle en mémoire UNE SEULE FOIS pour toute la durée de vie de l'application.
+    Cela évite de lire le disque lourdement à chaque question posée à l'agent.
+    """
+    return joblib.load(model_path)
 
 
 def predire_orientation_top3(profil_etudiant: dict) -> list:
     """
-    Fonction généralisée pour l'Agent IA.
     Prend un dictionnaire contenant le profil de l'étudiant et retourne
     le Top 3 des filières recommandées avec leurs pourcentages de confiance.
-
-    Exemple de profil attendu :
-    {
-        'serie': 'D',
-        'moyenne_generale': 14.5,
-        'matieres_fortes': 'Mathématiques, SVT',
-        'matieres_faibles': 'Histoire-Géographie',
-        'centres_interet': 'Nouvelles technologies',
-        'competences': 'Analyse'
-    }
     """
     # 1. Localisation dynamique robuste du modèle
     current_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.abspath(os.path.join(current_dir, '../../'))
     model_path = os.path.join(project_root, 'models', 'ispm_orientation_model.pkl')
 
-    # 2. Vérifie l'existence du modèle, l'entraîne automatiquement sinon
+    # 2. Vérifie l'existence du modèle, l'entraîne de façon sécurisée sinon
     _assurer_modele_ml(model_path, project_root)
 
-    # 3. Chargement du pipeline
-    model_pipeline = joblib.load(model_path)
+    # 3. Chargement du pipeline (depuis le cache Streamlit !)
+    model_pipeline = _charger_modele(model_path)
 
-    # 4. Validation et préparation des données pour le modèle
+    # 4. Validation et préparation des données
     df_input = pd.DataFrame([profil_etudiant])
 
     # 5. Extraction des prédictions et probabilités
