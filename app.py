@@ -10,6 +10,32 @@ if str(ROOT_DIR) not in sys.path:
 
 from src.agent.chatbot import OrientIAAgent
 from src.agent.tools import traduire_profil_vers_vocabulaire_ml, analyser_profil_ml
+from src.rag.search import CHROMA_DB_DIR
+from src.rag.ingest import executer_ingestion
+
+
+def _base_vectorielle_existe() -> bool:
+    """
+    Vérifie si la base Chroma a déjà été générée et contient des données.
+    Nécessaire car data/chroma_db n'est pas versionné sur Git (trop volumineux),
+    donc absent lors d'un déploiement Streamlit Cloud frais.
+    """
+    if not CHROMA_DB_DIR.exists():
+        return False
+    # Chroma persiste au moins un fichier sqlite dans ce dossier une fois indexé
+    return any(CHROMA_DB_DIR.iterdir())
+
+
+@st.cache_resource(show_spinner=False)
+def assurer_base_vectorielle():
+    """
+    Exécuté une seule fois par session (grâce au cache) : si la base vectorielle
+    n'existe pas encore sur le disque, on l'ingère depuis data/corpus avant de
+    laisser le reste de l'application démarrer.
+    """
+    if not _base_vectorielle_existe():
+        executer_ingestion()
+    return True
 
 # Configuration de la page en mode "wide" pour profiter de tout l'écran côte à côte
 st.set_page_config(
@@ -50,6 +76,9 @@ st.markdown("""
 def charger_agent() -> OrientIAAgent:
     return OrientIAAgent()
 
+
+with st.spinner("Préparation de la base de connaissances (première utilisation uniquement)..."):
+    assurer_base_vectorielle()
 
 agent = charger_agent()
 

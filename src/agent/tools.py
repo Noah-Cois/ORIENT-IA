@@ -7,9 +7,8 @@ Ce fichier définit l'interface formelle (Tool Calling) utilisée par l'agent LL
 Tant que la clé et la structure des dictionnaires retournés restent inchangées,
 les modules ML, RAG et IA Symbolique peuvent remplacer ces stubs par leur logique finale.
 """
-
-from typing import Dict, List, Any, Optional
 from langchain_core.tools import tool
+from typing import Dict, List, Any, Optional
 
 import sys
 from pathlib import Path
@@ -36,7 +35,12 @@ def _charger_vocabulaire_ml() -> Dict[str, List[str]]:
     colonnes = ["serie", "matieres_fortes", "matieres_faibles", "centres_interet", "competences"]
     return {col: sorted(df[col].dropna().unique().tolist()) for col in colonnes if col in df.columns}
 
-@tool
+
+# NOTE : PAS de @tool ici. Cette fonction est appelée directement en Python
+# (traduire_profil_vers_vocabulaire_ml(profile, self.llm) dans chatbot.py),
+# pas via l'agent LangGraph — elle n'est d'ailleurs pas dans self.tools.
+# La décorer avec @tool en ferait un StructuredTool non appelable directement
+# (erreur : 'StructuredTool' object is not callable).
 def traduire_profil_vers_vocabulaire_ml(profil_libre: Dict[str, Any], llm) -> Dict[str, Any]:
     """
     Traduit un profil exprimé en langage libre (venant du chatbot/utilisateur)
@@ -116,10 +120,36 @@ Chaque valeur catégorielle DOIT être copiée EXACTEMENT depuis les listes four
         }
 
 
+from src.rag.search import recherche_rag
+# ==============================================================================
+# 1. RAG : DOC ISPM
+# ==============================================================================
+@tool
+def rechercher_documentation_ispm(question: str) -> str:
+    """
+    Recherche dans la base de connaissances officielle de l'ISPM (Règlement, frais, 
+    filières ISAIA, IGGLIA, IMTICIA, ESIIA, IAA, AEE, PIP, EMII, GCA, ICMP, TEE, TEH, CAA, DTJA, EMP, FIC, etc.)
+    Utilise cet outil dès que l'utilisateur pose une question sur :
+    - Les frais de scolarité, écolage, droits d'inscription.
+    - Les détails, prérequis ou débouchés d'une filière spécifique de l'ISPM.
+    - Le règlement intérieur ou les informations administratives de l'école.
+    
+    Args:
+        question: La question précise de l'étudiant concernant l'ISPM.
+    """
+    # Appel direct à votre moteur search.py
+    contexte = recherche_rag(question, top_k=3)
+    return contexte
+
+
 # ==============================================================================
 # 1. OUTIL MACHINE LEARNING : ANALYSER PROFIL ML
 # ==============================================================================
-@tool
+
+# NOTE : PAS de @tool ici non plus. C'est un helper interne appelé directement
+# par analyser_profil_ml (input_ml = _mapper_profil_vers_input_ml(profil)),
+# et il n'est pas exposé dans self.tools de l'agent. Même raison que ci-dessus :
+# @tool en ferait un StructuredTool non appelable directement.
 def _mapper_profil_vers_input_ml(profil: Dict[str, Any]) -> Dict[str, Any]:
     """
     Traduit le profil "libre" envoyé par le chatbot (bac, notes, listes libres)
@@ -133,8 +163,9 @@ def _mapper_profil_vers_input_ml(profil: Dict[str, Any]) -> Dict[str, Any]:
     le OneHotEncoder, et la confiance de la prédiction chutera fortement
     (voir tests : ~14% avec valeurs inventées vs ~87% avec valeurs exactes).
     Ce mapping fait de son mieux mais ne résout pas ce problème de fond —
-    à traiter via une liste de choix contrainte côté frontend, ou via une
-    étape de traduction par le LLM vers le vocabulaire exact du modèle.
+    d'où l'étape de traduction LLM (traduire_profil_vers_vocabulaire_ml) qui
+    doit être appelée en amont, dans chatbot.py, sur le profil AVANT qu'il
+    n'arrive ici.
     """
     notes = profil.get("notes", {}) or {}
     moyenne_generale = profil.get("moyenne_generale")
