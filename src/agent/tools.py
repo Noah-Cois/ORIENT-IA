@@ -273,77 +273,7 @@ def analyser_profil_ml(profil: Dict[str, Any]) -> Dict[str, Any]:
         }
 
 
-# ==============================================================================
-# 2. OUTIL RAG / RECHERCHE DOCUMENTAIRE : RECHERCHER FORMATION
-# ==============================================================================
-@tool
-def rechercher_formation(query: str, filiere: Optional[str] = None) -> List[Dict[str, Any]]:
-    """
-    Interroge la base de connaissances documentaire (index vectoriel/lexical ISPM)
-    pour extraire des passages officiels vérifiés.
 
-    Args:
-        query (str): Mots-clés ou question de l'utilisateur.
-        filiere (Optional[str]): Filtre optionnel par filière ("GLSI", "IA_DS", "RSI").
-
-    Returns:
-        List[Dict[str, Any]]: Liste d'extraits documentaires avec métadonnées :
-            [
-                {
-                    "document_id": str,
-                    "source_title": str,
-                    "section": str,
-                    "content": str,
-                    "relevance_score": float
-                },
-                ...
-            ]
-    """
-    if not query or not query.strip():
-        return []
-
-    # --------------------------------------------------------------------------
-    # TODO: Remplacer par l'interrogation du VectorStore (ex: ChromaDB / FAISS)
-    # --------------------------------------------------------------------------
-    query_lower = query.lower()
-
-    if "math" in query_lower or "prerequis" in query_lower or "bac" in query_lower:
-        return [
-            {
-                "document_id": "ISPM_CATALOG_2026_SEC3",
-                "source_title": "Conditions Générales d'Admission ISPM 2026",
-                "section": "Prérequis Académiques par Série de Bac",
-                "content": (
-                    "L'admission en parcours scientifique exige un Bac C, D ou S. "
-                    "Une moyenne supérieure ou égale à 13/20 en mathématiques est "
-                    "fortement recommandée pour la filière IA & Data Science."
-                ),
-                "relevance_score": 0.94
-            },
-            {
-                "document_id": "ISPM_MAQUETTE_GLSI_2026",
-                "source_title": "Maquette Pédagogique GLSI",
-                "section": "Modules de Spécialité L3 / M1",
-                "content": (
-                    "La filière GLSI couvre l'Algorithmique avancée, le Génie Logiciel, "
-                    "l'Architecture Web/Mobile et la gestion de bases de données NoSQL."
-                ),
-                "relevance_score": 0.88
-            }
-        ]
-
-    return [
-        {
-            "document_id": "ISPM_GENERAL_GUIDE",
-            "source_title": "Guide de l'Étudiant ISPM",
-            "section": "Présentation Générale des Cursus",
-            "content": (
-                "L'ISPM propose des formations académiques en Génie Logiciel (GLSI), "
-                "Intelligence Artificielle & Data Science (IA_DS) et Réseaux (RSI)."
-            ),
-            "relevance_score": 0.75
-        }
-    ]
 
 
 # ==============================================================================

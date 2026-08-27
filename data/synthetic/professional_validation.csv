@@ -1,0 +1,251 @@
+professional_id,filiere_etudiee,parcours_id,metier_exerce,adequation_score,parcours_valide
+PRO_2026_0001,IAA,P1,Responsable Qualité HACCP,88.26,Oui
+PRO_2026_0002,PIP,P1,Délégué médical,98.26,Oui
+PRO_2026_0003,EMII,P2,Concepteur Mécatronique,95.94,Oui
+PRO_2026_0004,GCA,P2,Chef de chantier BTP,78.61,Oui
+PRO_2026_0005,ICMP,P2,Ingénieur Procédés,78.33,Oui
+PRO_2026_0006,ESIIA,P3,Concepteur Électronique,73.7,Oui
+PRO_2026_0007,IGGLIA,P3,Architecte SI,74.46,Oui
+PRO_2026_0008,IMTICIA,P3,Développeur Web/Mobile,98.26,Oui
+PRO_2026_0009,ISAIA,P3,Data Analyst,75.35,Oui
+PRO_2026_0010,TEE,P4,Responsable Parc Naturel,86.58,Oui
+PRO_2026_0011,TEH,P4,Responsable d'Agence de Voyage,93.12,Oui
+PRO_2026_0012,CAA,P5,Directeur des Ventes,86.68,Oui
+PRO_2026_0013,DTJA,P5,Gestionnaire de Contrats,98.51,Oui
+PRO_2026_0014,EMP,P5,Scrum Master,78.73,Oui
+PRO_2026_0015,FIC,P5,Auditeur Financier,86.32,Oui
+PRO_2026_0016,AEE,P1,Chef d'exploitation,71.96,Oui
+PRO_2026_0017,IAA,P1,Biologiste industriel,90.46,Oui
+PRO_2026_0018,PIP,P1,Responsable contrôle qualité labo,81.62,Oui
+PRO_2026_0019,EMII,P2,Concepteur Mécatronique,97.44,Oui
+PRO_2026_0020,GCA,P2,Conducteur de travaux,79.26,Oui
+PRO_2026_0021,ICMP,P2,Géologue minier,90.12,Oui
+PRO_2026_0022,ESIIA,P3,Ingénieur Systèmes Embarqués,70.57,Oui
+PRO_2026_0023,IGGLIA,P3,Ingénieur Génie Logiciel,98.59,Oui
+PRO_2026_0024,IMTICIA,P3,Administrateur Réseaux & TIC,70.63,Oui
+PRO_2026_0025,ISAIA,P3,Data Scientist,76.67,Oui
+PRO_2026_0026,TEE,P4,Chef de projet Développement Durable,79.47,Oui
+PRO_2026_0027,TEH,P4,Responsable d'Agence de Voyage,94.92,Oui
+PRO_2026_0028,CAA,P5,Chef de Produit Marketing,93.72,Oui
+PRO_2026_0029,DTJA,P5,Juriste d'Entreprise,93.58,Oui
+PRO_2026_0030,EMP,P5,Chef de Projet,72.19,Oui
+PRO_2026_0031,FIC,P5,Contrôleur de Gestion,89.97,Oui
+PRO_2026_0032,AEE,P1,Responsable d'élevage,90.07,Oui
+PRO_2026_0033,IAA,P1,Biologiste industriel,97.8,Oui
+PRO_2026_0034,PIP,P1,Délégué médical,81.91,Oui
+PRO_2026_0035,EMII,P2,Automaticien,70.27,Oui
+PRO_2026_0036,GCA,P2,Ingénieur Génie Civil,71.59,Oui
+PRO_2026_0037,ICMP,P2,Ingénieur QHSE,82.92,Oui
+PRO_2026_0038,ESIIA,P3,Ingénieur Systèmes Embarqués,92.2,Oui
+PRO_2026_0039,IGGLIA,P3,Data Scientist / IA,91.25,Oui
+PRO_2026_0040,IMTICIA,P3,Designer UI/UX,93.18,Oui
+PRO_2026_0041,ISAIA,P3,Data Analyst,83.72,Oui
+PRO_2026_0042,TEE,P4,Consultant Écotourisme,71.02,Oui
+PRO_2026_0043,TEH,P4,Chef de projet Événementiel,75.11,Oui
+PRO_2026_0044,CAA,P5,Chef de Produit Marketing,88.51,Oui
+PRO_2026_0045,DTJA,P5,Consultant Fiscaliste,76.11,Oui
+PRO_2026_0046,EMP,P5,Consultant en Organisation,76.44,Oui
+PRO_2026_0047,FIC,P5,Contrôleur de Gestion,87.62,Oui
+PRO_2026_0048,AEE,P1,Responsable d'élevage,86.36,Oui
+PRO_2026_0049,IAA,P1,Conducteur de ligne de production,79.79,Oui
+PRO_2026_0050,PIP,P1,Assistant de recherche galénique,80.18,Oui
+PRO_2026_0051,EMII,P2,Responsable Maintenance,84.61,Oui
+PRO_2026_0052,GCA,P2,Ingénieur Génie Civil,85.35,Oui
+PRO_2026_0053,ICMP,P2,Responsable d'extraction,93.04,Oui
+PRO_2026_0054,ESIIA,P3,Développeur IoT,92.7,Oui
+PRO_2026_0055,IGGLIA,P3,Data Scientist / IA,94.71,Oui
+PRO_2026_0056,IMTICIA,P3,Administrateur Réseaux & TIC,79.32,Oui
+PRO_2026_0057,ISAIA,P3,Data Analyst,94.55,Oui
+PRO_2026_0058,TEE,P4,Guide Patrimoine,81.36,Oui
+PRO_2026_0059,TEH,P4,Chef de projet Événementiel,70.87,Oui
+PRO_2026_0060,CAA,P5,Directeur des Ventes,84.26,Oui
+PRO_2026_0061,DTJA,P5,Assistant Juridique,74.43,Oui
+PRO_2026_0062,EMP,P5,Chef de Projet,74.21,Oui
+PRO_2026_0063,FIC,P5,Comptable Senior,73.69,Oui
+PRO_2026_0064,AEE,P1,Chef d'exploitation,83.57,Oui
+PRO_2026_0065,IAA,P1,Ingénieur Agroalimentaire,96.77,Oui
+PRO_2026_0066,PIP,P1,Délégué médical,71.26,Oui
+PRO_2026_0067,EMII,P2,Automaticien,86.05,Oui
+PRO_2026_0068,GCA,P2,Conducteur de travaux,72.4,Oui
+PRO_2026_0069,ICMP,P2,Ingénieur QHSE,74.5,Oui
+PRO_2026_0070,ESIIA,P3,Concepteur Électronique,85.78,Oui
+PRO_2026_0071,IGGLIA,P3,Data Scientist / IA,72.23,Oui
+PRO_2026_0072,IMTICIA,P3,Développeur Web/Mobile,89.69,Oui
+PRO_2026_0073,ISAIA,P3,Data Scientist,81.11,Oui
+PRO_2026_0074,TEE,P4,Consultant Écotourisme,93.32,Oui
+PRO_2026_0075,TEH,P4,Chef de projet Événementiel,84.1,Oui
+PRO_2026_0076,CAA,P5,Responsable Commercial,77.59,Oui
+PRO_2026_0077,DTJA,P5,Juriste d'Entreprise,88.37,Oui
+PRO_2026_0078,EMP,P5,Consultant en Organisation,73.36,Oui
+PRO_2026_0079,FIC,P5,Comptable Senior,70.04,Oui
+PRO_2026_0080,AEE,P1,Agronome,93.71,Oui
+PRO_2026_0081,IAA,P1,Responsable Qualité HACCP,93.47,Oui
+PRO_2026_0082,PIP,P1,Responsable contrôle qualité labo,79.52,Oui
+PRO_2026_0083,EMII,P2,Responsable Maintenance,76.23,Oui
+PRO_2026_0084,GCA,P2,Architecte collaborateur,73.09,Oui
+PRO_2026_0085,ICMP,P2,Géologue minier,72.05,Oui
+PRO_2026_0086,ESIIA,P3,Développeur IoT,97.27,Oui
+PRO_2026_0087,IGGLIA,P3,Ingénieur Génie Logiciel,94.26,Oui
+PRO_2026_0088,IMTICIA,P3,Administrateur Réseaux & TIC,74.81,Oui
+PRO_2026_0089,ISAIA,P3,Data Analyst,82.78,Oui
+PRO_2026_0090,TEE,P4,Responsable Parc Naturel,77.32,Oui
+PRO_2026_0091,TEH,P4,Manager d'Hôtel,96.72,Oui
+PRO_2026_0092,CAA,P5,Business Developer,83.93,Oui
+PRO_2026_0093,DTJA,P5,Juriste d'Entreprise,72.99,Oui
+PRO_2026_0094,EMP,P5,Chef de Projet,70.69,Oui
+PRO_2026_0095,FIC,P5,Contrôleur de Gestion,82.26,Oui
+PRO_2026_0096,AEE,P1,Chef d'exploitation,96.84,Oui
+PRO_2026_0097,IAA,P1,Ingénieur Agroalimentaire,76.79,Oui
+PRO_2026_0098,PIP,P1,Responsable contrôle qualité labo,81.72,Oui
+PRO_2026_0099,EMII,P2,Concepteur Mécatronique,73.01,Oui
+PRO_2026_0100,GCA,P2,Architecte collaborateur,84.36,Oui
+PRO_2026_0101,ICMP,P2,Responsable d'extraction,77.06,Oui
+PRO_2026_0102,ESIIA,P3,Développeur IoT,90.34,Oui
+PRO_2026_0103,IGGLIA,P3,Data Scientist / IA,97.18,Oui
+PRO_2026_0104,IMTICIA,P3,Développeur Web/Mobile,93.92,Oui
+PRO_2026_0105,ISAIA,P3,Statisticien Décisionnel,70.71,Oui
+PRO_2026_0106,TEE,P4,Guide Patrimoine,81.62,Oui
+PRO_2026_0107,TEH,P4,Manager d'Hôtel,98.34,Oui
+PRO_2026_0108,CAA,P5,Chef de Produit Marketing,73.84,Oui
+PRO_2026_0109,DTJA,P5,Consultant Fiscaliste,73.66,Oui
+PRO_2026_0110,EMP,P5,Chef de Projet,89.34,Oui
+PRO_2026_0111,FIC,P5,Comptable Senior,94.54,Oui
+PRO_2026_0112,AEE,P1,Agronome,94.81,Oui
+PRO_2026_0113,IAA,P1,Conducteur de ligne de production,88.11,Oui
+PRO_2026_0114,PIP,P1,Responsable contrôle qualité labo,77.65,Oui
+PRO_2026_0115,EMII,P2,Automaticien,98.11,Oui
+PRO_2026_0116,GCA,P2,Ingénieur Génie Civil,70.61,Oui
+PRO_2026_0117,ICMP,P2,Ingénieur Procédés,71.83,Oui
+PRO_2026_0118,ESIIA,P3,Ingénieur Robotique,88.21,Oui
+PRO_2026_0119,IGGLIA,P3,Développeur Fullstack,82.6,Oui
+PRO_2026_0120,IMTICIA,P3,Développeur Web/Mobile,75.21,Oui
+PRO_2026_0121,ISAIA,P3,Statisticien Décisionnel,81.04,Oui
+PRO_2026_0122,TEE,P4,Guide Patrimoine,79.08,Oui
+PRO_2026_0123,TEH,P4,Responsable d'Agence de Voyage,93.24,Oui
+PRO_2026_0124,CAA,P5,Responsable Commercial,76.4,Oui
+PRO_2026_0125,DTJA,P5,Gestionnaire de Contrats,94.39,Oui
+PRO_2026_0126,EMP,P5,Consultant en Organisation,83.89,Oui
+PRO_2026_0127,FIC,P5,Comptable Senior,90.68,Oui
+PRO_2026_0128,AEE,P1,Agronome,95.7,Oui
+PRO_2026_0129,IAA,P1,Responsable Qualité HACCP,84.75,Oui
+PRO_2026_0130,PIP,P1,Assistant de recherche galénique,87.96,Oui
+PRO_2026_0131,EMII,P2,Automaticien,94.73,Oui
+PRO_2026_0132,GCA,P2,Conducteur de travaux,72.47,Oui
+PRO_2026_0133,ICMP,P2,Responsable d'extraction,90.6,Oui
+PRO_2026_0134,ESIIA,P3,Développeur IoT,74.65,Oui
+PRO_2026_0135,IGGLIA,P3,Ingénieur Génie Logiciel,85.75,Oui
+PRO_2026_0136,IMTICIA,P3,Designer UI/UX,77.33,Oui
+PRO_2026_0137,ISAIA,P3,Data Scientist,95.75,Oui
+PRO_2026_0138,TEE,P4,Responsable Parc Naturel,82.38,Oui
+PRO_2026_0139,TEH,P4,Chef de projet Événementiel,73.88,Oui
+PRO_2026_0140,CAA,P5,Directeur des Ventes,83.63,Oui
+PRO_2026_0141,DTJA,P5,Gestionnaire de Contrats,81.47,Oui
+PRO_2026_0142,EMP,P5,Analyste Économique,90.57,Oui
+PRO_2026_0143,FIC,P5,Comptable Senior,85.6,Oui
+PRO_2026_0144,AEE,P1,Conseiller agricole,76.08,Oui
+PRO_2026_0145,IAA,P1,Conducteur de ligne de production,91.63,Oui
+PRO_2026_0146,PIP,P1,Responsable contrôle qualité labo,98.88,Oui
+PRO_2026_0147,EMII,P2,Automaticien,73.24,Oui
+PRO_2026_0148,GCA,P2,Conducteur de travaux,83.67,Oui
+PRO_2026_0149,ICMP,P2,Ingénieur QHSE,96.39,Oui
+PRO_2026_0150,ESIIA,P3,Développeur IoT,83.46,Oui
+PRO_2026_0151,IGGLIA,P3,Développeur Fullstack,91.14,Oui
+PRO_2026_0152,IMTICIA,P3,Concepteur Multimédia,70.1,Oui
+PRO_2026_0153,ISAIA,P3,Data Analyst,88.97,Oui
+PRO_2026_0154,TEE,P4,Chef de projet Développement Durable,94.26,Oui
+PRO_2026_0155,TEH,P4,Chef de projet Événementiel,84.59,Oui
+PRO_2026_0156,CAA,P5,Chef de Produit Marketing,91.46,Oui
+PRO_2026_0157,DTJA,P5,Consultant Fiscaliste,92.38,Oui
+PRO_2026_0158,EMP,P5,Analyste Économique,83.43,Oui
+PRO_2026_0159,FIC,P5,Comptable Senior,98.51,Oui
+PRO_2026_0160,AEE,P1,Agronome,93.27,Oui
+PRO_2026_0161,IAA,P1,Biologiste industriel,93.98,Oui
+PRO_2026_0162,PIP,P1,Assistant de recherche galénique,91.19,Oui
+PRO_2026_0163,EMII,P2,Concepteur Mécatronique,82.9,Oui
+PRO_2026_0164,GCA,P2,Architecte collaborateur,93.13,Oui
+PRO_2026_0165,ICMP,P2,Responsable d'extraction,82.82,Oui
+PRO_2026_0166,ESIIA,P3,Développeur IoT,86.53,Oui
+PRO_2026_0167,IGGLIA,P3,Développeur Fullstack,96.92,Oui
+PRO_2026_0168,IMTICIA,P3,Concepteur Multimédia,70.23,Oui
+PRO_2026_0169,ISAIA,P3,Data Analyst,84.72,Oui
+PRO_2026_0170,TEE,P4,Responsable Parc Naturel,96.17,Oui
+PRO_2026_0171,TEH,P4,Chef de projet Événementiel,88.37,Oui
+PRO_2026_0172,CAA,P5,Business Developer,84.89,Oui
+PRO_2026_0173,DTJA,P5,Juriste d'Entreprise,98.11,Oui
+PRO_2026_0174,EMP,P5,Chef de Projet,76.88,Oui
+PRO_2026_0175,FIC,P5,Contrôleur de Gestion,96.12,Oui
+PRO_2026_0176,AEE,P1,Responsable d'élevage,96.26,Oui
+PRO_2026_0177,IAA,P1,Conducteur de ligne de production,92.29,Oui
+PRO_2026_0178,PIP,P1,Assistant de recherche galénique,86.81,Oui
+PRO_2026_0179,EMII,P2,Ingénieur Électromécanicien,90.42,Oui
+PRO_2026_0180,GCA,P2,Architecte collaborateur,82.08,Oui
+PRO_2026_0181,ICMP,P2,Ingénieur QHSE,89.64,Oui
+PRO_2026_0182,ESIIA,P3,Développeur IoT,72.72,Oui
+PRO_2026_0183,IGGLIA,P3,Data Scientist / IA,86.93,Oui
+PRO_2026_0184,IMTICIA,P3,Développeur Web/Mobile,81.86,Oui
+PRO_2026_0185,ISAIA,P3,Consultant Big Data,75.43,Oui
+PRO_2026_0186,TEE,P4,Chef de projet Développement Durable,76.9,Oui
+PRO_2026_0187,TEH,P4,Responsable d'Agence de Voyage,74.05,Oui
+PRO_2026_0188,CAA,P5,Responsable Commercial,92.97,Oui
+PRO_2026_0189,DTJA,P5,Assistant Juridique,90.15,Oui
+PRO_2026_0190,EMP,P5,Chef de Projet,72.14,Oui
+PRO_2026_0191,FIC,P5,Contrôleur de Gestion,73.22,Oui
+PRO_2026_0192,AEE,P1,Agronome,89.63,Oui
+PRO_2026_0193,IAA,P1,Biologiste industriel,74.9,Oui
+PRO_2026_0194,PIP,P1,Assistant de recherche galénique,78.22,Oui
+PRO_2026_0195,EMII,P2,Responsable Maintenance,93.53,Oui
+PRO_2026_0196,GCA,P2,Conducteur de travaux,79.65,Oui
+PRO_2026_0197,ICMP,P2,Ingénieur QHSE,88.74,Oui
+PRO_2026_0198,ESIIA,P3,Ingénieur Systèmes Embarqués,93.88,Oui
+PRO_2026_0199,IGGLIA,P3,Data Scientist / IA,89.16,Oui
+PRO_2026_0200,IMTICIA,P3,Designer UI/UX,86.36,Oui
+PRO_2026_0201,ISAIA,P3,Data Analyst,71.08,Oui
+PRO_2026_0202,TEE,P4,Consultant Écotourisme,71.62,Oui
+PRO_2026_0203,TEH,P4,Manager d'Hôtel,87.37,Oui
+PRO_2026_0204,CAA,P5,Chef de Produit Marketing,93.72,Oui
+PRO_2026_0205,DTJA,P5,Gestionnaire de Contrats,70.07,Oui
+PRO_2026_0206,EMP,P5,Consultant en Organisation,71.22,Oui
+PRO_2026_0207,FIC,P5,Auditeur Financier,91.71,Oui
+PRO_2026_0208,AEE,P1,Chef d'exploitation,91.32,Oui
+PRO_2026_0209,IAA,P1,Responsable Qualité HACCP,75.61,Oui
+PRO_2026_0210,PIP,P1,Responsable contrôle qualité labo,86.05,Oui
+PRO_2026_0211,EMII,P2,Responsable Maintenance,95.55,Oui
+PRO_2026_0212,GCA,P2,Conducteur de travaux,74.51,Oui
+PRO_2026_0213,ICMP,P2,Géologue minier,83.51,Oui
+PRO_2026_0214,ESIIA,P3,Développeur IoT,90.27,Oui
+PRO_2026_0215,IGGLIA,P3,Data Scientist / IA,72.51,Oui
+PRO_2026_0216,IMTICIA,P3,Administrateur Réseaux & TIC,85.15,Oui
+PRO_2026_0217,ISAIA,P3,Data Analyst,73.47,Oui
+PRO_2026_0218,TEE,P4,Consultant Écotourisme,79.71,Oui
+PRO_2026_0219,TEH,P4,Manager d'Hôtel,78.86,Oui
+PRO_2026_0220,CAA,P5,Chef de Produit Marketing,85.19,Oui
+PRO_2026_0221,DTJA,P5,Assistant Juridique,89.5,Oui
+PRO_2026_0222,EMP,P5,Chef de Projet,86.13,Oui
+PRO_2026_0223,FIC,P5,Comptable Senior,90.07,Oui
+PRO_2026_0224,AEE,P1,Conseiller agricole,83.55,Oui
+PRO_2026_0225,IAA,P1,Conducteur de ligne de production,82.31,Oui
+PRO_2026_0226,PIP,P1,Délégué médical,74.4,Oui
+PRO_2026_0227,EMII,P2,Ingénieur Électromécanicien,96.86,Oui
+PRO_2026_0228,GCA,P2,Ingénieur Génie Civil,91.37,Oui
+PRO_2026_0229,ICMP,P2,Géologue minier,78.38,Oui
+PRO_2026_0230,ESIIA,P3,Concepteur Électronique,70.35,Oui
+PRO_2026_0231,IGGLIA,P3,Data Scientist / IA,83.36,Oui
+PRO_2026_0232,IMTICIA,P3,Concepteur Multimédia,94.11,Oui
+PRO_2026_0233,ISAIA,P3,Consultant Big Data,78.16,Oui
+PRO_2026_0234,TEE,P4,Responsable Parc Naturel,97.29,Oui
+PRO_2026_0235,TEH,P4,Chef de projet Événementiel,93.09,Oui
+PRO_2026_0236,CAA,P5,Responsable Commercial,94.29,Oui
+PRO_2026_0237,DTJA,P5,Assistant Juridique,85.11,Oui
+PRO_2026_0238,EMP,P5,Analyste Économique,71.69,Oui
+PRO_2026_0239,FIC,P5,Comptable Senior,77.41,Oui
+PRO_2026_0240,AEE,P1,Conseiller agricole,92.18,Oui
+PRO_2026_0241,IAA,P1,Ingénieur Agroalimentaire,97.92,Oui
+PRO_2026_0242,PIP,P1,Assistant de recherche galénique,82.3,Oui
+PRO_2026_0243,EMII,P2,Automaticien,77.04,Oui
+PRO_2026_0244,GCA,P2,Conducteur de travaux,77.97,Oui
+PRO_2026_0245,ICMP,P2,Géologue minier,74.49,Oui
+PRO_2026_0246,ESIIA,P3,Ingénieur Robotique,85.85,Oui
+PRO_2026_0247,IGGLIA,P3,Développeur Fullstack,94.76,Oui
+PRO_2026_0248,IMTICIA,P3,Administrateur Réseaux & TIC,81.21,Oui
+PRO_2026_0249,ISAIA,P3,Data Analyst,85.88,Oui
+PRO_2026_0250,TEE,P4,Guide Patrimoine,83.28,Oui

@@ -21,6 +21,14 @@ from typing import Dict, Any, Optional, Union, List
 from langchain.agents import create_agent
 from langchain_google_genai import ChatGoogleGenerativeAI
 
+try:
+    # Exception spécifique renvoyée par langchain-google-genai en cas de
+    # quota/rate-limit dépassé (429 RESOURCE_EXHAUSTED). Import protégé au
+    # cas où la classe bougerait entre versions de la librairie.
+    from langchain_google_genai.chat_models import GoogleRateLimitError
+except ImportError:
+    GoogleRateLimitError = None
+
 from src.utils.config import get_gemini_token
 from src.agent.tools import (
     rechercher_documentation_ispm,
@@ -55,6 +63,49 @@ def _extraire_texte_reponse(content: Union[str, List[Any]]) -> str:
     return str(content)
 
 
+def _est_erreur_quota(e: Exception) -> bool:
+    """Détecte un dépassement de quota/rate-limit Gemini, même si
+    GoogleRateLimitError n'a pas pu être importé (fallback par message)."""
+    if GoogleRateLimitError is not None and isinstance(e, GoogleRateLimitError):
+        return True
+    texte = str(e)
+    return "RESOURCE_EXHAUSTED" in texte or "429" in texte or "quota" in texte.lower()
+
+
+def _construire_reponse_fallback(ml_resultat: Optional[Dict[str, Any]], rag_resultats: List[Dict[str, Any]], raison: str) -> str:
+    """
+    Construit une réponse structurée directement à partir du ML et du RAG déjà
+    calculés (déterministes, ne nécessitent pas de nouvel appel LLM), utilisée
+    quand l'appel à l'agent Gemini échoue (quota dépassé, erreur réseau, etc.).
+    """
+    if ml_resultat and ml_resultat.get("status") == "SUCCESS":
+        filiere = ml_resultat.get("filiere_recommandee", "N/A")
+        score = ml_resultat.get("score_adequation", 0.0) * 100
+        synth = f"D'après l'analyse de votre profil, la filière recommandée est **{filiere}** (score d'adéquation : {score:.0f}%)."
+        probas = ml_resultat.get("predict_proba", {})
+        proba_str = ", ".join(f"{k} : {v * 100:.0f}%" for k, v in probas.items())
+        justif = f"Probabilités par filière : {proba_str}." if proba_str else "Détails du score indisponibles."
+    else:
+        synth = "Je ne peux pas générer de recommandation personnalisée pour le moment."
+        justif = "Le service de génération de texte est temporairement indisponible ou surchargé."
+
+    if rag_resultats:
+        citations = "\n".join(
+            f"- *{doc.get('source_title', 'Document ISPM')}* ({doc.get('section', '')})"
+            for doc in rag_resultats
+        )
+    else:
+        citations = "- Aucune source documentaire disponible pour cette requête."
+
+    return (
+        f"**Recommandation / Synthèse**\n{synth}\n\n"
+        f"**Justification & Outils**\n{justif}\n\n"
+        f"_Réponse générée en mode dégradé ({raison}), sans reformulation par l'IA générative._\n\n"
+        f"**Sources & Citations**\n{citations}\n\n"
+        f"{DISCLAIMER_ISPM}"
+    )
+
+
 class OrientIAAgent:
     def __init__(self, model_name: str = "gemini-3.5-flash"):
         self.model_name = model_name
@@ -70,8 +121,8 @@ class OrientIAAgent:
             )
             # Outils laissés à la discrétion de l'agent (dépendent vraiment du
             # contexte de la question — analyser_profil_ml et rechercher_formation
-            # sont volontairement RETIRÉS de cette liste : ils sont désormais
-            # exécutés de façon déterministe dans process_query, voir plus bas).
+            # sont volontairement RETIRÉS de cette liste : ils sont exécutés de
+            # façon déterministe dans process_query, voir plus bas).
             self.tools = [
                 rechercher_documentation_ispm,
                 verifier_prerequis,
@@ -161,8 +212,10 @@ class OrientIAAgent:
             }
 
         # 3. ANALYSE ML — exécutée de façon DÉTERMINISTE (pas laissée à
-        # l'agent), pour garantir qu'elle a effectivement lieu et qu'elle
-        # utilise bien le profil traduit dans le vocabulaire exact du modèle.
+        # l'agent), pour garantir qu'elle a effectivement lieu. La traduction
+        # LLM interne à traduire_profil_vers_vocabulaire_ml a déjà son propre
+        # fallback en cas d'erreur (voir tools.py), donc un quota dépassé ici
+        # ne fait pas planter cette étape : elle retombe sur un mapping brut.
         ml_resultat = None
         if profile.get("notes") or profile.get("competences"):
             try:
@@ -186,9 +239,7 @@ class OrientIAAgent:
                     "status": "ERROR",
                 }
 
-        # 4. RECHERCHE RAG — également exécutée de façon déterministe, sur la
-        # question brute de l'utilisateur, pour garantir un ancrage documentaire
-        # systématique plutôt que dépendant du choix de l'agent.
+        # 4. RECHERCHE RAG — également déterministe, ne dépend pas de Gemini.
         rag_resultats = []
         try:
             rag_resultats = rechercher_formation.invoke({"query": user_input})
@@ -227,31 +278,44 @@ class OrientIAAgent:
             f"{DISCLAIMER_ISPM}"
         )
 
-        # 6. Création et exécution de l'agent LangGraph
-        agent_executor = create_agent(
-            model=self.llm,
-            tools=self.tools,
-            system_prompt=system_prompt
-        )
+        # 6. Création et exécution de l'agent LangGraph — protégée contre les
+        # erreurs de quota/rate-limit Gemini (429 RESOURCE_EXHAUSTED) et toute
+        # autre erreur d'appel modèle : on retombe sur une réponse construite
+        # à partir du ML/RAG déjà calculés plutôt que de planter Streamlit.
+        try:
+            agent_executor = create_agent(
+                model=self.llm,
+                tools=self.tools,
+                system_prompt=system_prompt
+            )
 
-        response_state = agent_executor.invoke({
-            "messages": [("user", user_input)]
-        })
+            response_state = agent_executor.invoke({
+                "messages": [("user", user_input)]
+            })
 
-        # 7. Extraction de la traçabilité depuis l'historique des messages
-        #    (s'ajoute aux appels déterministes déjà tracés ci-dessus)
-        messages = response_state.get("messages", [])
+            messages = response_state.get("messages", [])
+            for msg in messages:
+                if hasattr(msg, 'tool_calls') and msg.tool_calls:
+                    for tool_call in msg.tool_calls:
+                        tool_calls_history.append({
+                            "tool_name": tool_call.get("name"),
+                            "tool_arguments": tool_call.get("args")
+                        })
 
-        for msg in messages:
-            if hasattr(msg, 'tool_calls') and msg.tool_calls:
-                for tool_call in msg.tool_calls:
-                    tool_calls_history.append({
-                        "tool_name": tool_call.get("name"),
-                        "tool_arguments": tool_call.get("args")
-                    })
+            reponse_finale = _extraire_texte_reponse(messages[-1].content) if messages else ""
+            erreur_agent = None
+
+        except Exception as e:
+            if _est_erreur_quota(e):
+                raison = "quota Gemini dépassé, réessayez plus tard"
+                print(f"[QUOTA DÉPASSÉ] {e}")
+            else:
+                raison = "erreur du moteur IA"
+                print(f"[ERREUR AGENT] {e}")
+            reponse_finale = _construire_reponse_fallback(ml_resultat, rag_resultats, raison)
+            erreur_agent = str(e)
 
         latency_ms = (time.time() - start_time) * 1000
-        reponse_finale = _extraire_texte_reponse(messages[-1].content) if messages else ""
 
         return {
             "response": reponse_finale,
@@ -260,6 +324,7 @@ class OrientIAAgent:
                 "trace_id": trace_id,
                 "tool_calls": tool_calls_history,
                 "ml_resultat": ml_resultat,
+                "erreur_agent": erreur_agent,
             }
         }
 
