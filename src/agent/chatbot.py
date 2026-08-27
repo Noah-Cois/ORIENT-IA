@@ -23,6 +23,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 
 from src.utils.config import get_gemini_token
 from src.agent.tools import (
+    rechercher_documentation_ispm,
     analyser_profil_ml,
     rechercher_formation,
     verifier_prerequis,
@@ -49,7 +50,7 @@ class OrientIAAgent:
                 temperature=0.2
             )
             # Nos outils
-            self.tools = [analyser_profil_ml, rechercher_formation, verifier_prerequis, comparer_parcours]
+            self.tools = [rechercher_documentation_ispm, analyser_profil_ml, rechercher_formation, verifier_prerequis, comparer_parcours]
             
         except ValueError as e:
             self.llm = None
