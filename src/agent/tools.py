@@ -9,6 +9,26 @@ les modules ML, RAG et IA Symbolique peuvent remplacer ces stubs par leur logiqu
 """
 from langchain_core.tools import tool
 from typing import Dict, List, Any, Optional
+from src.rag.search import recherche_rag 
+# ==============================================================================
+# 1. RAG : DOC ISPM
+# ==============================================================================
+@tool
+def rechercher_documentation_ispm(question: str) -> str:
+    """
+    Recherche dans la base de connaissances officielle de l'ISPM (Règlement, frais, 
+    filières ISAIA, IGGLIA, IMTICIA, ESIIA, IAA, AEE, PIP, EMII, GCA, ICMP, TEE, TEH, CAA, DTJA, EMP, FIC, etc.)
+    Utilise cet outil dès que l'utilisateur pose une question sur :
+    - Les frais de scolarité, écolage, droits d'inscription.
+    - Les détails, prérequis ou débouchés d'une filière spécifique de l'ISPM.
+    - Le règlement intérieur ou les informations administratives de l'école.
+    
+    Args:
+        question: La question précise de l'étudiant concernant l'ISPM.
+    """
+    # Appel direct à votre moteur search.py
+    contexte = recherche_rag(question, top_k=3)
+    return contexte
 
 # ==============================================================================
 # 1. OUTIL MACHINE LEARNING : ANALYSER PROFIL ML
