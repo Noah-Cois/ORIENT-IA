@@ -7,7 +7,7 @@ Ce fichier définit l'interface formelle (Tool Calling) utilisée par l'agent LL
 Tant que la clé et la structure des dictionnaires retournés restent inchangées,
 les modules ML, RAG et IA Symbolique peuvent remplacer ces stubs par leur logique finale.
 """
-
+from langchain_core.tools import tool
 from typing import Dict, List, Any, Optional
 
 # ==============================================================================
