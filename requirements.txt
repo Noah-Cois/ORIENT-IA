@@ -1,6 +1,10 @@
+langchain
 langchain-core
 langchain-chroma
 langchain-huggingface
+langgraph
+langchain-google-genai
+huggingface-hub
 python-frontmatter
 python-dotenv
 chromadb
